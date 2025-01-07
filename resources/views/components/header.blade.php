@@ -16,10 +16,10 @@
             <button @click="open = !open" class="text-gray-600 hover:text-gray-900 font-medium">Products</button>
             <div x-show="open" x-transition class="absolute hidden group-hover:block bg-white shadow-lg mt-2 py-2 rounded-md w-72">
               <!-- Dropdown Items -->
-              <a href="#" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
-              <a href="#" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
-              <a href="#" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
-              <a href="#" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
+              <a href="{{route('frontend.staticqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
+              <a href="{{route('frontend.staticqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
+              <a href="{{route('frontend.staticqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
+              <a href="{{route('frontend.staticqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
             </div>
           </div>
 
@@ -27,24 +27,24 @@
           <div x-data="{ open: false }" class="relative group">
             <button @click="open = !open" class="text-gray-600 hover:text-gray-900 font-medium">Resources</button>
             <div x-show="open" x-transition class="absolute hidden group-hover:block bg-white shadow-lg mt-2 py-2 rounded-md">
-              <a href="#" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resource 1</a>
-              <a href="#" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resource 2</a>
+              <a href="{{route('frontend.typesofqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resource 1</a>
+              <a href="{{route('frontend.typesofqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Resource 2</a>
             </div>
           </div>
 
           <!-- Static Links -->
-          <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Plans and prices</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">FAQ</a>
-          <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">API</a>
+          <a href="{{route('frontend.plans')}}" class="text-gray-600 hover:text-gray-900 font-medium">Plans and prices</a>
+          <a href="{{route('frontend.faq')}}" class="text-gray-600 hover:text-gray-900 font-medium">FAQ</a>
+          <a href="{{route('frontend.api')}}" class="text-gray-600 hover:text-gray-900 font-medium">API</a>
         </div>
       </div>
 
       <!-- Right Section -->
       <div class="flex items-center space-x-4">
-        <a href="#" class="text-gray-600 hover:text-gray-900 font-medium border border-blue-600 px-3 py-1 rounded-full">
+        <a href="{{route('frontend.login')}}" class="text-gray-600 hover:text-gray-900 font-medium border border-blue-600 text-xs md:text-md md:px-3 md:py-1 p-1 rounded-full">
           Log In
         </a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium">
+        <a href="{{route('frontend.login')}}" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium">
           Register
         </a>
 
@@ -61,13 +61,13 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
     <div class="space-y-1 py-3 px-4">
-      <a href="#" class="block text-gray-600 hover:text-gray-900 font-medium">Products</a>
-      <a href="#" class="block text-gray-600 hover:text-gray-900 font-medium">Resources</a>
-      <a href="#" class="block text-gray-600 hover:text-gray-900 font-medium">Plans and prices</a>
-      <a href="#" class="block text-gray-600 hover:text-gray-900 font-medium">FAQ</a>
-      <a href="#" class="block text-gray-600 hover:text-gray-900 font-medium">API</a>
-      <a href="#" class="block text-blue-600 hover:text-blue-700 font-medium">Log In</a>
-      <a href="#" class="block bg-blue-600 text-white rounded-lg px-4 py-2 text-center hover:bg-blue-700 font-medium">
+      <a href="{{route('frontend.staticqr')}}" class="block text-gray-600 hover:text-gray-900 font-medium">Products</a>
+      <a href="{{route('frontend.typesofqr')}}" class="block text-gray-600 hover:text-gray-900 font-medium">Resources</a>
+      <a href="{{route('frontend.plans')}}" class="block text-gray-600 hover:text-gray-900 font-medium">Plans and prices</a>
+      <a href="{{route('frontend.faq')}}" class="block text-gray-600 hover:text-gray-900 font-medium">FAQ</a>
+      <a href="{{route('frontend.api')}}" class="block text-gray-600 hover:text-gray-900 font-medium">API</a>
+      <a href="{{route('frontend.login')}}" class="block text-blue-600 hover:text-blue-700 font-medium">Log In</a>
+      <a href="{{route('frontend.login')}}" class="block bg-blue-600 text-white rounded-lg px-4 py-2 text-center hover:bg-blue-700 font-medium">
         Register
       </a>
     </div>

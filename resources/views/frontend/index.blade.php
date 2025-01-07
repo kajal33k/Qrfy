@@ -120,58 +120,59 @@
         </div>
     </div>
     {{--  create account --}}
-    <div class="flex flex-row w-4xl items-center justify-center p-8 space-y-6 bg-[#F0F0FF] rounded-lg space-x-4">
+    <div class="flex flex-col lg:flex-row items-center justify-between p-8 bg-[#F0F0FF] rounded-lg space-y-6 lg:space-y-0 lg:space-x-8 max-w-4xl mx-auto">
         <!-- Logo Section -->
-        <div>
-            {{-- <img src="{{asset('asset/img/logo.png')}}" alt="Logo" class="w-32 h-auto"> --}}
-            <p>Google</p>
+        <div class="flex-shrink-0">
+            <!-- Example logo (you can replace it with the actual image) -->
+            <p class="text-2xl font-bold text-gray-800">Google</p>
         </div>
-
+    
         <!-- Trusted Text -->
-        <div class="text-xl font-semibold text-gray-700">
+        <div class="text-xl font-semibold text-gray-700 text-center lg:text-left">
             Trusted by more than <span class="text-blue-500">12,607 people</span>
         </div>
-
+    
         <!-- Button Section -->
         <div>
-            <button class="px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+            <button class="px-8 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
                 Create your free account
             </button>
         </div>
-
+    
         <!-- No Credit Card Text -->
-        <div class="text-sm text-gray-500">
+        <div class="text-sm text-gray-500 text-center lg:text-left">
             No credit card required on Signup
         </div>
     </div>
+    
 
     {{-- text --}}
-    <div class="flex flex-col  items-center p-8  rounded-lg shadow-md max-w-full mx-auto space-y-4">
+    <div class="flex flex-col items-center p-8 rounded-lg shadow-lg bg-white max-w-4xl mx-auto space-y-6">
         <!-- Title -->
-        <h1 class="text-3xl font-extrabold text-gray-800 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-800 text-center">
             QR Code Generator: Create Your Free QR Code
         </h1>
-
+    
         <!-- Subtitle -->
-        <p class="text-lg text-gray-600 text-center">
+        <p class="text-lg text-gray-600 text-center max-w-prose mx-auto">
             Customize it with your <span class="text-blue-600 font-medium">color</span>,
             <span class="text-blue-600 font-medium">shape</span>, and
             <span class="text-blue-600 font-medium">logo</span> in 3 simple steps.
         </p>
     </div>
+    
 
     <div class="min-h-screen bg-gray-50 p-8">
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
             <h1 class="text-4xl font-bold text-center mb-12">How to create a QR code?</h1>
-
+    
             <!-- Steps -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Step 1 -->
                 <div class="p-6 bg-white rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
+                        <div class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
                             1
                         </div>
                     </div>
@@ -179,19 +180,12 @@
                     <p class="text-gray-600 mb-4">
                         Select from a wide variety of options: PDF, menu, video, business cards, web, apps, etc.
                     </p>
-                    {{-- <select class="w-full border-gray-300 rounded-lg p-2">
-            <option>Website URL</option>
-            <option>Plain Text</option>
-            <option>Business Card</option>
-            <option>PDF Document</option>
-          </select> --}}
                 </div>
-
+    
                 <!-- Step 2 -->
                 <div class="p-6 bg-white rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
+                        <div class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
                             2
                         </div>
                     </div>
@@ -199,93 +193,82 @@
                     <p class="text-gray-600 mb-4">
                         Fill in all the information and use our design tool to make your QR unique.
                     </p>
-                    {{-- <div class="space-y-4">
-            <input
-              type="text"
-              placeholder="Enter your content here..."
-              class="w-full border-gray-300 rounded-lg p-2"
-            />
-      
-          </div> --}}
                 </div>
-
+    
                 <!-- Step 3 -->
                 <div class="p-6 bg-white rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
+                        <div class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
                             3
                         </div>
                     </div>
                     <h2 class="text-xl font-semibold mb-3">Download your QR code</h2>
                     <p class="text-gray-600 mb-4">
-                        Get your QR code in different formats (pdf, png, svg), print it or show it in a digital format and
-                        voilà!
+                        Get your QR code in different formats (pdf, png, svg), print it or show it in a digital format and voilà!
                     </p>
-
                 </div>
             </div>
-
+    
             <!-- Create QR Button -->
             <div class="mt-8 flex justify-center">
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 rounded-full">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 rounded-full text-lg">
                     Create QR code
                 </button>
             </div>
         </div>
     </div>
-
+    
 
     {{-- ::::::::::::::SLIDER::::::::::::::::: --}}
-    <div class="max-w-7xl mx-auto px-36 py-6">
+    <div class="max-w-7xl mx-auto md:px-36 md:py-6">
         <!-- Tailwind CSS Slider -->
         <div class="relative">
             <div class="overflow-hidden">
                 <div class="flex transition-transform duration-500 ease-in-out space-x-8" id="slider-items">
                     <!-- Slide 1 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div id="landing" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Landing page icon" />
                         </div>
                         <span class="text-sm font-medium text-gray-700">Landing page</span>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div id="event" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Event icon" />
                         </div>
                         <span class="text-sm font-medium text-blue-600">Event</span>
                     </div>
                     <!-- Slide 1 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div id="slide3" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Landing page icon" />
                         </div>
                         <span class="text-sm font-medium text-gray-700">Landing page</span>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div id="slide4" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Event icon" />
                         </div>
                         <span class="text-sm font-medium text-blue-600">Event</span>
                     </div>
                     <!-- Slide 1 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div id="slide4" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Landing page icon" />
                         </div>
                         <span class="text-sm font-medium text-gray-700">Landing page</span>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div id="slide5" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Event icon" />
                         </div>
                         <span class="text-sm font-medium text-blue-600">Event</span>
                     </div>
                     <!-- Slide 1 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
+                    <div  id="slide6" class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
                         <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                             <img src="https://via.placeholder.com/40" alt="Landing page icon" />
                         </div>
@@ -388,19 +371,19 @@
     </script>
 
 
-    <div class="max-w-6xl mx-auto px-36 py-8">
+    <div class="max-w-6xl mx-auto md:px-36 md:py-8">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <!-- Left Content -->
                     <div class="space-y-6">
-                        <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                        <p class="text-gray-600 leading-relaxed">
+                        <h1 class="text-4xl font-bold text-gray-900 m-2">Event</h1>
+                        <p class="text-gray-600 leading-relaxed m-2">
                             Wow your guests with a dynamic invitation. Include images that will leave them excited, and
                             don't forget to add the date, time, and location so that no one misses your party.
                         </p>
-                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                        <button class="bg-blue-600 m-2  text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
                             Generate QR Code for Event
                         </button>
                     </div>
@@ -450,7 +433,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                {{-- slide2 --}}
+                <div href="#event" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <!-- Left Content -->
                     <div class="space-y-6">
                         <h1 class="text-4xl font-bold text-gray-900">mail</h1>
@@ -508,7 +492,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                {{-- slide3 --}}
+                <div href="#slide3" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <!-- Left Content -->
                     <div class="space-y-6">
                         <h1 class="text-4xl font-bold text-gray-900">Event</h1>
@@ -566,7 +551,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                {{-- slide4 --}}
+                <div href="#slide3" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <!-- Left Content -->
                     <div class="space-y-6">
                         <h1 class="text-4xl font-bold text-gray-900">Event</h1>
@@ -624,7 +610,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                {{-- slide5 --}}
+                <div href="#slide3" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <!-- Left Content -->
                     <div class="space-y-6">
                         <h1 class="text-4xl font-bold text-gray-900">Event</h1>
@@ -714,11 +701,11 @@
     <!-- grid Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
-            Your all-in-one marketing platform
+          Your all-in-one marketing platform
         </h1>
         <div class="max-w-7xl mx-auto p-6">
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
             <!-- Feature 1: Editing and management of QRs -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -732,7 +719,7 @@
               </div>
               <p class="text-gray-600">Customize and organize your QRs.</p>
             </div>
-        
+      
             <!-- Feature 2: Dynamic QR Codes -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -746,7 +733,7 @@
               </div>
               <p class="text-gray-600">QR codes that can be updated in real time</p>
             </div>
-        
+      
             <!-- Feature 3: Unlimited Contributing Users -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -760,7 +747,7 @@
               </div>
               <p class="text-gray-600">Manage your QR codes as a team</p>
             </div>
-        
+      
             <!-- Feature 4: Variety of download formats -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -774,7 +761,7 @@
               </div>
               <p class="text-gray-600">Expand the possibilities of use of your QRs</p>
             </div>
-        
+      
             <!-- Feature 5: Templates -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -788,7 +775,7 @@
               </div>
               <p class="text-gray-600">Save and reuse your own designs</p>
             </div>
-        
+      
             <!-- Feature 6: Static QR -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -802,7 +789,7 @@
               </div>
               <p class="text-gray-600">Permanent QR codes</p>
             </div>
-        
+      
             <!-- Feature 7: Custom Domain -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -816,7 +803,7 @@
               </div>
               <p class="text-gray-600">Strengthen your brand with your own domain</p>
             </div>
-        
+      
             <!-- Feature 8: Password access protection -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -830,7 +817,7 @@
               </div>
               <p class="text-gray-600">Secure your QR codes with password protection</p>
             </div>
-        
+      
             <!-- Feature 9: Complete analytics -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -844,7 +831,7 @@
               </div>
               <p class="text-gray-600">Understand performance with detailed data</p>
             </div>
-        
+      
             <!-- Feature 10: Event tracking -->
             <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
               <div class="flex items-center space-x-3">
@@ -858,13 +845,16 @@
               </div>
               <p class="text-gray-600">Monitor QR code usage and engagement</p>
             </div>
+      
           </div>
         </div>
-        
     </main>
+      
 
+
+{{-- slider --}}
     <div>
-        <div class=" p-8 flex items-center space-x-6 mx-32">
+        <div class=" p-4 md:p-8 flex items-center md:space-x-6 mx-4 md:mx-32">
 
             <div>
                 <h2 class="text-sm font-semibold text-blue-700">QR Codes on</h2>
@@ -879,7 +869,7 @@
         {{-- slider --}}
 
         <div class="w-full relative ">
-            <div class="swiper-slider2 multiple-slide-carousel swiper-container relative mx-32 overflow-hidden mt-8">
+            <div class="swiper-slider2 multiple-slide-carousel swiper-container relative mx-4 md:mx-32 overflow-hidden">
                 <div class="swiper-wrapper mb-16">
                     <div class="swiper-slide">
 
@@ -966,8 +956,7 @@
         <script>
             var swiper = new Swiper(".swiper-slider2", {
                 loop: true,
-                slidesPerView: 3,
-                spaceBetween: 20,
+             
                 navigation: {
                     nextEl: ".swiper-slider2 .swiper-button-next",
                     prevEl: ".swiper-slider2 .swiper-button-prev",
@@ -977,11 +966,11 @@
                         slidesPerView: 4,
                         spaceBetween: 30
                     },
-                    1028: {
+                    1024: {
                         slidesPerView: 3,
                         spaceBetween: 30
                     },
-                    990: {
+                    764: {
                         slidesPerView: 1,
                         spaceBetween: 0
                     }
@@ -1001,12 +990,12 @@
         <p class="text-center text-gray-600 mb-8">
             QR codes can contain a wide range of content and at QRfy we offer them all.
         </p>
-
+    
         <!-- Hero Section -->
         <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
             <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-12">
-                <h2 class="text-white text-4xl max-w-md font-light leading-tight mb-6">
+            <div class="relative z-20 p-8 md:p-12">
+                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
                     Create a unique invitation for an unforgettable event.
                 </h2>
                 <button
@@ -1015,59 +1004,31 @@
                 </button>
             </div>
             <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 h-full object-cover opacity-50" />
+                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
         </div>
-        <div class=" hidden relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-12">
-                <h2 class="text-white text-4xl max-w-md font-light leading-tight mb-6">
-                    Create a unique invitation for an unforgettable event.
-                </h2>
-                <button
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                    See more
-                </button>
-            </div>
-            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 h-full object-cover opacity-50" />
-        </div>
-        <div class="hidden relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-12">
-                <h2 class="text-white text-4xl max-w-md font-light leading-tight mb-6">
-                    Create a unique invitation for an unforgettable event.
-                </h2>
-                <button
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                    See more
-                </button>
-            </div>
-            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 h-full object-cover opacity-50" />
-        </div>
-
+    
         <!-- Features Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-white">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 bg-white">
             <!-- Wedding QR -->
-            <div class=" p-6 rounded-xl hover:shadow-lg transition-shadow">
+            <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="text-blue-600 text-2xl">🥂</span>
                     <h3 class="text-blue-600 font-medium">QR code for weddings</h3>
                 </div>
                 <div class="h-1 w-full bg-blue-600 rounded mb-4"></div>
             </div>
-
+    
             <!-- NGO QR -->
-            <div class=" p-6 rounded-xl hover:shadow-lg transition-shadow">
+            <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="text-gray-600 text-2xl">🐼</span>
                     <h3 class="text-gray-600 font-medium">QR code for NGOs</h3>
                 </div>
                 <div class="h-1 w-full bg-gray-400 rounded mb-4"></div>
             </div>
-
+    
             <!-- Photographer QR -->
-            <div class=" p-6 rounded-xl hover:shadow-lg transition-shadow">
+            <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
                 <div class="flex items-center gap-3 mb-2">
                     <span class="text-gray-600 text-2xl">🎬</span>
                     <h3 class="text-gray-600 font-medium">QR code for Photographers</h3>
@@ -1076,10 +1037,10 @@
             </div>
         </div>
     </div>
+    
 
 
-
-    <div class="max-w-7xl mx-auto px-4 py-8 px-36">
+    <div class="max-w-7xl mx-auto px-4 py-8 lg:px-36">
         <!-- Introduction Section -->
         <h2 class="text-3xl font-semibold text-center mb-4">
             Everything you need to know to get started
@@ -1169,13 +1130,15 @@
 
     {{-- REVIEW --}}
 
-    <section class="bg-white px-4 py-12 md:py-24 px-36">
-        <div class="max-w-4xl mx-auto overflow-x-scroll">
+    <section class="bg-white px-4 py-12 md:py-24">
+        <div class="max-w-4xl mx-auto">
             <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
                 What Listeners Are Saying
             </h2>
-            <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4 relative">
-                <div class="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+    
+            <div class="flex flex-col space-y-8 md:space-y-0 md:flex-row md:space-x-8">
+                <!-- Testimonial Item 1 -->
+                <div class="bg-gray-200 rounded-lg p-8 text-center flex flex-col items-center space-y-4 md:w-1/3">
                     <p class="font-bold uppercase">John Doe</p>
                     <p class="text-xl font-light italic text-gray-700">
                         This podcast is amazing! The storytelling and production quality are top-notch. I can't wait for the
@@ -1183,122 +1146,92 @@
                     </p>
                     <div class="flex items-center justify-center space-x-2 mt-4">
                         <!-- Star Ratings -->
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                             fill="currentColor" stroke="currentColor">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                             fill="currentColor" stroke="currentColor">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                             fill="currentColor" stroke="currentColor">
                             <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 000.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
                     </div>
                 </div>
-                <div class="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
-                    <p class="font-bold uppercase">John Doe</p>
-                    <p class="text-xl font-light italic text-gray-700">
-                        This podcast is amazing! The storytelling and production quality are top-notch. I can't wait for the
-                        next episode!
-                    </p>
-                    <div class="flex items-center justify-center space-x-2 mt-4">
-                        <!-- Star Ratings -->
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor" stroke="currentColor">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                            </path>
-                        </svg>
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor" stroke="currentColor">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                            </path>
-                        </svg>
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor" stroke="currentColor">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 000.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                            </path>
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Repeat the above structure for other testimonials -->
-                <div class="bg-gray-200 rounded-lg p-8 text-center md:w-1/3">
+    
+                <!-- Testimonial Item 2 -->
+                <div class="bg-gray-200 rounded-lg p-8 text-center flex flex-col items-center space-y-4 md:w-1/3">
                     <p class="font-bold uppercase">Jane Smith</p>
                     <p class="text-xl font-light italic text-gray-700">
                         This podcast kept me on the edge of my seat. It's a must-listen for true crime enthusiasts!
                     </p>
                     <div class="flex items-center justify-center space-x-2 mt-4">
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        <!-- Star Ratings -->
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                             fill="currentColor" stroke="currentColor">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor" stroke="currentColor">
-                            <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 000.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                            </path>
-                        </svg>
-                        <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                             fill="currentColor" stroke="currentColor">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
+                        </svg>
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 000-1.175l2.8-2.034c-.784.57-.197-1.539-1.118l-2.8-2.034"></path>
                         </svg>
                     </div>
                 </div>
-                <!-- Add more testimonial blocks as needed -->
+    
+                <!-- Repeat the above structure for additional testimonials -->
             </div>
         </div>
     </section>
+    
 
 
-
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold text-center mb-12 text-[#1f1f1f]">Do not leave with doubt</h1>
-
+    
         <!-- Navigation Tabs -->
-        <div class="flex justify-center gap-8 mb-12 border-b">
-            <button class="text-blue-500 border-b-2 border-blue-500 pb-4 px-4">Basic information</button>
-            <button class="text-gray-500 pb-4 px-4">Design & creation</button>
-            <button class="text-gray-500 pb-4 px-4">Scan & print</button>
+        <div class="flex justify-center gap-6 sm:gap-8 mb-12 border-b">
+            <button class="text-blue-500 border-b-2 border-blue-500 pb-4 px-6 text-sm sm:text-base">Basic information</button>
+            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base">Design & creation</button>
+            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base">Scan & print</button>
         </div>
-
+    
         <!-- FAQ Items -->
         <div class="space-y-4">
             <!-- FAQ Item 1 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-2" onclick="toggleAccordion(1)">
-                    <span class="text-lg font-medium text-[#1f1f1f]">What is a QR code generator?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4" onclick="toggleAccordion(1)">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">What is a QR code generator?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-1" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or
-                        other information for scanning by devices like smartphones.</p>
+                    <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or other information for scanning by devices like smartphones.</p>
                 </div>
             </div>
-
+    
             <!-- FAQ Item 2 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-2" onclick="toggleAccordion(2)">
-                    <span class="text-lg font-medium text-[#1f1f1f]">Are QR codes free?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4" onclick="toggleAccordion(2)">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Are QR codes free?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
@@ -1306,54 +1239,52 @@
                     <p>Yes, QR codes are free to generate. Many online tools offer free QR code creation services.</p>
                 </div>
             </div>
-
+    
             <!-- FAQ Item 3 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-2" onclick="toggleAccordion(3)">
-                    <span class="text-lg font-medium text-[#1f1f1f]">So can I create an account to generate free QR
-                        codes?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4" onclick="toggleAccordion(3)">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free QR codes?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-3" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free
-                        services without requiring an account.</p>
+                    <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free services without requiring an account.</p>
                 </div>
             </div>
-
+    
             <!-- FAQ Item 4 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-2" onclick="toggleAccordion(4)">
-                    <span class="text-lg font-medium text-[#1f1f1f]">Why on other web pages making QR codes is free?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-4"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4" onclick="toggleAccordion(4)">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Why on other web pages making QR codes is free?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-4" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>Other websites may offer free QR code generation as a marketing tool to attract users, or they may
-                        have limitations in their free plans.</p>
+                    <p>Other websites may offer free QR code generation as a marketing tool to attract users, or they may have limitations in their free plans.</p>
                 </div>
             </div>
         </div>
+    
         <script>
             function toggleAccordion(faqId) {
                 const content = document.getElementById(`faq-${faqId}`);
                 const icon = document.getElementById(`icon-${faqId}`);
-
+    
                 // Toggle visibility of the FAQ answer
                 content.classList.toggle('hidden');
-
+    
                 // Rotate the icon to indicate open/close state
                 icon.classList.toggle('rotate-180');
             }
         </script>
     </div>
+    
 
-    <div class="grid grid-cols-1 grid-cols-2 gap-0 px-32">
-        <div class="">
+    {{-- section with image --}}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:px-32 px-4">
+        <div class="flex justify-center">
             <svg width="242" height="234" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="207" height="209" rx="10" fill="#fff" />
                 <g clip-path="url(#a)">
@@ -1495,12 +1426,12 @@
         </div>
     </div>
 
-    <div
-        class="max-w-full mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-[#230F28] via-[#1D56F3] to-[#230F28] px-32">
+    {{-- desktop view --}}
+    <div class="max-w-full mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-[#230F28] via-[#1D56F3] to-[#230F28]">
         <!-- Header Section -->
-        <div class="flex justify-between items-center mb-16 mx-8">
-            <div class="max-w-2xl">
-                <h1 class="text-5xl font-bold text-white mb-4 leading-tight">
+        <div class="flex flex-col sm:flex-row justify-between items-center mb-16 px-4 sm:px-8 lg:px-16">
+            <div class="max-w-2xl mb-8 sm:mb-0">
+                <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
                     Try our QR code generator for 7 days free.
                 </h1>
             </div>
@@ -1508,18 +1439,18 @@
                 Register now
             </button>
         </div>
-
+    
         <!-- Dashboard Preview -->
-        <div class="mt-8 mx-8">
-            <img class="w-full h-auto object-cover rounded-lg" src="{{ asset('asset/img/web-img') }}"
-                alt="Dashboard preview">
+        <div class="mt-8 mx-4 sm:mx-8 lg:mx-16">
+            <img class="w-full h-auto object-cover rounded-lg" src="{{ asset('asset/img/web-img') }}" alt="Dashboard preview">
         </div>
     </div>
+    
 
 
 
     <div class="max-w-full mx-auto bg-gradient-to-r from-[#230F28] via-[#201C50] to-[#230F28]">
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mx-8 py-8 px-36">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:mx-8 py-8 lg:px-36 px-2">
             <!-- Web page -->
             <div class="group hover:bg-white/10 transition-all p-6 rounded-xl cursor-pointer">
                 <div
@@ -1764,7 +1695,7 @@
 
 
     <!-- Header with Logo and Rating -->
-    <div class="flex justify-between items-center  border-b border-white/10 pb-8 bg-[#230F28] px-36">
+    <div class="flex justify-between items-center border-b border-white/10 pb-8 bg-[#230F28] px-6 md:px-36">
         <div class="flex items-center gap-1">
             <div class="bg-blue-600 p-1.5 rounded">
                 <div class="w-6 h-6 bg-white rounded"></div>
@@ -1783,5 +1714,8 @@
             </div>
         </div>
     </div>
+    
+    
+    
     
 @endsection

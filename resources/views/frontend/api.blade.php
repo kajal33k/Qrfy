@@ -2,21 +2,21 @@
 @section('comtent')
 
 {{-- Hero Section --}}
-<div class="bg-[#220E27] text-white py-16 px-32 flex flex-col items-center text-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+<div class="bg-[#220E27] text-white py-16 px-6 sm:px-12 lg:px-32 flex flex-col items-center text-center">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
         Automate the Creation of Your QR Code with Our API
     </h1>
-    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-6">
+    <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mb-6">
         Create static & dynamic QR Codes wherever you want in just seconds.
     </p>
-    
 </div>
 
+
  <!-- API Documentation Section -->
- <section class="bg-gray-100 text-black py-12 px-8">
-    <div class="flex flex-col md:flex-row gap-8 max-w-7xl mx-auto bg-white">
+ <section class="bg-gray-100 text-black py-12 px-6 sm:px-8 lg:px-12">
+    <div class="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto bg-white">
         <!-- Sidebar -->
-        <aside class="w-full md:w-1/4 bg-white p-6 rounded-lg" id="sidebar">
+        <aside class="w-full lg:w-1/4 bg-white p-6 rounded-lg" id="sidebar">
             <h3 class="font-bold text-lg mb-4 cursor-pointer" onclick="toggleSection('qr-section')">QR</h3>
             <ul class="space-y-2 text-sm" id="qr-section">
                 <li><a href="#" class="block text-blue-600 font-semibold">Bulk create</a></li>
@@ -39,8 +39,8 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="flex-1 bg-white p-8 rounded-lg">
-            <h2 class="text-2xl font-bold mb-4">Bulk create</h2>
+        <main class="flex-1 bg-white p-6 sm:p-8 lg:p-12 rounded-lg">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6">Bulk create</h2>
 
             <!-- Authorization -->
             <div class="mb-6">
@@ -66,37 +66,40 @@
             <div class="mb-6">
                 <h3 class="font-semibold text-lg">Request Body schema</h3>
                 <p class="text-sm text-gray-500 mb-2">application/json</p>
-                <table class="w-full text-sm border-collapse border border-gray-300">
-                    <thead>
-                        <tr class="bg-gray-200">
-                            <th class="border border-gray-300 p-2">Parameter</th>
-                            <th class="border border-gray-300 p-2">Type</th>
-                            <th class="border border-gray-300 p-2">Example</th>
-                            <th class="border border-gray-300 p-2">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-gray-300 p-2">style</td>
-                            <td class="border border-gray-300 p-2">object</td>
-                            <td class="border border-gray-300 p-2">-</td>
-                            <td class="border border-gray-300 p-2">Style applied to all QRs</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 p-2">folder</td>
-                            <td class="border border-gray-300 p-2">integer or null</td>
-                            <td class="border border-gray-300 p-2">1</td>
-                            <td class="border border-gray-300 p-2">Folder ID, assign a user folder to the QR</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 p-2">qrs <span class="text-red-600">*</span></td>
-                            <td class="border border-gray-300 p-2">array of object</td>
-                            <td class="border border-gray-300 p-2">-</td>
-                            <td class="border border-gray-300 p-2"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm border-collapse border border-gray-300">
+                        <thead>
+                            <tr class="bg-gray-200">
+                                <th class="border border-gray-300 p-2">Parameter</th>
+                                <th class="border border-gray-300 p-2">Type</th>
+                                <th class="border border-gray-300 p-2">Example</th>
+                                <th class="border border-gray-300 p-2">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-2">style</td>
+                                <td class="border border-gray-300 p-2">object</td>
+                                <td class="border border-gray-300 p-2">-</td>
+                                <td class="border border-gray-300 p-2">Style applied to all QRs</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">folder</td>
+                                <td class="border border-gray-300 p-2">integer or null</td>
+                                <td class="border border-gray-300 p-2">1</td>
+                                <td class="border border-gray-300 p-2">Folder ID, assign a user folder to the QR</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">qrs <span class="text-red-600">*</span></td>
+                                <td class="border border-gray-300 p-2">array of object</td>
+                                <td class="border border-gray-300 p-2">-</td>
+                                <td class="border border-gray-300 p-2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            
 
             <!-- Responses -->
             <div>
@@ -125,6 +128,7 @@
     </div>
 </section>
 
+
 <!-- JavaScript -->
 <script>
     // Toggle sidebar sections
@@ -144,10 +148,31 @@
 </script>
 
 
+ {{-- desktop view --}}
+ <div class="max-w-full mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-[#230F28] via-[#1D56F3] to-[#230F28]">
+    <!-- Header Section -->
+    <div class="flex flex-col sm:flex-row justify-between items-center mb-16 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-2xl mb-8 sm:mb-0">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
+                Try our QR code generator for 7 days free.
+            </h1>
+        </div>
+        <button class="px-6 py-3 text-white rounded-full border-2 border-white/20 hover:bg-white/10 transition-all">
+            Register now
+        </button>
+    </div>
+
+    <!-- Dashboard Preview -->
+    <div class="mt-8 mx-4 sm:mx-8 lg:mx-16">
+        <img class="w-full h-auto object-cover rounded-lg" src="{{ asset('asset/img/web-img') }}" alt="Dashboard preview">
+    </div>
+</div>
+
+
 
 
 <div class="max-w-full mx-auto bg-gradient-to-r from-[#230F28] via-[#201C50] to-[#230F28]">
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mx-8 py-8 px-36">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:mx-8 py-8 lg:px-36 px-2">
         <!-- Web page -->
         <div class="group hover:bg-white/10 transition-all p-6 rounded-xl cursor-pointer">
             <div
@@ -390,26 +415,26 @@
 </div>
 
 
-    <!-- Header with Logo and Rating -->
-    <div class="flex justify-between items-center  border-b border-white/10 pb-8 bg-[#230F28] px-36">
-        <div class="flex items-center gap-1">
-            <div class="bg-blue-600 p-1.5 rounded">
-                <div class="w-6 h-6 bg-white rounded"></div>
-            </div>
-            <div class="text-white">
-                <h2 class="text-2xl font-bold mb-1">QRFY</h2>
-                <p class="text-sm text-white/60">Create your own QR codes and boost your business or idea</p>
-            </div>
+
+<!-- Header with Logo and Rating -->
+<div class="flex justify-between items-center border-b border-white/10 pb-8 bg-[#230F28] px-6 md:px-36">
+    <div class="flex items-center gap-1">
+        <div class="bg-blue-600 p-1.5 rounded">
+            <div class="w-6 h-6 bg-white rounded"></div>
         </div>
-        <div class="flex items-center gap-2 bg-white/5 rounded-full px-4 py-2">
-            <img src="/api/placeholder/24/24" alt="Google" class="w-6 h-6 rounded-full" />
-            <span class="text-white">Google</span>
-            <div class="flex items-center gap-1">
-                <span class="text-white">★</span>
-                <span class="text-white">4,7</span>
-            </div>
+        <div class="text-white">
+            <h2 class="text-2xl font-bold mb-1">QRFY</h2>
+            <p class="text-sm text-white/60">Create your own QR codes and boost your business or idea</p>
         </div>
     </div>
-    
+    <div class="flex items-center gap-2 bg-white/5 rounded-full px-4 py-2">
+        <img src="/api/placeholder/24/24" alt="Google" class="w-6 h-6 rounded-full" />
+        <span class="text-white">Google</span>
+        <div class="flex items-center gap-1">
+            <span class="text-white">★</span>
+            <span class="text-white">4,7</span>
+        </div>
+    </div>
+</div>
 
 @endsection

@@ -1,6 +1,6 @@
-<footer class="max-w-full mx-auto px-36 py-16 bg-[#230F28]">
+<footer class="max-w-full mx-auto px-6 md:px-12 py-16 bg-[#230F28]">
     <!-- Footer Navigation -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <!-- QRFY Column -->
         <div class="space-y-4">
             <h3 class="text-white font-semibold mb-6">QRFY</h3>
@@ -44,8 +44,8 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10">
-        <p class="text-white/60 text-sm mb-4 md:mb-0">
+    <div class="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-white/10">
+        <p class="text-white/60 text-sm mb-4 sm:mb-0">
             2024 © QR Code Generator PRO S.L. - "QR Code" is a trademark of DENSO WAVE INCORPORATED
         </p>
         <div class="flex items-center gap-6">

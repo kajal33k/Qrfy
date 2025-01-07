@@ -84,31 +84,31 @@
 </div>
 
 
-
-<div
-        class="px-44 max-w-full mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-[#230F28] via-[#1D56F3] to-[#230F28] px-32">
-        <!-- Header Section -->
-        <div class="flex justify-between items-center mb-16 mx-8">
-            <div class="max-w-2xl">
-                <h1 class="text-5xl font-bold text-white mb-4 leading-tight">
-                    Try our QR code generator for 7 days free.
-                </h1>
-            </div>
-            <button class="px-6 py-3 text-white rounded-full border-2 border-white/20 hover:bg-white/10 transition-all">
-                Register now
-            </button>
+ {{-- desktop view --}}
+ <div class="max-w-full mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-[#230F28] via-[#1D56F3] to-[#230F28]">
+    <!-- Header Section -->
+    <div class="flex flex-col sm:flex-row justify-between items-center mb-16 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-2xl mb-8 sm:mb-0">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
+                Try our QR code generator for 7 days free.
+            </h1>
         </div>
-
-        <!-- Dashboard Preview -->
-        <div class="mt-8 mx-8">
-            <img class="w-full h-auto object-cover rounded-lg" src="{{ asset('asset/img/web-img') }}"
-                alt="Dashboard preview">
-        </div>
+        <button class="px-6 py-3 text-white rounded-full border-2 border-white/20 hover:bg-white/10 transition-all">
+            Register now
+        </button>
     </div>
+
+    <!-- Dashboard Preview -->
+    <div class="mt-8 mx-4 sm:mx-8 lg:mx-16">
+        <img class="w-full h-auto object-cover rounded-lg" src="{{ asset('asset/img/web-img') }}" alt="Dashboard preview">
+    </div>
+</div>
+
+
 
 
 <div class="max-w-full mx-auto bg-gradient-to-r from-[#230F28] via-[#201C50] to-[#230F28]">
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mx-8 py-8 px-36">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:mx-8 py-8 lg:px-36 px-2">
         <!-- Web page -->
         <div class="group hover:bg-white/10 transition-all p-6 rounded-xl cursor-pointer">
             <div
@@ -353,7 +353,7 @@
 
 
 <!-- Header with Logo and Rating -->
-<div class="flex justify-between items-center  border-b border-white/10 pb-8 bg-[#230F28] px-36">
+<div class="flex justify-between items-center border-b border-white/10 pb-8 bg-[#230F28] px-6 md:px-36">
     <div class="flex items-center gap-1">
         <div class="bg-blue-600 p-1.5 rounded">
             <div class="w-6 h-6 bg-white rounded"></div>
@@ -372,5 +372,6 @@
         </div>
     </div>
 </div>
+
 
 @endsection
