@@ -1,8 +1,5 @@
 @extends('components.main')
 @section('comtent')
-
-
-
     {{-- hero section --}}
     <div class="max-w-4xl mx-auto bg-gray-100 rounded-lg shadow-lg p-4 mt-4">
         <!-- Tabs Container -->
@@ -22,9 +19,9 @@
                     PDF
                 </button>
                 <button id="img" data-tab="tab-img"
-                class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">
-               IMAGE
-            </button>
+                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">
+                    IMAGE
+                </button>
             </div>
         </div>
 
@@ -168,47 +165,48 @@
             </div>
         </div>
 
-        
-    <!-- PDF Content -->
-    <div id="tab-pdf" class="tab-content hidden">
-        <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md shadow-md ">
-            <!-- Left Content -->
-            <div class="flex-1 space-y-6">
-                <h1 class="text-4xl font-extrabold text-gray-900">QR PDF</h1>
-                <p class="text-xl text-gray-600 max-w-lg">
-                    From menus to user guides to creative portfolios, give your clients access to PDF documents quickly and
-                    efficiently.
-                </p>
-                <button
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    Register Now
-                </button>
-            </div>
 
-            <!-- Right Content -->
-            <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
-                <div class="flex items-center gap-2 text-gray-700">
-                    <span
-                        class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
-                    <span class="font-medium">Download Your QR</span>
+        <!-- PDF Content -->
+        <div id="tab-pdf" class="tab-content hidden">
+            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md shadow-md ">
+                <!-- Left Content -->
+                <div class="flex-1 space-y-6">
+                    <h1 class="text-4xl font-extrabold text-gray-900">QR PDF</h1>
+                    <p class="text-xl text-gray-600 max-w-lg">
+                        From menus to user guides to creative portfolios, give your clients access to PDF documents quickly
+                        and
+                        efficiently.
+                    </p>
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Register Now
+                    </button>
                 </div>
 
-                <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
-                    <img src="/api/placeholder/200/200" alt="QR Code" class="w-48 h-48" />
-                </div>
+                <!-- Right Content -->
+                <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
+                    <div class="flex items-center gap-2 text-gray-700">
+                        <span
+                            class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
+                        <span class="font-medium">Download Your QR</span>
+                    </div>
 
-                <button
-                    class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
-                    <span>Download QR</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </button>
+                    <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
+                        <img src="/api/placeholder/200/200" alt="QR Code" class="w-48 h-48" />
+                    </div>
+
+                    <button
+                        class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <span>Download QR</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
 
         <!-- IMages -->
         <div id="tab-img" class="tab-content hidden">
@@ -217,7 +215,8 @@
                 <div class="flex-1 space-y-6">
                     <h1 class="text-4xl font-extrabold text-gray-900">QR image</h1>
                     <p class="text-xl text-gray-600 max-w-lg">
-                        From menus to user guides to creative portfolios, give your clients access to PDF documents quickly and
+                        From menus to user guides to creative portfolios, give your clients access to PDF documents quickly
+                        and
                         efficiently.
                     </p>
                     <button
@@ -225,7 +224,7 @@
                         Register Now
                     </button>
                 </div>
-    
+
                 <!-- Right Content -->
                 <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
                     <div class="flex items-center gap-2 text-gray-700">
@@ -233,11 +232,11 @@
                             class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
                         <span class="font-medium">Download Your QR</span>
                     </div>
-    
+
                     <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
                         <img src="/api/placeholder/200/200" alt="QR Code" class="w-48 h-48" />
                     </div>
-    
+
                     <button
                         class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
                         <span>Download QR</span>
@@ -252,7 +251,7 @@
         </div>
     </div>
 
-    
+
     </div>
 
     </div>
@@ -271,7 +270,7 @@
                         'text-blue-600', 'border-blue-500'));
                     // Add active class to the clicked button
                     button.classList.add('active', 'bg-blue-50', 'text-blue-600',
-                    'border-blue-500');
+                        'border-blue-500');
 
                     // Hide all tab contents
                     tabContents.forEach((content) => content.classList.add('hidden'));
@@ -387,491 +386,161 @@
         </div>
     </div>
 
-
-    {{-- ::::::::::::::SLIDER::::::::::::::::: --}}
-    <div class="max-w-7xl mx-auto md:px-36 md:py-6 md:mb-6">
-        <!-- Tailwind CSS Slider -->
-        <div class="relative">
-            <div class="overflow-hidden">
-                <div class="flex transition-transform duration-500 ease-in-out space-x-8" id="slider-items">
-                    <!-- Slide 1 -->
-                    <div id="landing" data-tab="tab1"
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Landing page icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Landing page</span>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div id="event" data-tab="tab2"
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Event icon" />
-                        </div>
-                        <span class="text-sm font-medium text-blue-600">Event</span>
-                    </div>
-                    <!-- Slide 1 -->
-                    <div id="slide3" data-tab="tab3"
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Landing page icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Landing page</span>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div id="slide4" data-tab="tab4"
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Event icon" />
-                        </div>
-                        <span class="text-sm font-medium text-blue-600">Event</span>
-                    </div>
-                    <!-- Slide 1 -->
-                    <div id="slide5" data-tab="tab5" 
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Landing page icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Landing page</span>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div id="slide6" data-tab="tab6"
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Event icon" />
-                        </div>
-                        <span class="text-sm font-medium text-blue-600">Event</span>
-                    </div>
-                    <!-- Slide 1 -->
-                    <div id="slide7" data-tab="tab7"
-                        class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Landing page icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Landing page</span>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Event icon" />
-                        </div>
-                        <span class="text-sm font-medium text-blue-600">Event</span>
-                    </div>
-                    <!-- Slide 1 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Landing page icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Landing page</span>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Event icon" />
-                        </div>
-                        <span class="text-sm font-medium text-blue-600">Event</span>
-                    </div>
-                    <!-- Slide 1 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Landing page icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Landing page</span>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Event icon" />
-                        </div>
-                        <span class="text-sm font-medium text-blue-600">Event</span>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="vCard icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">vCard</span>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="flex-shrink-0 flex flex-col items-center space-y-2 bg-white shadow-md p-4 rounded-lg">
-                        <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                            <img src="https://via.placeholder.com/40" alt="Feedback icon" />
-                        </div>
-                        <span class="text-sm font-medium text-gray-700">Feedback</span>
-                    </div>
+    {{-- slider --}}
+    <div class="max-w-3xl mx-auto px-4 py-6">
+        <!-- Tabs -->
+        <div class="flex justify-center gap-4 mb-6 flex-wrap" role="tablist">
+            <button id="prevBtn" class="text-white py-2 px-4 rounded-full  transition duration-300" aria-label="Previous slide">◀</button>
+    
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-active bg-blue-600 text-white" data-index="0" role="tab" aria-selected="true">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
                 </div>
-            </div>
-
-            <!-- Next/Prev buttons -->
-            <button id="prev"
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg">
-                &#10094;
+                <span class="text-sm font-medium">Landing page</span>
             </button>
-            <button id="next"
-                class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg">
-                &#10095;
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700" data-index="1" role="tab" aria-selected="false">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
+                </div>
+                <span class="text-sm font-medium">Landing page</span>
             </button>
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700" data-index="2" role="tab" aria-selected="false">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
+                </div>
+                <span class="text-sm font-medium">Landing page</span>
+            </button>
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700" data-index="3" role="tab" aria-selected="false">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
+                </div>
+                <span class="text-sm font-medium">Landing page</span>
+            </button>
+    
+            <button id="nextBtn" class="text-white py-2 px-4 rounded-full  transition duration-300" aria-label="Next slide">▶</button>
         </div>
-    </div>
-
-    <script>
-        const slider = document.getElementById('slider-items');
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-        const slides = document.querySelectorAll('.flex-shrink-0');
-        let currentIndex = 0;
-
-        const updateSliderPosition = () => {
-            const slideWidth = slides[0].offsetWidth + 20; // Slide width + margin
-            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        };
-
-        prevButton.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = slides.length - 1; // Loop to last slide
-            }
-            updateSliderPosition();
-        });
-
-        nextButton.addEventListener('click', () => {
-            if (currentIndex < slides.length - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0; // Loop to first slide
-            }
-            updateSliderPosition();
-        });
-    </script>
-
-
-    <div class="max-w-6xl mx-auto md:px-36 md:py-8">
-        <div class="swiper">
-            <div class="swiper-wrapper">
+    
+        <!-- Slider -->
+        <div class="relative overflow-hidden">
+            <div id="slider" class="flex transition-transform duration-500 ease-in-out">
                 <!-- Slide 1 -->
-                <div id="tab1" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-6">
-                    <!-- Left Content -->
-                    <div class="space-y-6 ">
-                        <h1 class="text-4xl font-bold text-gray-900 m-2">Event</h1>
-                        <p class="text-gray-600 leading-relaxed m-2">
-                            Wow your guests with a dynamic invitation. Include images that will leave them excited, and
-                            don't forget to add the date, time, and location so that no one misses your party.
-                        </p>
-                        <button
-                            class="bg-blue-600 m-2  text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            Generate QR Code for Event
-                        </button>
-                    </div>
-                    <!-- Phone Mockup -->
-                    <div class="relative">
-                        <div
-                            class="w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] relative overflow-hidden bg-white shadow-lg">
-                            <div class="absolute inset-0 p-6 flex flex-col items-center">
-                                <!-- Image -->
-                                <img src="https://via.placeholder.com/240x160" alt="Event Image"
-                                    class="rounded-lg mb-4 w-full h-48 object-cover" />
-                                <!-- Event Details -->
-                                <h2 class="text-lg font-semibold mb-2 text-center">Andy & Carol</h2>
-                                <p class="text-sm text-gray-600 text-center mb-6">
-                                    Queremos invitarlos a nuestra boda y disfrutar juntos de un día muy especial.
-                                </p>
-                                <button
-                                    class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">
-                                    Confirm assistance
-                                </button>
-                                <!-- Schedule Info -->
-                                <div class="w-full border-t border-gray-300 pt-4">
-                                    <div class="flex items-center justify-between text-sm mb-3">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M8 7V3m8 4V3M3 9h18M5 19h14M10 15l2 2 4-4" />
-                                            </svg>
-                                            <span>When</span>
-                                        </span>
-                                        <span>Saturday, October 19, 2025</span>
-                                    </div>
-                                    <div class="flex items-center justify-between text-sm">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 8v4l3 3m6-1a9 9 0 11-10.9-13.9" />
-                                            </svg>
-                                            <span>Schedule</span>
-                                        </span>
-                                        <span>All day</span>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
+                    <div class="flex flex-col md:flex-row justify-between w-full items-center space-y-8 md:space-y-0 md:space-x-8">
+                        <!-- Left Section -->
+                        <div class="space-y-4 w-full md:w-1/2">
+                            <h1 class="text-4xl font-bold text-gray-900">Event</h1>
+                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        </div>
+                        
+                        <!-- Right Section -->
+                        <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px]  mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                         </div>
                     </div>
                 </div>
-                {{-- slide2 --}}
-                <div href="#event" id="tab2" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
-                    <div class="space-y-6">
-                        <h1 class="text-4xl font-bold text-gray-900">mail</h1>
-                        <p class="text-gray-600 leading-relaxed">
-                            Wow your guests with a dynamic invitation. Include images that will leave them excited, and
-                            don't forget to add the date, time, and location so that no one misses your party.
-                        </p>
-                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            Generate QR Code for Event
-                        </button>
-                    </div>
-                    <!-- Phone Mockup -->
-                    <div class="relative">
-                        <div
-                            class="w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] relative overflow-hidden bg-white shadow-lg">
-                            <div class="absolute inset-0 p-6 flex flex-col items-center">
-                                <!-- Image -->
-                                <img src="https://via.placeholder.com/240x160" alt="Event Image"
-                                    class="rounded-lg mb-4 w-full h-48 object-cover" />
-                                <!-- Event Details -->
-                                <h2 class="text-lg font-semibold mb-2 text-center">Andy & Carol</h2>
-                                <p class="text-sm text-gray-600 text-center mb-6">
-                                    Queremos invitarlos a nuestra boda y disfrutar juntos de un día muy especial.
-                                </p>
-                                <button
-                                    class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">
-                                    Confirm assistance
-                                </button>
-                                <!-- Schedule Info -->
-                                <div class="w-full border-t border-gray-300 pt-4">
-                                    <div class="flex items-center justify-between text-sm mb-3">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M8 7V3m8 4V3M3 9h18M5 19h14M10 15l2 2 4-4" />
-                                            </svg>
-                                            <span>When</span>
-                                        </span>
-                                        <span>Saturday, October 19, 2025</span>
-                                    </div>
-                                    <div class="flex items-center justify-between text-sm">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 8v4l3 3m6-1a9 9 0 11-10.9-13.9" />
-                                            </svg>
-                                            <span>Schedule</span>
-                                        </span>
-                                        <span>All day</span>
-                                    </div>
-                                </div>
-                            </div>
+            
+                <!-- Slide 2 -->
+                <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
+                    <div class="flex flex-col md:flex-row justify-between w-full items-center space-y-8 md:space-y-0 md:space-x-8">
+                        <!-- Left Section -->
+                        <div class="space-y-4 w-full md:w-1/2">
+                            <h1 class="text-4xl font-bold text-gray-900">Event</h1>
+                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        </div>
+                        
+                        <!-- Right Section -->
+                        <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px]  mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                         </div>
                     </div>
                 </div>
-                {{-- slide3 --}}
-                <div href="#slide3" id="tab3" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
-                    <div class="space-y-6">
-                        <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                        <p class="text-gray-600 leading-relaxed">
-                            Wow your guests with a dynamic invitation. Include images that will leave them excited, and
-                            don't forget to add the date, time, and location so that no one misses your party.
-                        </p>
-                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            Generate QR Code for Event
-                        </button>
-                    </div>
-                    <!-- Phone Mockup -->
-                    <div class="relative">
-                        <div
-                            class="w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] relative overflow-hidden bg-white shadow-lg">
-                            <div class="absolute inset-0 p-6 flex flex-col items-center">
-                                <!-- Image -->
-                                <img src="https://via.placeholder.com/240x160" alt="Event Image"
-                                    class="rounded-lg mb-4 w-full h-48 object-cover" />
-                                <!-- Event Details -->
-                                <h2 class="text-lg font-semibold mb-2 text-center">Andy & Carol</h2>
-                                <p class="text-sm text-gray-600 text-center mb-6">
-                                    Queremos invitarlos a nuestra boda y disfrutar juntos de un día muy especial.
-                                </p>
-                                <button
-                                    class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">
-                                    Confirm assistance
-                                </button>
-                                <!-- Schedule Info -->
-                                <div class="w-full border-t border-gray-300 pt-4">
-                                    <div class="flex items-center justify-between text-sm mb-3">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M8 7V3m8 4V3M3 9h18M5 19h14M10 15l2 2 4-4" />
-                                            </svg>
-                                            <span>When</span>
-                                        </span>
-                                        <span>Saturday, October 19, 2025</span>
-                                    </div>
-                                    <div class="flex items-center justify-between text-sm">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 8v4l3 3m6-1a9 9 0 11-10.9-13.9" />
-                                            </svg>
-                                            <span>Schedule</span>
-                                        </span>
-                                        <span>All day</span>
-                                    </div>
-                                </div>
-                            </div>
+                 <!-- Slide 1 -->
+                 <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
+                    <div class="flex flex-col md:flex-row justify-between w-full items-center space-y-8 md:space-y-0 md:space-x-8">
+                        <!-- Left Section -->
+                        <div class="space-y-4 w-full md:w-1/2">
+                            <h1 class="text-4xl font-bold text-gray-900">Event</h1>
+                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        </div>
+                        
+                        <!-- Right Section -->
+                        <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px]  mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                         </div>
                     </div>
                 </div>
-                {{-- slide4 --}}
-                <div href="#slide3" id="tab4" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
-                    <div class="space-y-6">
-                        <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                        <p class="text-gray-600 leading-relaxed">
-                            Wow your guests with a dynamic invitation. Include images that will leave them excited, and
-                            don't forget to add the date, time, and location so that no one misses your party.
-                        </p>
-                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            Generate QR Code for Event
-                        </button>
-                    </div>
-                    <!-- Phone Mockup -->
-                    <div class="relative">
-                        <div
-                            class="w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] relative overflow-hidden bg-white shadow-lg">
-                            <div class="absolute inset-0 p-6 flex flex-col items-center">
-                                <!-- Image -->
-                                <img src="https://via.placeholder.com/240x160" alt="Event Image"
-                                    class="rounded-lg mb-4 w-full h-48 object-cover" />
-                                <!-- Event Details -->
-                                <h2 class="text-lg font-semibold mb-2 text-center">Andy & Carol</h2>
-                                <p class="text-sm text-gray-600 text-center mb-6">
-                                    Queremos invitarlos a nuestra boda y disfrutar juntos de un día muy especial.
-                                </p>
-                                <button
-                                    class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">
-                                    Confirm assistance
-                                </button>
-                                <!-- Schedule Info -->
-                                <div class="w-full border-t border-gray-300 pt-4">
-                                    <div class="flex items-center justify-between text-sm mb-3">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M8 7V3m8 4V3M3 9h18M5 19h14M10 15l2 2 4-4" />
-                                            </svg>
-                                            <span>When</span>
-                                        </span>
-                                        <span>Saturday, October 19, 2025</span>
-                                    </div>
-                                    <div class="flex items-center justify-between text-sm">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 8v4l3 3m6-1a9 9 0 11-10.9-13.9" />
-                                            </svg>
-                                            <span>Schedule</span>
-                                        </span>
-                                        <span>All day</span>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Slide 2 -->
+                <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
+                    <div class="flex justify-between w-full items-center space-x-8">
+                        <div class="space-y-4 w-full md:w-1/2">
+                            <h1 class="text-4xl font-bold text-gray-900">Mail</h1>
+                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        </div>
+                        <div class="relative w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                         </div>
                     </div>
                 </div>
-                {{-- slide5 --}}
-                <div href="#slide3" id="tab5" class="swiper-slide grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <!-- Left Content -->
-                    <div class="space-y-6">
-                        <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                        <p class="text-gray-600 leading-relaxed">
-                            Wow your guests with a dynamic invitation. Include images that will leave them excited, and
-                            don't forget to add the date, time, and location so that no one misses your party.
-                        </p>
-                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            Generate QR Code for Event
-                        </button>
-                    </div>
-                    <!-- Phone Mockup -->
-                    <div class="relative">
-                        <div
-                            class="w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] relative overflow-hidden bg-white shadow-lg">
-                            <div class="absolute inset-0 p-6 flex flex-col items-center">
-                                <!-- Image -->
-                                <img src="https://via.placeholder.com/240x160" alt="Event Image"
-                                    class="rounded-lg mb-4 w-full h-48 object-cover" />
-                                <!-- Event Details -->
-                                <h2 class="text-lg font-semibold mb-2 text-center">Andy & Carol</h2>
-                                <p class="text-sm text-gray-600 text-center mb-6">
-                                    Queremos invitarlos a nuestra boda y disfrutar juntos de un día muy especial.
-                                </p>
-                                <button
-                                    class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">
-                                    Confirm assistance
-                                </button>
-                                <!-- Schedule Info -->
-                                <div class="w-full border-t border-gray-300 pt-4">
-                                    <div class="flex items-center justify-between text-sm mb-3">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M8 7V3m8 4V3M3 9h18M5 19h14M10 15l2 2 4-4" />
-                                            </svg>
-                                            <span>When</span>
-                                        </span>
-                                        <span>Saturday, October 19, 2025</span>
-                                    </div>
-                                    <div class="flex items-center justify-between text-sm">
-                                        <span class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500"
-                                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 8v4l3 3m6-1a9 9 0 11-10.9-13.9" />
-                                            </svg>
-                                            <span>Schedule</span>
-                                        </span>
-                                        <span>All day</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more slides by copying the structure above -->
             </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Navigation Buttons -->
-            {{-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> --}}
         </div>
     </div>
+    
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const swiper = new Swiper('.swiper', {
-                loop: true, // Infinite loop
-                slidesPerView: 1, // Show one slide at a time
-                spaceBetween: 20, // Space between slides
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
+        const slider = document.getElementById("slider");
+        const tabs = document.querySelectorAll(".tab-btn");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+    
+        let currentIndex = 0;
+    
+        const updateSlider = (index) => {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            tabs.forEach((tab, idx) => {
+                const isActive = idx === index;
+                tab.classList.toggle("bg-blue-600", isActive);
+                tab.classList.toggle("bg-gray-200", !isActive);
+                tab.classList.toggle("text-white", isActive);
+                tab.classList.toggle("text-gray-700", !isActive);
+                tab.setAttribute("aria-selected", isActive.toString());
             });
-        });
+        };
+    
+        const handleTabClick = (event) => {
+            currentIndex = parseInt(event.target.getAttribute("data-index"));
+            updateSlider(currentIndex);
+        };
+    
+        const handlePrevClick = () => {
+            currentIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            updateSlider(currentIndex);
+        };
+    
+        const handleNextClick = () => {
+            currentIndex = (currentIndex + 1) % tabs.length;
+            updateSlider(currentIndex);
+        };
+    
+        tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
+        prevBtn.addEventListener("click", handlePrevClick);
+        nextBtn.addEventListener("click", handleNextClick);
     </script>
+    
 
 
 
@@ -1189,8 +858,26 @@
         <p class="text-center text-gray-600 mb-8">
             QR codes can contain a wide range of content and at QRfy we offer them all.
         </p>
+<!-- Tabs Navigation -->
+<div class="flex md:gap-4 mb-6 border-b border-gray-300">
+    <button
+        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+        data-tab="tab1">Invitation</button>
+    <button
+        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+        data-tab="tab2">Wedding QR</button>
+    <button
+        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+        data-tab="tab3">NGO QR</button>
+    <button
+        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+        data-tab="tab4">Photographer QR</button>
+</div>
 
-        <!-- Hero Section -->
+<!-- Tab Content -->
+<div class="tab-content">
+    <!-- Tab 1: Hero Section -->
+    <div class="tab-pane" id="tab1">
         <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
             <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
             <div class="relative z-20 p-8 md:p-12">
@@ -1205,36 +892,83 @@
             <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
                 class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
         </div>
+    </div>
 
-        <!-- Features Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 bg-white">
-            <!-- Wedding QR -->
-            <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="text-blue-600 text-2xl">🥂</span>
-                    <h3 class="text-blue-600 font-medium">QR code for weddings</h3>
-                </div>
-                <div class="h-1 w-full bg-blue-600 rounded mb-4"></div>
+    <!-- Tab 2: Wedding QR -->
+    <div class="tab-pane hidden" id="tab2">
+        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+            <div class="relative z-20 p-8 md:p-12">
+                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                    Create a unique invitation for Wedding QR.
+                </h2>
+                <button
+                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                    See more
+                </button>
             </div>
-
-            <!-- NGO QR -->
-            <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="text-gray-600 text-2xl">🐼</span>
-                    <h3 class="text-gray-600 font-medium">QR code for NGOs</h3>
-                </div>
-                <div class="h-1 w-full bg-gray-400 rounded mb-4"></div>
-            </div>
-
-            <!-- Photographer QR -->
-            <div class="p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="text-gray-600 text-2xl">🎬</span>
-                    <h3 class="text-gray-600 font-medium">QR code for Photographers</h3>
-                </div>
-                <div class="h-1 w-full bg-gray-400 rounded mb-4"></div>
-            </div>
+            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
         </div>
+    </div>
+
+    <!-- Tab 3: NGO QR -->
+    <div class="tab-pane hidden" id="tab3">
+        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+            <div class="relative z-20 p-8 md:p-12">
+                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                    Create a unique invitation for an unforgettable event.
+                </h2>
+                <button
+                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                    See more
+                </button>
+            </div>
+            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+        </div>
+    </div>
+
+    <!-- Tab 4: Photographer QR -->
+    <div class="tab-pane hidden" id="tab4">
+        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+            <div class="relative z-20 p-8 md:p-12">
+                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                    Create a unique invitation for Photographer QR .
+                </h2>
+                <button
+                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                    See more
+                </button>
+            </div>
+            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+        </div>
+    </div>
+</div>
+
+<script>
+    // Tab switching logic
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Deactivate all buttons and hide all panes
+            tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
+            tabPanes.forEach(pane => pane.classList.add('hidden'));
+
+            // Activate clicked button and show corresponding pane
+            button.classList.add('text-blue-600', 'border-blue-600');
+            const targetPane = document.querySelector(`#${button.dataset.tab}`);
+            targetPane.classList.remove('hidden');
+        });
+    });
+</script>
+
+        
     </div>
 
 
@@ -1248,24 +982,25 @@
             In this section, you will find the basic concepts and the necessary steps to start enjoying the benefits of
             using QR.
         </p>
-
+    
         <!-- Grid Layout for Image and Accordion -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <!-- Image Section -->
-            <div class="h-1/4">
+            <div class="flex justify-center lg:justify-start">
                 <img src="{{ asset('asset/img/imagfold') }}" alt="QR Image"
-                    class="w-full h-auto object-cover rounded-lg shadow-md">
+                    class="w-full max-w-lg h-auto object-cover rounded-lg shadow-md">
             </div>
-
+    
             <!-- Accordion Section -->
             <div>
                 <div class="space-y-4">
                     <!-- Accordion Item 1 -->
                     <div class="border border-gray-300 rounded-lg">
-                        <button class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none"
+                        <button
+                            class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none flex justify-between items-center"
                             onclick="toggleAccordion(event)" aria-expanded="false" aria-controls="content-1">
                             <span>Step 1: Understand QR Codes</span>
-                            <span class="float-right text-gray-600" id="icon-1">+</span>
+                            <span class="text-gray-600 transition-transform transform" id="icon-1">+</span>
                         </button>
                         <div id="content-1" class="px-6 pb-4 hidden">
                             <p class="text-gray-600">
@@ -1274,13 +1009,14 @@
                             </p>
                         </div>
                     </div>
-
+    
                     <!-- Accordion Item 2 -->
                     <div class="border border-gray-300 rounded-lg">
-                        <button class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none"
+                        <button
+                            class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none flex justify-between items-center"
                             onclick="toggleAccordion(event)" aria-expanded="false" aria-controls="content-2">
                             <span>Step 2: Choose Your QR Code Type</span>
-                            <span class="float-right text-gray-600" id="icon-2">+</span>
+                            <span class="text-gray-600 transition-transform transform" id="icon-2">+</span>
                         </button>
                         <div id="content-2" class="px-6 pb-4 hidden">
                             <p class="text-gray-600">
@@ -1289,13 +1025,14 @@
                             </p>
                         </div>
                     </div>
-
+    
                     <!-- Accordion Item 3 -->
                     <div class="border border-gray-300 rounded-lg">
-                        <button class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none"
+                        <button
+                            class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none flex justify-between items-center"
                             onclick="toggleAccordion(event)" aria-expanded="false" aria-controls="content-3">
                             <span>Step 3: Generate Your QR Code</span>
-                            <span class="float-right text-gray-600" id="icon-3">+</span>
+                            <span class="text-gray-600 transition-transform transform" id="icon-3">+</span>
                         </button>
                         <div id="content-3" class="px-6 pb-4 hidden">
                             <p class="text-gray-600">
@@ -1308,23 +1045,27 @@
             </div>
         </div>
     </div>
-
+    
     <script>
         function toggleAccordion(event) {
-            const button = event.target.closest('button');
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('span.float-right');
-            const expanded = button.getAttribute('aria-expanded') === 'true';
-
-            // Toggle the visibility of the content
-            content.classList.toggle('hidden');
-            // Update the aria-expanded attribute for accessibility
-            button.setAttribute('aria-expanded', !expanded);
-
-            // Change the icon based on the visibility
-            icon.textContent = expanded ? '+' : '-';
+            const button = event.currentTarget;
+            const contentId = button.getAttribute('aria-controls');
+            const content = document.getElementById(contentId);
+            const icon = button.querySelector('span#' + button.id);
+    
+            // Toggle content visibility
+            const isExpanded = content.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', !isExpanded);
+    
+            // Toggle icon
+            if (icon) {
+                icon.textContent = isExpanded ? '+' : '-';
+                icon.classList.toggle('rotate-45');
+            }
         }
     </script>
+    
+    
 
 
     {{-- REVIEW --}}
@@ -1395,6 +1136,36 @@
                     </div>
                 </div>
 
+                {{-- Testimonial Item 3 --}}
+                <div class="bg-gray-200 rounded-lg p-8 text-center flex flex-col items-center space-y-4 md:w-1/3">
+                    <p class="font-bold uppercase">John Doe</p>
+                    <p class="text-xl font-light italic text-gray-700">
+                        This podcast is amazing! The storytelling and production quality are top-notch. I can't wait for the
+                        next episode!
+                    </p>
+                    <div class="flex items-center justify-center space-x-2 mt-4">
+                        <!-- Star Ratings -->
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <svg class="text-yellow-500 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" stroke="currentColor">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
                 <!-- Repeat the above structure for additional testimonials -->
             </div>
         </div>
@@ -1407,14 +1178,14 @@
 
         <!-- Navigation Tabs -->
         <div class="flex justify-center gap-6 sm:gap-8 mb-12 border-b">
-            <button class="text-blue-500 border-b-2 border-blue-500 pb-4 px-6 text-sm sm:text-base">Basic
+            <button class="text-blue-500 border-b-2 border-blue-500 pb-4 px-6 text-sm sm:text-base" data-tab="tab4">Basic
                 information</button>
-            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base">Design & creation</button>
-            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base">Scan & print</button>
+            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base" data-tab="tab5">Design & creation</button>
+            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base" data-tab="tab6">Scan & print</button>
         </div>
 
         <!-- FAQ Items -->
-        <div class="space-y-4">
+        <div class="space-y-4" id="tab4">
             <!-- FAQ Item 1 -->
             <div class="border-b border-gray-200 pb-4">
                 <button class="w-full text-left flex justify-between items-center py-3 sm:py-4"
@@ -1495,6 +1266,129 @@
         </script>
     </div>
 
+
+    {{-- Design & creation --}}
+
+    <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab5" >
+        <!-- Accordion Item 1 -->
+        <div class="border-b">
+          <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
+            <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
+            <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or any other elements.</div>
+          </div>
+        </div>
+    
+        <!-- Accordion Item 2 -->
+        <div class="border-b">
+          <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
+            <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
+            <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
+          </div>
+        </div>
+    
+        <!-- Accordion Item 3 -->
+        <div>
+          <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
+            <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
+            <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.</div>
+          </div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('button[data-target]').forEach(button => {
+          button.addEventListener('click', () => {
+            const content = document.querySelector(button.dataset.target);
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+    
+            document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
+              el.setAttribute('aria-expanded', 'false');
+              document.querySelector(el.dataset.target).style.maxHeight = null;
+            });
+    
+            if (!isExpanded) {
+              button.setAttribute('aria-expanded', 'true');
+              content.style.maxHeight = content.scrollHeight + 'px';
+            }
+          });
+        });
+    </script>
+
+{{-- Scan & print --}}
+<div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab6" >
+    <!-- Accordion Item 1 -->
+    <div class="border-b">
+      <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
+        <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
+        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
+        <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or any other elements.</div>
+      </div>
+    </div>
+
+    <!-- Accordion Item 2 -->
+    <div class="border-b">
+      <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
+        <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
+        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
+        <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
+      </div>
+    </div>
+
+    <!-- Accordion Item 3 -->
+    <div>
+      <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
+        <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
+        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
+        <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.</div>
+      </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('button[data-target]').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = document.querySelector(button.dataset.target);
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
+          el.setAttribute('aria-expanded', 'false');
+          document.querySelector(el.dataset.target).style.maxHeight = null;
+        });
+
+        if (!isExpanded) {
+          button.setAttribute('aria-expanded', 'true');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    });
+</script>
 
     {{-- section with image --}}
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:px-32 px-4">
