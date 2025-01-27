@@ -6,8 +6,8 @@
             <h3 class="text-white font-semibold mb-6">QRFY</h3>
             <ul class="space-y-3">
                 <li><a href="#" class="text-white/60 hover:text-white">QR Code Generator</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">Plans and prices</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">About us</a></li>
+                <li><a href="{{route('frontend.plans')}}" class="text-white/60 hover:text-white">Plans and prices</a></li>
+                <li><a href="{{route('frontend.about')}}" class="text-white/60 hover:text-white">About us</a></li>
             </ul>
         </div>
 
@@ -15,10 +15,10 @@
         <div class="space-y-4">
             <h3 class="text-white font-semibold mb-6">Company</h3>
             <ul class="space-y-3">
-                <li><a href="#" class="text-white/60 hover:text-white">Terms of Use and Contract</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">Cookies Policy</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">GDPR</a></li>
+                <li><a href="{{route('frontend.plans')}}" class="text-white/60 hover:text-white">Terms of Use and Contract</a></li>
+                <li><a href="{{route('frontend.plans')}}" class="text-white/60 hover:text-white">Privacy Policy</a></li>
+                <li><a href="{{route('frontend.faq')}}" class="text-white/60 hover:text-white">Cookies Policy</a></li>
+                <li><a href="{{route('frontend.api')}}" class="text-white/60 hover:text-white">GDPR</a></li>
             </ul>
         </div>
 
@@ -26,8 +26,8 @@
         <div class="space-y-4">
             <h3 class="text-white font-semibold mb-6">Resources</h3>
             <ul class="space-y-3">
-                <li><a href="#" class="text-white/60 hover:text-white">QR Codes for</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">QR Codes on</a></li>
+                <li><a href="{{route('frontend.faq')}}" class="text-white/60 hover:text-white">QR Codes for</a></li>
+                <li><a href="{{route('frontend.api')}}" class="text-white/60 hover:text-white">QR Codes on</a></li>
             </ul>
         </div>
 
@@ -35,10 +35,10 @@
         <div class="space-y-4">
             <h3 class="text-white font-semibold mb-6">Help</h3>
             <ul class="space-y-3">
-                <li><a href="#" class="text-white/60 hover:text-white">Contact us</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">FAQ</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">API Docs</a></li>
-                <li><a href="#" class="text-white/60 hover:text-white">Report abuse</a></li>
+                <li><a href="{{route('frontend.login')}}" class="text-white/60 hover:text-white">Contact us</a></li>
+                <li><a href="{{route('frontend.faq')}}" class="text-white/60 hover:text-white">FAQ</a></li>
+                <li><a href="{{route('frontend.api')}}" class="text-white/60 hover:text-white">API Docs</a></li>
+                <li><a href="{{route('frontend.plans')}}" class="text-white/60 hover:text-white">Report abuse</a></li>
             </ul>
         </div>
     </div>

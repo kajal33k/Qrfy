@@ -7,143 +7,53 @@
             <div class="flex flex-wrap items-center space-x-4 overflow-x-auto">
                 <!-- Tabs -->
                 <button id="url" data-tab="tab-url"
-                    class="tab-btn active flex items-center px-4 py-2 rounded-md bg-blue-50 border border-blue-500 text-blue-600 font-medium">
-                    URL
-                </button>
+                    class="tab-btn active flex items-center px-4 py-2 rounded-md bg-blue-50 border border-blue-500 text-blue-600 font-medium">URL</button>
                 <button id="text" data-tab="tab-text"
-                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">
-                    Text
-                </button>
+                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">Text</button>
                 <button id="pdf" data-tab="tab-pdf"
-                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">
-                    PDF
-                </button>
+                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">PDF</button>
                 <button id="img" data-tab="tab-img"
-                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">
-                    IMAGE
-                </button>
+                    class="tab-btn flex items-center px-4 py-2 rounded-md hover:bg-gray-100 text-gray-600 font-medium">IMAGE</button>
             </div>
         </div>
-
-        <!-- Content Sections -->
-        <div class="content-sections bg-white mt-4 px-4 py-6">
-            <!-- URL Content -->
-            <div id="tab-url" class="tab-content">
-                <!-- Content Section -->
-                <div class="grid md:grid-cols-2 gap-8 bg-white mt-6 p-6 rounded-md shadow-md">
-                    <!-- Left Section -->
-                    <div>
-                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
-                        <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
-                            placeholder="Enter some text..."></textarea>
-
-                        <!-- Step 2: Design Your QR -->
-                        <div class="mb-6">
-                            <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
-
-                            <!-- Tabs for Frame, Shape, Logo, and Level -->
-                            <div class="flex space-x-4 mb-4">
-                                <button class="px-4 py-2 bg-purple-500 text-white rounded-lg shadow-md">Frame</button>
-                                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md">Shape</button>
-                                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md">Logo</button>
-                                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md">Level</button>
-                            </div>
-
-                            <!-- Frame Options -->
-                            <div class="grid grid-cols-4 gap-4">
-                                <div class="flex flex-col items-center">
-                                    <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--
-                                    </div>
-                                    <span class="mt-2 text-sm text-gray-600">No Frame</span>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧
-                                    </div>
-                                    <span class="mt-2 text-sm text-gray-600">Envelope</span>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄
-                                    </div>
-                                    <span class="mt-2 text-sm text-gray-600">Paper</span>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕
-                                    </div>
-                                    <span class="mt-2 text-sm text-gray-600">Coffee</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Section -->
-                    <div>
-                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Download QR</h2>
-                        <div class="flex flex-col items-center gap-4">
-                            <div class="h-24 w-24 bg-gray-200 border rounded-md flex items-center justify-center">
-                                <span class="text-gray-500">QR Preview</span>
-                            </div>
-                            <button
-                                class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2">
-                                <svg class="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                                </svg>
-                                Download QR
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Text Content -->
-        <div id="tab-text" class="tab-content hidden">
-            <div class="grid md:grid-cols-2 gap-8 bg-white mt-6 p-6 rounded-md shadow-md">
+        {{-- url --}}
+        <section id="tab-url" class="tab-content">
+            <div class="grid gap-8 bg-white mt-6 p-6 rounded-md shadow-md sm:grid-cols-1 md:grid-cols-2">
                 <!-- Left Section -->
                 <div>
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
-                        placeholder="Enter some text..."></textarea>
-
-                    <!-- Step 2: Design Your QR -->
-                    <div class="mb-6">
+                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
+        
+                    <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
-
-                        <!-- Tabs for Frame, Shape, Logo, and Level -->
-                        <div class="flex space-x-4 mb-4">
-                            <button class="px-4 py-2 bg-purple-500 text-white rounded-lg shadow-md">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md">Level</button>
+                        <div class="flex flex-wrap gap-4 mb-4">
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-
-                        <!-- Frame Options -->
-                        <div class="grid grid-cols-4 gap-4">
+        
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--
-                                </div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--</div>
                                 <span class="mt-2 text-sm text-gray-600">No Frame</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧
-                                </div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧</div>
                                 <span class="mt-2 text-sm text-gray-600">Envelope</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄
-                                </div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄</div>
                                 <span class="mt-2 text-sm text-gray-600">Paper</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕
-                                </div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕</div>
                                 <span class="mt-2 text-sm text-gray-600">Coffee</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Right Section -->
                 <div>
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Download QR</h2>
@@ -151,43 +61,87 @@
                         <div class="h-24 w-24 bg-gray-200 border rounded-md flex items-center justify-center">
                             <span class="text-gray-500">QR Preview</span>
                         </div>
-                        <button
-                            class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2">
-                            <svg class="w-5 h-5" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        <button class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2 transition">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </section>
+        {{-- text --}}
+        <section id="tab-text" class="tab-content hidden">
+            <div class="grid gap-8 bg-white mt-6 p-6 rounded-md shadow-md sm:grid-cols-1 md:grid-cols-2">
+                <!-- Left Section -->
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
+                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
+        
+                    <div class="mt-6">
+                        <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
+                        <div class="flex flex-wrap gap-4 mb-4">
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                        </div>
+        
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--</div>
+                                <span class="mt-2 text-sm text-gray-600">No Frame</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧</div>
+                                <span class="mt-2 text-sm text-gray-600">Envelope</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄</div>
+                                <span class="mt-2 text-sm text-gray-600">Paper</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕</div>
+                                <span class="mt-2 text-sm text-gray-600">Coffee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Section -->
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Download QR</h2>
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="h-24 w-24 bg-gray-200 border rounded-md flex items-center justify-center">
+                            <span class="text-gray-500">QR Preview</span>
+                        </div>
+                        <button class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2 transition">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            Download QR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
         <!-- PDF Content -->
-        <div id="tab-pdf" class="tab-content hidden">
-            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md shadow-md ">
+        <section id="tab-pdf" class="tab-content hidden">
+            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md shadow-md">
                 <!-- Left Content -->
                 <div class="flex-1 space-y-6">
                     <h1 class="text-4xl font-extrabold text-gray-900">QR PDF</h1>
-                    <p class="text-xl text-gray-600 max-w-lg">
-                        From menus to user guides to creative portfolios, give your clients access to PDF documents quickly
-                        and
-                        efficiently.
-                    </p>
-                    <button
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        Register Now
-                    </button>
+                    <p class="text-xl text-gray-600 max-w-lg text-wrap">From menus to user guides to creative portfolios, give your clients access to PDF documents quickly and efficiently.</p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">Register Now</button>
                 </div>
 
                 <!-- Right Content -->
                 <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
                     <div class="flex items-center gap-2 text-gray-700">
-                        <span
-                            class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
+                        <span class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
                         <span class="font-medium">Download Your QR</span>
                     </div>
 
@@ -195,18 +149,15 @@
                         <img src="/api/placeholder/200/200" alt="QR Code" class="w-48 h-48" />
                     </div>
 
-                    <button
-                        class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                    <button class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
                         <span>Download QR</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- IMages -->
         <div id="tab-img" class="tab-content hidden">
@@ -214,7 +165,7 @@
                 <!-- Left Content -->
                 <div class="flex-1 space-y-6">
                     <h1 class="text-4xl font-extrabold text-gray-900">QR image</h1>
-                    <p class="text-xl text-gray-600 max-w-lg">
+                    <p class="text-xl text-gray-600 max-w-lg text-wrap">
                         From menus to user guides to creative portfolios, give your clients access to PDF documents quickly
                         and
                         efficiently.
@@ -251,80 +202,56 @@
         </div>
     </div>
 
-
-    </div>
-
-    </div>
-    </div>
-
-    <script>
-        // JavaScript for Tab Functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabButtons = document.querySelectorAll('.tab-btn');
-            const tabContents = document.querySelectorAll('.tab-content');
-
-            tabButtons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    tabButtons.forEach((btn) => btn.classList.remove('active', 'bg-blue-50',
-                        'text-blue-600', 'border-blue-500'));
-                    // Add active class to the clicked button
-                    button.classList.add('active', 'bg-blue-50', 'text-blue-600',
-                        'border-blue-500');
-
-                    // Hide all tab contents
-                    tabContents.forEach((content) => content.classList.add('hidden'));
-                    // Show the relevant tab content
-                    const tabId = button.getAttribute('data-tab');
-                    document.getElementById(tabId).classList.remove('hidden');
-                });
-            });
-        });
-    </script>
-
     {{--  create account --}}
-    <div
-        class="flex flex-col lg:flex-row items-center justify-between p-8 bg-[#F0F0FF] rounded-lg space-y-6 lg:space-y-0 lg:space-x-8 max-w-4xl mx-auto">
+    <div class="bg-[#F0F0FF] mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
         <!-- Logo Section -->
-        <div class="flex-shrink-0">
-            <!-- Example logo (you can replace it with the actual image) -->
-            <p class="text-2xl font-bold text-gray-800">Google</p>
+        <div class="flex-shrink-0 text-center lg:text-left">
+            <span class="text-2xl font-extrabold text-gray-800 tracking-wide">
+                <span class="text-blue-600">G</span>oogle
+            </span>
         </div>
-
+    
         <!-- Trusted Text -->
-        <div class="text-xl font-semibold text-gray-700 text-center lg:text-left">
-            Trusted by more than <span class="text-blue-500">12,607 people</span>
+        <div class="flex-1 text-lg lg:text-xl text-gray-700 font-medium text-center lg:text-left">
+            <span class="font-semibold text-gray-800">Trusted by </span>
+            <span class="text-blue-600 font-bold">12,607+ users</span> globally
         </div>
-
+    
         <!-- Button Section -->
-        <div>
-            <button class="px-8 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+        <div class="text-center lg:text-left">
+            <button class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 transform transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
                 Create your free account
             </button>
         </div>
-
+    
         <!-- No Credit Card Text -->
         <div class="text-sm text-gray-500 text-center lg:text-left">
-            No credit card required on Signup
+            <span>No credit card required for signup</span>
         </div>
     </div>
-
-
-    {{-- text --}}
-    <div class="flex flex-col items-center p-8 rounded-lg shadow-lg bg-white max-w-4xl mx-auto space-y-6">
+    {{-- tittle --}}
+    <div class="bg-white mt-8 p-10 rounded-3xl  max-w-4xl mx-auto flex flex-col items-center gap-6">
         <!-- Title -->
-        <h1 class="text-4xl font-extrabold text-gray-800 text-center">
-            QR Code Generator: Create Your Free QR Code
+        <h1 class="text-4xl font-extrabold text-gray-900 text-center leading-snug">
+            Generate Your Custom <span class="text-blue-600">QR Code</span>
         </h1>
-
+    
         <!-- Subtitle -->
-        <p class="text-lg text-gray-600 text-center max-w-prose mx-auto">
-            Customize it with your <span class="text-blue-600 font-medium">color</span>,
-            <span class="text-blue-600 font-medium">shape</span>, and
-            <span class="text-blue-600 font-medium">logo</span> in 3 simple steps.
+        <p class="text-lg text-gray-600 text-center max-w-lg">
+            Personalize with <span class="text-blue-500 font-semibold">colors</span>, 
+            <span class="text-blue-500 font-semibold">shapes</span>, and 
+            <span class="text-blue-500 font-semibold">logos</span>. Complete your design in just 3 simple steps!
         </p>
+    
+        <!-- Call to Action -->
+        <button class="mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold rounded-full shadow-lg hover:scale-105 transform transition-transform duration-300">
+            Get Started Now
+        </button>
     </div>
-
+    
 
     <div class="min-h-auto bg-gray-50 p-8">
         <div class="max-w-4xl mx-auto">
@@ -341,8 +268,8 @@
                             1
                         </div>
                     </div>
-                    <h2 class="text-xl font-semibold mb-3">Choose the content of your QR code</h2>
-                    <p class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-semibold mb-3 text-wrap">Choose the content of your QR code</h2>
+                    <p class="text-gray-600 mb-4 text-wrap">
                         Select from a wide variety of options: PDF, menu, video, business cards, web, apps, etc.
                     </p>
                 </div>
@@ -355,8 +282,8 @@
                             2
                         </div>
                     </div>
-                    <h2 class="text-xl font-semibold mb-3">Customize and design it to measure</h2>
-                    <p class="text-gray-600 mb-4">
+                    <h2 class="text-xl font-semibold mb-3 text-wrap">Customize and design it to measure</h2>
+                    <p class="text-gray-600 mb-4 text-wrap">
                         Fill in all the information and use our design tool to make your QR unique.
                     </p>
                 </div>
@@ -389,126 +316,115 @@
     {{-- slider --}}
     <div class="max-w-3xl mx-auto px-4 py-6">
         <!-- Tabs -->
-        <div class="flex justify-center gap-4 mb-6 flex-wrap" role="tablist">
-            <button id="prevBtn" class="text-white py-2 px-4 rounded-full  transition duration-300" aria-label="Previous slide">◀</button>
+        <div class="grid grid-cols-3 md:flex md:justify-center gap-4 mb-6 flex-wrap" role="tablist">
+            <button id="prevBtn" class="text-white md:py-2 md:px-4 rounded-full transition duration-300"
+                aria-label="Previous slide">◀</button>
     
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-active bg-blue-600 text-white" data-index="0" role="tab" aria-selected="true">
-                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
-                </div>
-                <span class="text-sm font-medium">Landing page</span>
-            </button>
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700" data-index="1" role="tab" aria-selected="false">
-                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
-                </div>
-                <span class="text-sm font-medium">Landing page</span>
-            </button>
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700" data-index="2" role="tab" aria-selected="false">
-                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
-                </div>
-                <span class="text-sm font-medium">Landing page</span>
-            </button>
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700" data-index="3" role="tab" aria-selected="false">
-                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
-                    <img src="{{asset('asset/img/logo.png')}}" alt="Landing page icon" class="rounded-full"/>
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-active text-white"
+                data-index="0" role="tab" aria-selected="true">
+                <div class="w-14 h-14 flex flex-grow items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
                 </div>
                 <span class="text-sm font-medium">Landing page</span>
             </button>
     
-            <button id="nextBtn" class="text-white py-2 px-4 rounded-full  transition duration-300" aria-label="Next slide">▶</button>
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
+                data-index="1" role="tab" aria-selected="false">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
+                </div>
+                <span class="text-sm font-medium">Landing page</span>
+            </button>
+    
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
+                data-index="2" role="tab" aria-selected="false">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
+                </div>
+                <span class="text-sm font-medium">Landing page</span>
+            </button>
+    
+            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
+                data-index="3" role="tab" aria-selected="false">
+                <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
+                    <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
+                </div>
+                <span class="text-sm font-medium">Landing page</span>
+            </button>
+    
+            <button id="nextBtn" class="text-white py-2 px-4 rounded-full transition duration-300"
+                aria-label="Next slide">▶</button>
         </div>
     
         <!-- Slider -->
         <div class="relative overflow-hidden">
             <div id="slider" class="flex transition-transform duration-500 ease-in-out">
                 <!-- Slide 1 -->
-                <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
-                    <div class="flex flex-col md:flex-row justify-between w-full items-center space-y-8 md:space-y-0 md:space-x-8">
-                        <!-- Left Section -->
-                        <div class="space-y-4 w-full md:w-1/2">
-                            <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
-                        </div>
-                        
-                        <!-- Right Section -->
-                        <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px]  mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
-                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
-                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
-                        </div>
+                <div class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
+                    <!-- Left Section -->
+                    <div class="space-y-4 text-center md:text-left w-full md:w-1/2">
+                        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Event</h1>
+                        <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                    </div>
+    
+                    <!-- Right Section -->
+                    <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                        <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                        <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                        <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                        <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                     </div>
                 </div>
-            
+    
                 <!-- Slide 2 -->
-                <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
-                    <div class="flex flex-col md:flex-row justify-between w-full items-center space-y-8 md:space-y-0 md:space-x-8">
-                        <!-- Left Section -->
-                        <div class="space-y-4 w-full md:w-1/2">
-                            <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
-                        </div>
-                        
-                        <!-- Right Section -->
-                        <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px]  mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
-                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
-                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
-                        </div>
+                <div class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
+                    <!-- Left Section -->
+                    <div class="space-y-4 text-center md:text-left w-full md:w-1/2">
+                        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Event</h1>
+                        <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                    </div>
+    
+                    <!-- Right Section -->
+                    <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                        <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                        <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                        <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                        <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                     </div>
                 </div>
-                 <!-- Slide 1 -->
-                 <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
-                    <div class="flex flex-col md:flex-row justify-between w-full items-center space-y-8 md:space-y-0 md:space-x-8">
-                        <!-- Left Section -->
-                        <div class="space-y-4 w-full md:w-1/2">
-                            <h1 class="text-4xl font-bold text-gray-900">Event</h1>
-                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
-                        </div>
-                        
-                        <!-- Right Section -->
-                        <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px]  mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
-                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
-                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
-                        </div>
+    
+                <!-- Slide 3 -->
+                <div class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
+                    <!-- Left Section -->
+                    <div class="space-y-4 text-center md:text-left w-full md:w-1/2">
+                        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Mail</h1>
+                        <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
                     </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="min-w-full flex justify-center items-center bg-gray-100 p-8 rounded-lg">
-                    <div class="flex justify-between w-full items-center space-x-8">
-                        <div class="space-y-4 w-full md:w-1/2">
-                            <h1 class="text-4xl font-bold text-gray-900">Mail</h1>
-                            <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
-                        </div>
-                        <div class="relative w-[280px] h-[560px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                            <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
-                            <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
-                            <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                            <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
-                        </div>
+    
+                    <!-- Right Section -->
+                    <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                        <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                        <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
+                        <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
+                        <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
+
     <script>
         const slider = document.getElementById("slider");
         const tabs = document.querySelectorAll(".tab-btn");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
-    
+
         let currentIndex = 0;
-    
+
         const updateSlider = (index) => {
             slider.style.transform = `translateX(-${index * 100}%)`;
             tabs.forEach((tab, idx) => {
@@ -520,27 +436,27 @@
                 tab.setAttribute("aria-selected", isActive.toString());
             });
         };
-    
+
         const handleTabClick = (event) => {
             currentIndex = parseInt(event.target.getAttribute("data-index"));
             updateSlider(currentIndex);
         };
-    
+
         const handlePrevClick = () => {
             currentIndex = (currentIndex - 1 + tabs.length) % tabs.length;
             updateSlider(currentIndex);
         };
-    
+
         const handleNextClick = () => {
             currentIndex = (currentIndex + 1) % tabs.length;
             updateSlider(currentIndex);
         };
-    
+
         tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
         prevBtn.addEventListener("click", handlePrevClick);
         nextBtn.addEventListener("click", handleNextClick);
     </script>
-    
+
 
 
 
@@ -858,117 +774,117 @@
         <p class="text-center text-gray-600 mb-8">
             QR codes can contain a wide range of content and at QRfy we offer them all.
         </p>
-<!-- Tabs Navigation -->
-<div class="flex md:gap-4 mb-6 border-b border-gray-300">
-    <button
-        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
-        data-tab="tab1">Invitation</button>
-    <button
-        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
-        data-tab="tab2">Wedding QR</button>
-    <button
-        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
-        data-tab="tab3">NGO QR</button>
-    <button
-        class="tab-button md:px-4 md:py-2 p-2 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
-        data-tab="tab4">Photographer QR</button>
-</div>
-
-<!-- Tab Content -->
-<div class="tab-content">
-    <!-- Tab 1: Hero Section -->
-    <div class="tab-pane" id="tab1">
-        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-8 md:p-12">
-                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                    Create a unique invitation for an unforgettable event.
-                </h2>
-                <button
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                    See more
-                </button>
-            </div>
-            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+        <!-- Tabs Navigation -->
+        <div class="flex md:gap-4 mb-6 border-b border-gray-300">
+            <button
+                class="tab-button md:px-4 md:py-2 p-1 text-gray-600 md:text-base text-xs font-medium border-b-2 border-transparent hover:border-blue-600"
+                data-tab="tab1">Invitation</button>
+            <button
+                class="tab-button md:px-4 md:py-2 p-1 text-gray-600 md:text-base text-xs font-medium border-b-2 border-transparent hover:border-blue-600"
+                data-tab="tab2">Wedding QR</button>
+            <button
+                class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+                data-tab="tab3">NGO QR</button>
+            <button
+                class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+                data-tab="tab4">Photographer QR</button>
         </div>
-    </div>
 
-    <!-- Tab 2: Wedding QR -->
-    <div class="tab-pane hidden" id="tab2">
-        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-8 md:p-12">
-                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                    Create a unique invitation for Wedding QR.
-                </h2>
-                <button
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                    See more
-                </button>
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Tab 1: Hero Section -->
+            <div class="tab-pane" id="tab1">
+                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+                    <div class="relative z-20 p-8 md:p-12">
+                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                            Create a unique invitation for an unforgettable event.
+                        </h2>
+                        <button
+                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                            See more
+                        </button>
+                    </div>
+                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+                </div>
             </div>
-            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
-        </div>
-    </div>
 
-    <!-- Tab 3: NGO QR -->
-    <div class="tab-pane hidden" id="tab3">
-        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-8 md:p-12">
-                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                    Create a unique invitation for an unforgettable event.
-                </h2>
-                <button
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                    See more
-                </button>
+            <!-- Tab 2: Wedding QR -->
+            <div class="tab-pane hidden" id="tab2">
+                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+                    <div class="relative z-20 p-8 md:p-12">
+                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                            Create a unique invitation for Wedding QR.
+                        </h2>
+                        <button
+                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                            See more
+                        </button>
+                    </div>
+                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+                </div>
             </div>
-            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
-        </div>
-    </div>
 
-    <!-- Tab 4: Photographer QR -->
-    <div class="tab-pane hidden" id="tab4">
-        <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-            <div class="relative z-20 p-8 md:p-12">
-                <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                    Create a unique invitation for Photographer QR .
-                </h2>
-                <button
-                    class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                    See more
-                </button>
+            <!-- Tab 3: NGO QR -->
+            <div class="tab-pane hidden" id="tab3">
+                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+                    <div class="relative z-20 p-8 md:p-12">
+                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                            Create a unique invitation for an unforgettable event.
+                        </h2>
+                        <button
+                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                            See more
+                        </button>
+                    </div>
+                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+                </div>
             </div>
-            <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+
+            <!-- Tab 4: Photographer QR -->
+            <div class="tab-pane hidden" id="tab4">
+                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
+                    <div class="relative z-20 p-8 md:p-12">
+                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
+                            Create a unique invitation for Photographer QR .
+                        </h2>
+                        <button
+                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
+                            See more
+                        </button>
+                    </div>
+                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
+                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<script>
-    // Tab switching logic
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+        <script>
+            // Tab switching logic
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanes = document.querySelectorAll('.tab-pane');
 
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Deactivate all buttons and hide all panes
-            tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
-            tabPanes.forEach(pane => pane.classList.add('hidden'));
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Deactivate all buttons and hide all panes
+                    tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
+                    tabPanes.forEach(pane => pane.classList.add('hidden'));
 
-            // Activate clicked button and show corresponding pane
-            button.classList.add('text-blue-600', 'border-blue-600');
-            const targetPane = document.querySelector(`#${button.dataset.tab}`);
-            targetPane.classList.remove('hidden');
-        });
-    });
-</script>
+                    // Activate clicked button and show corresponding pane
+                    button.classList.add('text-blue-600', 'border-blue-600');
+                    const targetPane = document.querySelector(`#${button.dataset.tab}`);
+                    targetPane.classList.remove('hidden');
+                });
+            });
+        </script>
 
-        
+
     </div>
 
 
@@ -982,7 +898,7 @@
             In this section, you will find the basic concepts and the necessary steps to start enjoying the benefits of
             using QR.
         </p>
-    
+
         <!-- Grid Layout for Image and Accordion -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <!-- Image Section -->
@@ -990,7 +906,7 @@
                 <img src="{{ asset('asset/img/imagfold') }}" alt="QR Image"
                     class="w-full max-w-lg h-auto object-cover rounded-lg shadow-md">
             </div>
-    
+
             <!-- Accordion Section -->
             <div>
                 <div class="space-y-4">
@@ -1009,7 +925,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                     <!-- Accordion Item 2 -->
                     <div class="border border-gray-300 rounded-lg">
                         <button
@@ -1025,7 +941,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                     <!-- Accordion Item 3 -->
                     <div class="border border-gray-300 rounded-lg">
                         <button
@@ -1045,18 +961,18 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         function toggleAccordion(event) {
             const button = event.currentTarget;
             const contentId = button.getAttribute('aria-controls');
             const content = document.getElementById(contentId);
             const icon = button.querySelector('span#' + button.id);
-    
+
             // Toggle content visibility
             const isExpanded = content.classList.toggle('hidden');
             button.setAttribute('aria-expanded', !isExpanded);
-    
+
             // Toggle icon
             if (icon) {
                 icon.textContent = isExpanded ? '+' : '-';
@@ -1064,8 +980,8 @@
             }
         }
     </script>
-    
-    
+
+
 
 
     {{-- REVIEW --}}
@@ -1269,126 +1185,136 @@
 
     {{-- Design & creation --}}
 
-    <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab5" >
+    <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab5">
         <!-- Accordion Item 1 -->
         <div class="border-b">
-          <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
-            <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
-            <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
-            <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or any other elements.</div>
-          </div>
+            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
+                <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
+                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
+                <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or
+                    any other elements.</div>
+            </div>
         </div>
-    
+
         <!-- Accordion Item 2 -->
         <div class="border-b">
-          <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
-            <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
-            <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
-            <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
-          </div>
+            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
+                <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
+                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
+                <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
+            </div>
         </div>
-    
+
         <!-- Accordion Item 3 -->
         <div>
-          <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
-            <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
-            <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
-            <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.</div>
-          </div>
+            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
+                <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
+                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
+                <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <script>
         document.querySelectorAll('button[data-target]').forEach(button => {
-          button.addEventListener('click', () => {
-            const content = document.querySelector(button.dataset.target);
-            const isExpanded = button.getAttribute('aria-expanded') === 'true';
-    
-            document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
-              el.setAttribute('aria-expanded', 'false');
-              document.querySelector(el.dataset.target).style.maxHeight = null;
+            button.addEventListener('click', () => {
+                const content = document.querySelector(button.dataset.target);
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
+                    el.setAttribute('aria-expanded', 'false');
+                    document.querySelector(el.dataset.target).style.maxHeight = null;
+                });
+
+                if (!isExpanded) {
+                    button.setAttribute('aria-expanded', 'true');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
             });
-    
-            if (!isExpanded) {
-              button.setAttribute('aria-expanded', 'true');
-              content.style.maxHeight = content.scrollHeight + 'px';
-            }
-          });
         });
     </script>
 
-{{-- Scan & print --}}
-<div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab6" >
-    <!-- Accordion Item 1 -->
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
-        <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
-        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
-        <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or any other elements.</div>
-      </div>
+    {{-- Scan & print --}}
+    <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab6">
+        <!-- Accordion Item 1 -->
+        <div class="border-b">
+            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
+                <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
+                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
+                <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or
+                    any other elements.</div>
+            </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="border-b">
+            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
+                <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
+                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
+                <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
+            </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div>
+            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
+                <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
+                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
+                <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Accordion Item 2 -->
-    <div class="border-b">
-      <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
-        <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
-        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
-        <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
-      </div>
-    </div>
+    <script>
+        document.querySelectorAll('button[data-target]').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = document.querySelector(button.dataset.target);
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-    <!-- Accordion Item 3 -->
-    <div>
-      <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
-        <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
-        <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
-        <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.</div>
-      </div>
-    </div>
-</div>
+                document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
+                    el.setAttribute('aria-expanded', 'false');
+                    document.querySelector(el.dataset.target).style.maxHeight = null;
+                });
 
-<script>
-    document.querySelectorAll('button[data-target]').forEach(button => {
-      button.addEventListener('click', () => {
-        const content = document.querySelector(button.dataset.target);
-        const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-        document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
-          el.setAttribute('aria-expanded', 'false');
-          document.querySelector(el.dataset.target).style.maxHeight = null;
+                if (!isExpanded) {
+                    button.setAttribute('aria-expanded', 'true');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
         });
-
-        if (!isExpanded) {
-          button.setAttribute('aria-expanded', 'true');
-          content.style.maxHeight = content.scrollHeight + 'px';
-        }
-      });
-    });
-</script>
+    </script>
 
     {{-- section with image --}}
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:px-32 px-4">
@@ -1823,4 +1749,33 @@
             </div>
         </div>
     </div>
+
+
+    {{-- script --}}
+    
+    <script>
+        // JavaScript for Tab Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    tabButtons.forEach((btn) => btn.classList.remove('active', 'bg-blue-50',
+                        'text-blue-600', 'border-blue-500'));
+                    // Add active class to the clicked button
+                    button.classList.add('active', 'bg-blue-50', 'text-blue-600',
+                        'border-blue-500');
+
+                    // Hide all tab contents
+                    tabContents.forEach((content) => content.classList.add('hidden'));
+                    // Show the relevant tab content
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+
 @endsection
