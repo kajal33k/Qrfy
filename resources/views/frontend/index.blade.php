@@ -1,7 +1,7 @@
 @extends('components.main')
 @section('comtent')
     {{-- hero section --}}
-    <div class="max-w-4xl mx-auto bg-gray-100 rounded-lg shadow-lg p-4 mt-4">
+    <div class="max-w-4xl mx-auto rounded-lg shadow-lg p-4 mt-4  backdrop-blur-lg bg-blue-200 bg-opacity-30 border border-blue-300">
         <!-- Tabs Container -->
         <div class="bg-white shadow-md rounded-lg border border-gray-200 px-2 py-2">
             <div class="flex flex-wrap items-center space-x-4 overflow-x-auto">
@@ -737,7 +737,7 @@
 
 
     </div>
-    <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="max-w-6xl mx-auto px-4 py-8  backdrop-blur-lg bg-blue-200 bg-opacity-30 ">
         <!-- Header -->
         <h1 class="text-4xl text-center font-normal mb-2">
             Explore our extensive collection of QR codes
@@ -912,7 +912,7 @@
     </div>
  
     {{-- REVIEW --}}
-    <section class="bg-white px-4 py-12 md:py-24">
+    <section class=" backdrop-blur-lg bg-blue-200 bg-opacity-30 px-4 py-12 md:py-24">
         <div class="max-w-4xl mx-auto">
             <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
                 What Listeners Are Saying
@@ -1012,6 +1012,8 @@
             </div>
         </div>
     </section>
+
+    {{-- faqs --}}
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold text-center mb-12 text-[#1f1f1f]">Do not leave with doubt</h1>
 
@@ -1104,8 +1106,9 @@
             }
         </script>
     </div>
+
     {{-- Design & creation --}}
-    <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab5">
+    <div class="w-full max-w-md mx-auto  backdrop-blur-lg bg-blue-200 bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
         <!-- Accordion Item 1 -->
         <div class="border-b">
             <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
@@ -1152,7 +1155,7 @@
     </div>
    
     {{-- Scan & print --}}
-    <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab6">
+    <div class="w-full max-w-md mx-auto  backdrop-blur-lg bg-blue-200 bg-opacity-30 shadow-lg rounded-lg hidden " id="tab6">
         <!-- Accordion Item 1 -->
         <div class="border-b">
             <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
