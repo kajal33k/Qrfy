@@ -55,20 +55,43 @@
                 </div>
         
                 <!-- Right Section -->
-                <div>
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Download QR</h2>
-                    <div class="flex flex-col items-center gap-4">
-                        <div class="h-24 w-24 bg-gray-200 border rounded-md flex items-center justify-center">
-                            <span class="text-gray-500">QR Preview</span>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-6">Download QR</h2>
+                    <div class="flex flex-col items-center gap-6">
+                        <!-- QR Code Preview -->
+                        <div class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                            <img 
+                                src="{{ asset('asset/img/qr.jpg') }}" 
+                                alt="QR Code" 
+                                class="w-24 h-24 object-contain"
+                            />
+                            <!-- Placeholder Text (if needed) -->
+                            <!-- <span class="text-sm text-gray-500">QR Preview</span> -->
                         </div>
-                        <button class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2 transition">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                
+                        <!-- Download Button -->
+                        <button 
+                            class="flex items-center gap-2 px-5 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                        >
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke="currentColor" 
+                                class="w-5 h-5"
+                            >
+                                <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    stroke-width="2" 
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" 
+                                />
                             </svg>
                             Download QR
                         </button>
                     </div>
                 </div>
+                
             </div>
         </section>
         {{-- text --}}
@@ -76,7 +99,7 @@
             <div class="grid gap-8 bg-white mt-6 p-6 rounded-md shadow-md sm:grid-cols-1 md:grid-cols-2">
                 <!-- Left Section -->
                 <div>
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Text</h2>
                     <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
         
                     <div class="mt-6">
@@ -130,7 +153,7 @@
 
         <!-- PDF Content -->
         <section id="tab-pdf" class="tab-content hidden">
-            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md shadow-md">
+            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md ">
                 <!-- Left Content -->
                 <div class="flex-1 space-y-6">
                     <h1 class="text-4xl font-extrabold text-gray-900">QR PDF</h1>
@@ -139,14 +162,14 @@
                 </div>
 
                 <!-- Right Content -->
-                <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
+                <div class="bg-white p-8 space-y-6">
                     <div class="flex items-center gap-2 text-gray-700">
                         <span class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
                         <span class="font-medium">Download Your QR</span>
                     </div>
 
                     <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
-                        <img src="/api/placeholder/200/200" alt="QR Code" class="w-48 h-48" />
+                        <img src="{{asset('asset/img/abtqr.jpg')}}" alt="QR Code" class="w-48 h-48" />
                     </div>
 
                     <button class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
@@ -161,7 +184,7 @@
 
         <!-- IMages -->
         <div id="tab-img" class="tab-content hidden">
-            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md shadow-md ">
+            <div class="grid md:grid-cols-2 bg-white mt-6 p-6 rounded-md  ">
                 <!-- Left Content -->
                 <div class="flex-1 space-y-6">
                     <h1 class="text-4xl font-extrabold text-gray-900">QR image</h1>
@@ -177,7 +200,7 @@
                 </div>
 
                 <!-- Right Content -->
-                <div class="bg-white p-8 rounded-xl shadow-lg space-y-6">
+                <div class="bg-white p-8  space-y-6">
                     <div class="flex items-center gap-2 text-gray-700">
                         <span
                             class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
@@ -185,7 +208,7 @@
                     </div>
 
                     <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
-                        <img src="/api/placeholder/200/200" alt="QR Code" class="w-48 h-48" />
+                        <img src="{{asset('asset/img/qr.jpg')}}" alt="QR Code" class="w-48 h-48" />
                     </div>
 
                     <button
@@ -201,7 +224,6 @@
             </div>
         </div>
     </div>
-
     {{--  create account --}}
     <div class="bg-[#F0F0FF] mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
         <!-- Logo Section -->
@@ -252,7 +274,6 @@
         </button>
     </div>
     
-
     <div class="min-h-auto bg-gray-50 p-8">
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
@@ -312,7 +333,6 @@
             </div>
         </div>
     </div>
-
     {{-- slider --}}
     <div class="max-w-3xl mx-auto px-4 py-6">
         <!-- Tabs -->
@@ -415,51 +435,7 @@
             </div>
         </div>
     </div>
-    
-
-    <script>
-        const slider = document.getElementById("slider");
-        const tabs = document.querySelectorAll(".tab-btn");
-        const prevBtn = document.getElementById("prevBtn");
-        const nextBtn = document.getElementById("nextBtn");
-
-        let currentIndex = 0;
-
-        const updateSlider = (index) => {
-            slider.style.transform = `translateX(-${index * 100}%)`;
-            tabs.forEach((tab, idx) => {
-                const isActive = idx === index;
-                tab.classList.toggle("bg-blue-600", isActive);
-                tab.classList.toggle("bg-gray-200", !isActive);
-                tab.classList.toggle("text-white", isActive);
-                tab.classList.toggle("text-gray-700", !isActive);
-                tab.setAttribute("aria-selected", isActive.toString());
-            });
-        };
-
-        const handleTabClick = (event) => {
-            currentIndex = parseInt(event.target.getAttribute("data-index"));
-            updateSlider(currentIndex);
-        };
-
-        const handlePrevClick = () => {
-            currentIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-            updateSlider(currentIndex);
-        };
-
-        const handleNextClick = () => {
-            currentIndex = (currentIndex + 1) % tabs.length;
-            updateSlider(currentIndex);
-        };
-
-        tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
-        prevBtn.addEventListener("click", handlePrevClick);
-        nextBtn.addEventListener("click", handleNextClick);
-    </script>
-
-
-
-
+   
     <!-- grid Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
@@ -633,10 +609,7 @@
             </div>
         </div>
     </main>
-
-
-
-    {{-- slider --}}
+  {{-- slider --}}
     <div>
         <div class=" p-4 md:p-8 flex items-center md:space-x-6 mx-4 md:mx-32">
 
@@ -764,8 +737,6 @@
 
 
     </div>
-
-
     <div class="max-w-6xl mx-auto px-4 py-8">
         <!-- Header -->
         <h1 class="text-4xl text-center font-normal mb-2">
@@ -786,7 +757,7 @@
                 class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
                 data-tab="tab3">NGO QR</button>
             <button
-                class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
+                class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs0 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
                 data-tab="tab4">Photographer QR</button>
         </div>
 
@@ -865,30 +836,8 @@
             </div>
         </div>
 
-        <script>
-            // Tab switching logic
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabPanes = document.querySelectorAll('.tab-pane');
-
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Deactivate all buttons and hide all panes
-                    tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
-                    tabPanes.forEach(pane => pane.classList.add('hidden'));
-
-                    // Activate clicked button and show corresponding pane
-                    button.classList.add('text-blue-600', 'border-blue-600');
-                    const targetPane = document.querySelector(`#${button.dataset.tab}`);
-                    targetPane.classList.remove('hidden');
-                });
-            });
-        </script>
-
 
     </div>
-
-
-
     <div class="max-w-7xl mx-auto px-4 py-8 lg:px-36">
         <!-- Introduction Section -->
         <h2 class="text-3xl font-semibold text-center mb-4">
@@ -961,31 +910,8 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function toggleAccordion(event) {
-            const button = event.currentTarget;
-            const contentId = button.getAttribute('aria-controls');
-            const content = document.getElementById(contentId);
-            const icon = button.querySelector('span#' + button.id);
-
-            // Toggle content visibility
-            const isExpanded = content.classList.toggle('hidden');
-            button.setAttribute('aria-expanded', !isExpanded);
-
-            // Toggle icon
-            if (icon) {
-                icon.textContent = isExpanded ? '+' : '-';
-                icon.classList.toggle('rotate-45');
-            }
-        }
-    </script>
-
-
-
-
+ 
     {{-- REVIEW --}}
-
     <section class="bg-white px-4 py-12 md:py-24">
         <div class="max-w-4xl mx-auto">
             <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
@@ -1086,9 +1012,6 @@
             </div>
         </div>
     </section>
-
-
-
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold text-center mb-12 text-[#1f1f1f]">Do not leave with doubt</h1>
 
@@ -1181,10 +1104,7 @@
             }
         </script>
     </div>
-
-
     {{-- Design & creation --}}
-
     <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab5">
         <!-- Accordion Item 1 -->
         <div class="border-b">
@@ -1230,26 +1150,7 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.querySelectorAll('button[data-target]').forEach(button => {
-            button.addEventListener('click', () => {
-                const content = document.querySelector(button.dataset.target);
-                const isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-                document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
-                    el.setAttribute('aria-expanded', 'false');
-                    document.querySelector(el.dataset.target).style.maxHeight = null;
-                });
-
-                if (!isExpanded) {
-                    button.setAttribute('aria-expanded', 'true');
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                }
-            });
-        });
-    </script>
-
+   
     {{-- Scan & print --}}
     <div class="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg hidden " id="tab6">
         <!-- Accordion Item 1 -->
@@ -1296,7 +1197,6 @@
             </div>
         </div>
     </div>
-
     <script>
         document.querySelectorAll('button[data-target]').forEach(button => {
             button.addEventListener('click', () => {
@@ -1315,7 +1215,6 @@
             });
         });
     </script>
-
     {{-- section with image --}}
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:px-32 px-4">
         <div class="flex justify-center">
@@ -1459,7 +1358,6 @@
             </div>
         </div>
     </div>
-
     {{-- desktop view --}}
     <div class="max-w-full mx-auto px-4 py-16 sm:px-6 lg:px-8 bg-gradient-to-r from-[#230F28] via-[#1D56F3] to-[#230F28]">
         <!-- Header Section -->
@@ -1480,10 +1378,6 @@
                 alt="Dashboard preview">
         </div>
     </div>
-
-
-
-
     <div class="max-w-full mx-auto bg-gradient-to-r from-[#230F28] via-[#201C50] to-[#230F28]">
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:mx-8 py-8 lg:px-36 px-2">
             <!-- Web page -->
@@ -1726,9 +1620,6 @@
 
         </div>
     </div>
-
-
-
     <!-- Header with Logo and Rating -->
     <div class="flex justify-between items-center border-b border-white/10 pb-8 bg-[#230F28] px-6 md:px-36">
         <div class="flex items-center gap-1">
@@ -1749,10 +1640,82 @@
             </div>
         </div>
     </div>
-
-
     {{-- script --}}
-    
+    <script>
+        document.querySelectorAll('button[data-target]').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = document.querySelector(button.dataset.target);
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                document.querySelectorAll('[aria-expanded="true"]').forEach(el => {
+                    el.setAttribute('aria-expanded', 'false');
+                    document.querySelector(el.dataset.target).style.maxHeight = null;
+                });
+
+                if (!isExpanded) {
+                    button.setAttribute('aria-expanded', 'true');
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+    <script>
+        function toggleAccordion(event) {
+            const button = event.currentTarget;
+            const contentId = button.getAttribute('aria-controls');
+            const content = document.getElementById(contentId);
+            const icon = button.querySelector('span#' + button.id);
+
+            // Toggle content visibility
+            const isExpanded = content.classList.toggle('hidden');
+            button.setAttribute('aria-expanded', !isExpanded);
+
+            // Toggle icon
+            if (icon) {
+                icon.textContent = isExpanded ? '+' : '-';
+                icon.classList.toggle('rotate-45');
+            }
+        }
+    </script>
+    <script>
+        const slider = document.getElementById("slider");
+        const tabs = document.querySelectorAll(".tab-btn");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        let currentIndex = 0;
+
+        const updateSlider = (index) => {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            tabs.forEach((tab, idx) => {
+                const isActive = idx === index;
+                tab.classList.toggle("bg-blue-600", isActive);
+                tab.classList.toggle("bg-gray-200", !isActive);
+                tab.classList.toggle("text-white", isActive);
+                tab.classList.toggle("text-gray-700", !isActive);
+                tab.setAttribute("aria-selected", isActive.toString());
+            });
+        };
+
+        const handleTabClick = (event) => {
+            currentIndex = parseInt(event.target.getAttribute("data-index"));
+            updateSlider(currentIndex);
+        };
+
+        const handlePrevClick = () => {
+            currentIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            updateSlider(currentIndex);
+        };
+
+        const handleNextClick = () => {
+            currentIndex = (currentIndex + 1) % tabs.length;
+            updateSlider(currentIndex);
+        };
+
+        tabs.forEach((tab) => tab.addEventListener("click", handleTabClick));
+        prevBtn.addEventListener("click", handlePrevClick);
+        nextBtn.addEventListener("click", handleNextClick);
+    </script>
     <script>
         // JavaScript for Tab Functionality
         document.addEventListener('DOMContentLoaded', () => {
@@ -1777,5 +1740,24 @@
             });
         });
     </script>
+
+<script>
+    // Tab switching logic
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Deactivate all buttons and hide all panes
+            tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
+            tabPanes.forEach(pane => pane.classList.add('hidden'));
+
+            // Activate clicked button and show corresponding pane
+            button.classList.add('text-blue-600', 'border-blue-600');
+            const targetPane = document.querySelector(`#${button.dataset.tab}`);
+            targetPane.classList.remove('hidden');
+        });
+    });
+</script>
 
 @endsection
