@@ -876,10 +876,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div class="flex justify-center lg:justify-start">
                 <img src="{{ asset('asset/img/imagfold') }}" alt="QR Image"
-                    class="w-full max-w-lg h-auto object-cover rounded-lg shadow-md">
+                    class="w-full max-w-lg h-auto object-cover rounded-lg ">
             </div>
     
-            <div class="w-full max-w-2xl p-6 bg-white rounded-2xl shadow-lg">
+            <div class="w-full max-w-2xl p-6 bg-white rounded-2xl ">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
                 <div class="space-y-4">
                     <!-- FAQ Item 1 -->
