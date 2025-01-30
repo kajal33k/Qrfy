@@ -1,9 +1,9 @@
 @extends('components.main')
 @section('comtent')
     {{-- hero section --}}
-    <div class="max-w-4xl mx-auto rounded-lg shadow-lg p-4 mt-4  backdrop-blur-lg bg-blue-200 bg-opacity-30 border border-blue-300">
+    <div class="max-w-4xl mx-auto rounded-lg  p-4 md:mt-20 ">
         <!-- Tabs Container -->
-        <div class="bg-white shadow-md rounded-lg border border-gray-200 px-2 py-2">
+        <div class=" rounded-lg border border-gray-200 px-2 py-2">
             <div class="flex flex-wrap items-center space-x-4 overflow-x-auto">
                 <!-- Tabs -->
                 <button id="url" data-tab="tab-url"
@@ -225,35 +225,36 @@
         </div>
     </div>
     {{--  create account --}}
-    <div class="bg-[#F0F0FF] mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
+    <div class="relative mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-lg border border-white/20">
         <!-- Logo Section -->
         <div class="flex-shrink-0 text-center lg:text-left">
-            <span class="text-2xl font-extrabold text-gray-800 tracking-wide">
-                <span class="text-blue-600">G</span>oogle
-            </span>
+          <span class="text-2xl font-extrabold text-gray-800 tracking-wide">
+            <span class="text-blue-600">G</span>oogle
+          </span>
         </div>
-    
+      
         <!-- Trusted Text -->
         <div class="flex-1 text-lg lg:text-xl text-gray-700 font-medium text-center lg:text-left">
-            <span class="font-semibold text-gray-800">Trusted by </span>
-            <span class="text-blue-600 font-bold">12,607+ users</span> globally
+          <span class="font-semibold text-gray-800">Trusted by </span>
+          <span class="text-blue-600 font-bold">12,607+ users</span> globally
         </div>
-    
+      
         <!-- Button Section -->
         <div class="text-center lg:text-left">
-            <button class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 transform transition-transform duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                Create your free account
-            </button>
+          <button class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 hover:shadow-lg transform transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Create your free account
+          </button>
         </div>
-    
+      
         <!-- No Credit Card Text -->
         <div class="text-sm text-gray-500 text-center lg:text-left">
-            <span>No credit card required for signup</span>
+          <span>No credit card required for signup</span>
         </div>
-    </div>
+      </div>
+      
     {{-- tittle --}}
     <div class="bg-white mt-8 p-10 rounded-3xl  max-w-4xl mx-auto flex flex-col items-center gap-6">
         <!-- Title -->
@@ -273,66 +274,103 @@
             Get Started Now
         </button>
     </div>
+
+    {{-- STEPS --}}
+   <div class="max-w-4xl md:px-44">
+    <h1 class="text-4xl text-center font-bold px-2 py-8">Create QR Code in 3 Steps</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-2 pb-4">
+        <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
+            <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 1" class="w-full h-40 object-cover rounded-lg">
+            <button class="mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                Step 1
+            </button>
+            <p class="text-gray-600 text-lg mt-2">Choose the type</p>
+        </section>
     
-    <div class="min-h-auto bg-gray-50 p-8">
+        <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
+            <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 2" class="w-full h-40 object-cover rounded-lg">
+            <button class="mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                Step 2
+            </button>
+            <p class="text-gray-600 text-lg mt-2">Choose the type</p>
+        </section>
+    
+        <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
+            <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 3" class="w-full h-40 object-cover rounded-lg">
+            <button class="mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                Step 3
+            </button>
+            <p class="text-gray-600 text-lg mt-2">Choose the type</p>
+        </section>
+    </div>
+   </div>
+    
+    
+    {{-- content --}}
+    <div class="min-h-screen  py-16 px-6">
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
-            <h1 class="text-4xl font-bold text-center mb-12">How to create a QR code?</h1>
-
-            <!-- Steps -->
+            <h1 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                How to create a QR code?
+            </h1>
+    
+            <!-- Steps Section -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Step 1 -->
-                <div class="p-6 bg-white rounded-lg shadow-sm">
+                <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
+                        <div class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
                             1
                         </div>
                     </div>
-                    <h2 class="text-xl font-semibold mb-3 text-wrap">Choose the content of your QR code</h2>
-                    <p class="text-gray-600 mb-4 text-wrap">
-                        Select from a wide variety of options: PDF, menu, video, business cards, web, apps, etc.
+                    <h2 class="text-xl font-semibold text-gray-900 mb-3">
+                        Choose the content of your QR code
+                    </h2>
+                    <p class="text-gray-600">
+                        Select from a variety of options: PDF, menu, video, business cards, websites, apps, and more.
                     </p>
                 </div>
-
+    
                 <!-- Step 2 -->
-                <div class="p-6 bg-white rounded-lg shadow-sm">
+                <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
+                        <div class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
                             2
                         </div>
                     </div>
-                    <h2 class="text-xl font-semibold mb-3 text-wrap">Customize and design it to measure</h2>
-                    <p class="text-gray-600 mb-4 text-wrap">
-                        Fill in all the information and use our design tool to make your QR unique.
+                    <h2 class="text-xl font-semibold text-gray-900 mb-3">
+                        Customize and design it
+                    </h2>
+                    <p class="text-gray-600">
+                        Fill in all the information and use our design tool to make your QR code unique and attractive.
                     </p>
                 </div>
-
+    
                 <!-- Step 3 -->
-                <div class="p-6 bg-white rounded-lg shadow-sm">
+                <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div
-                            class="w-8 h-8 rounded-full bg-purple-950 text-white flex items-center justify-center font-bold">
+                        <div class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
                             3
                         </div>
                     </div>
-                    <h2 class="text-xl font-semibold mb-3">Download your QR code</h2>
-                    <p class="text-gray-600 mb-4">
-                        Get your QR code in different formats (pdf, png, svg), print it or show it in a digital format and
-                        voilà!
+                    <h2 class="text-xl font-semibold text-gray-900 mb-3">
+                        Download your QR code
+                    </h2>
+                    <p class="text-gray-600">
+                        Get your QR code in different formats (PDF, PNG, SVG), print it, or use it digitally. Done!
                     </p>
                 </div>
             </div>
-
+    
             <!-- Create QR Button -->
-            <div class="mt-8 flex justify-center">
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 rounded-full text-lg">
-                    Create QR code
+            <div class="mt-12 flex justify-center">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-transform transform hover:scale-105">
+                    Create QR Code
                 </button>
             </div>
         </div>
     </div>
+    
     {{-- slider --}}
     <div class="max-w-3xl mx-auto px-4 py-6">
         <!-- Tabs -->
@@ -447,9 +485,9 @@
                 <!-- Feature 1: Editing and management of QRs -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- QrCode Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 8V4m0 12v-4m4 0H8m8 0l-4 4m4-4l-4-4" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"></path>
@@ -463,9 +501,9 @@
                 <!-- Feature 2: Dynamic QR Codes -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Code Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path
                                     d="M9 6H7a2 2 0 00-2 2v12a2 2 0 002 2h14a2 2 0 002-2V10a2 2 0 00-2-2h-6M9 6V4a2 2 0 012-2h6a2 2 0 012 2v2M9 6H7"
@@ -480,9 +518,9 @@
                 <!-- Feature 3: Unlimited Contributing Users -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Users Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M8 7a4 4 0 118 0 4 4 0 01-8 0zM4 14a4 4 0 018 0h4a4 4 0 014 4v2H4v-2a4 4 0 010-4z"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -496,9 +534,9 @@
                 <!-- Feature 4: Variety of download formats -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Download Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M4 4v16h16V4H4zm16 12H4V6h16v10z" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2"></path>
@@ -512,9 +550,9 @@
                 <!-- Feature 5: Templates -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Template Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M19 4H5v16h14V4zM7 4v16h10V4H7z" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2"></path>
@@ -528,9 +566,9 @@
                 <!-- Feature 6: Static QR -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- QrCode Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 8V4m0 12v-4m4 0H8m8 0l-4 4m4-4l-4-4" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"></path>
@@ -544,9 +582,9 @@
                 <!-- Feature 7: Custom Domain -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Globe Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M15 10c0 2.1-.5 4-1.5 5.5L18 18V6l-4.5 2.5c1-.5 1.5-2 1.5-3.5z"
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
@@ -560,9 +598,9 @@
                 <!-- Feature 8: Password access protection -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Lock Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path
                                     d="M12 6V4a2 2 0 012-2h6a2 2 0 012 2v2m-8 0V4m-4 0h8m-8 0H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2h-4m0 12V8m0 4h-4m4 0V6h4m0 4v2"
@@ -577,9 +615,9 @@
                 <!-- Feature 9: Complete analytics -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- BarChart3 Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M12 6v6m6-6v12m-6-6h6M6 6h6M6 6v12m0-12v12" stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"></path>
@@ -593,9 +631,9 @@
                 <!-- Feature 10: Event tracking -->
                 <div class="p-6 space-y-2 hover:shadow-lg transition-shadow bg-white rounded-lg">
                     <div class="flex items-center space-x-3">
-                        <div class="bg-purple-100 p-2 rounded-lg">
+                        <div class="bg-blue-100 p-2 rounded-lg">
                             <!-- Activity Icon -->
-                            <svg class="w-5 h-5 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            <svg class="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M19 13l-4-4m0 0l-4 4m4-4v8" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2"></path>
@@ -737,109 +775,96 @@
 
 
     </div>
-    <div class="max-w-6xl mx-auto px-4 py-8  backdrop-blur-lg bg-blue-200 bg-opacity-30 ">
-        <!-- Header -->
-        <h1 class="text-4xl text-center font-normal mb-2">
-            Explore our extensive collection of QR codes
-        </h1>
-        <p class="text-center text-gray-600 mb-8">
-            QR codes can contain a wide range of content and at QRfy we offer them all.
-        </p>
-        <!-- Tabs Navigation -->
-        <div class="flex md:gap-4 mb-6 border-b border-gray-300">
-            <button
-                class="tab-button md:px-4 md:py-2 p-1 text-gray-600 md:text-base text-xs font-medium border-b-2 border-transparent hover:border-blue-600"
-                data-tab="tab1">Invitation</button>
-            <button
-                class="tab-button md:px-4 md:py-2 p-1 text-gray-600 md:text-base text-xs font-medium border-b-2 border-transparent hover:border-blue-600"
-                data-tab="tab2">Wedding QR</button>
-            <button
-                class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
-                data-tab="tab3">NGO QR</button>
-            <button
-                class="tab-button md:px-4 md:py-2 p-1 md:text-base text-xs0 text-gray-600 font-medium border-b-2 border-transparent hover:border-blue-600"
-                data-tab="tab4">Photographer QR</button>
-        </div>
-
-        <!-- Tab Content -->
-        <div class="tab-content">
-            <!-- Tab 1: Hero Section -->
-            <div class="tab-pane" id="tab1">
-                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-                    <div class="relative z-20 p-8 md:p-12">
-                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                            Create a unique invitation for an unforgettable event.
-                        </h2>
-                        <button
-                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                            See more
-                        </button>
-                    </div>
-                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+    
+   {{--  Take your QR Codes--}}
+  
+        <div class="min-h-screen bg-gray-50">
+            <!-- Main Content -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Take your QR Codes to the next level</h1>
+                    <p class="text-xl text-gray-600 mb-16">Explore more ways to upgrade your QR Codes with The QR Code Generator:</p>
                 </div>
-            </div>
-
-            <!-- Tab 2: Wedding QR -->
-            <div class="tab-pane hidden" id="tab2">
-                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-                    <div class="relative z-20 p-8 md:p-12">
-                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                            Create a unique invitation for Wedding QR.
-                        </h2>
-                        <button
-                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                            See more
-                        </button>
+    
+                <!-- Feature Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="w-16 h-16 mb-6">
+                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">In-depth scan data</h3>
+                        <p class="text-gray-600">Gain deeper insights into your QR Code performance. Visualize usage by device type, scans by country, and scans by city to refine your QR Code marketing strategy effectively.</p>
                     </div>
-                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+    
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="w-16 h-16 mb-6">
+                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Ad-free scanning</h3>
+                        <p class="text-gray-600">Provide a seamless user experience without distracting ads, ensuring users have a better experience in each scan.</p>
+                    </div>
+    
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="w-16 h-16 mb-6">
+                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Multi-user collaboration</h3>
+                        <p class="text-gray-600">Collaborate with up to five team members on the same dashboard. Create, manage, and share QR Code access uninterruptedly across your team and organization.</p>
+                    </div>
+    
+                    <!-- Feature 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="w-16 h-16 mb-6">
+                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Priority customer support</h3>
+                        <p class="text-gray-600">Receive dedicated customer support for quick resolutions to issues or queries with your QR Codes and the platform. Keep your QR Code campaigns running smoothly and efficiently.</p>
+                    </div>
+    
+                    <!-- Feature 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm">
+                        <div class="w-16 h-16 mb-6">
+                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Flexible user and QR Code limits</h3>
+                        <p class="text-gray-600">As your requirements grow, you can add users and QR Codes to your quota in our professional plan. Continue your operations without limitations.</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Tab 3: NGO QR -->
-            <div class="tab-pane hidden" id="tab3">
-                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-                    <div class="relative z-20 p-8 md:p-12">
-                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                            Create a unique invitation for an unforgettable event.
-                        </h2>
-                        <button
-                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                            See more
-                        </button>
-                    </div>
-                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
-                </div>
-            </div>
-
-            <!-- Tab 4: Photographer QR -->
-            <div class="tab-pane hidden" id="tab4">
-                <div class="relative rounded-2xl overflow-hidden mb-12 bg-[#1a1523]">
-                    <div class="absolute inset-0 bg-gradient-to-r from-[#1a1523] to-transparent z-10"></div>
-                    <div class="relative z-20 p-8 md:p-12">
-                        <h2 class="text-white text-3xl md:text-4xl max-w-md font-light leading-tight mb-6">
-                            Create a unique invitation for Photographer QR .
-                        </h2>
-                        <button
-                            class="px-6 py-2 rounded-full border border-white text-white hover:bg-white hover:text-[#1a1523] transition-colors">
-                            See more
-                        </button>
-                    </div>
-                    <img src="{{ asset('asset/img/bg-image.jpeg') }}" alt="Wedding invitation with QR code"
-                        class="absolute top-0 right-0 w-full h-full object-cover opacity-50" />
+    
+                <!-- CTA Button -->
+                <div class="text-center mt-16">
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                        Explore plans
+                    </button>
                 </div>
             </div>
         </div>
-
-
-    </div>
+   
+    {{-- img-FAQ --}}
     <div class="max-w-7xl mx-auto px-4 py-8 lg:px-36">
-        <!-- Introduction Section -->
         <h2 class="text-3xl font-semibold text-center mb-4">
             Everything you need to know to get started
         </h2>
@@ -847,72 +872,82 @@
             In this section, you will find the basic concepts and the necessary steps to start enjoying the benefits of
             using QR.
         </p>
-
-        <!-- Grid Layout for Image and Accordion -->
+    
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <!-- Image Section -->
             <div class="flex justify-center lg:justify-start">
                 <img src="{{ asset('asset/img/imagfold') }}" alt="QR Image"
                     class="w-full max-w-lg h-auto object-cover rounded-lg shadow-md">
             </div>
-
-            <!-- Accordion Section -->
-            <div>
+    
+            <div class="w-full max-w-2xl p-6 bg-white rounded-2xl shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
                 <div class="space-y-4">
-                    <!-- Accordion Item 1 -->
-                    <div class="border border-gray-300 rounded-lg">
-                        <button
-                            class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none flex justify-between items-center"
-                            onclick="toggleAccordion(event)" aria-expanded="false" aria-controls="content-1">
-                            <span>Step 1: Understand QR Codes</span>
-                            <span class="text-gray-600 transition-transform transform" id="icon-1">+</span>
+                    <!-- FAQ Item 1 -->
+                    <div class="border rounded-lg">
+                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)" aria-expanded="false">
+                            <span class="text-lg font-medium">What is your return policy?</span>
+                            <span class="icon">+</span>
                         </button>
-                        <div id="content-1" class="px-6 pb-4 hidden">
-                            <p class="text-gray-600">
-                                QR codes can store a variety of information like URLs, text, or contact information. Learn
-                                how they work.
-                            </p>
-                        </div>
+                        <div class="hidden px-4 pb-3 text-gray-600">You can return any item within 30 days of purchase.</div>
                     </div>
-
-                    <!-- Accordion Item 2 -->
-                    <div class="border border-gray-300 rounded-lg">
-                        <button
-                            class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none flex justify-between items-center"
-                            onclick="toggleAccordion(event)" aria-expanded="false" aria-controls="content-2">
-                            <span>Step 2: Choose Your QR Code Type</span>
-                            <span class="text-gray-600 transition-transform transform" id="icon-2">+</span>
+    
+                    <!-- FAQ Item 2 -->
+                    <div class="border rounded-lg">
+                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)" aria-expanded="false">
+                            <span class="text-lg font-medium">How long does shipping take?</span>
+                            <span class="icon">+</span>
                         </button>
-                        <div id="content-2" class="px-6 pb-4 hidden">
-                            <p class="text-gray-600">
-                                QR codes can be used for different purposes, such as events, promotions, or personal use.
-                                Select the right type for your needs.
-                            </p>
-                        </div>
+                        <div class="hidden px-4 pb-3 text-gray-600">Shipping usually takes 5-7 business days.</div>
                     </div>
-
-                    <!-- Accordion Item 3 -->
-                    <div class="border border-gray-300 rounded-lg">
-                        <button
-                            class="w-full text-left px-6 py-4 bg-gray-100 text-gray-800 font-medium focus:outline-none flex justify-between items-center"
-                            onclick="toggleAccordion(event)" aria-expanded="false" aria-controls="content-3">
-                            <span>Step 3: Generate Your QR Code</span>
-                            <span class="text-gray-600 transition-transform transform" id="icon-3">+</span>
+    
+                    <!-- FAQ Item 3 -->
+                    <div class="border rounded-lg">
+                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)" aria-expanded="false">
+                            <span class="text-lg font-medium">Do you offer international shipping?</span>
+                            <span class="icon">+</span>
                         </button>
-                        <div id="content-3" class="px-6 pb-4 hidden">
-                            <p class="text-gray-600">
-                                Use a QR code generator to create your custom code. Customize it with colors, logos, and
-                                more to make it unique.
-                            </p>
-                        </div>
+                        <div class="hidden px-4 pb-3 text-gray-600">Yes, we ship to most countries worldwide.</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;  // The div containing the answer
+            const icon = button.querySelector('.icon');  // The icon (either "+" or "-")
+            const isOpen = !answer.classList.contains('hidden');  // Determine if the answer is open
+    
+            // Toggle the current answer and icon
+            if (isOpen) {
+                answer.classList.add('hidden');  // Hide the answer
+                icon.textContent = '+';  // Reset the icon to "+"
+                button.setAttribute('aria-expanded', 'false');  // Set aria-expanded to false
+            } else {
+                answer.classList.remove('hidden');  // Show the answer
+                icon.textContent = '-';  // Change the icon to "-"
+                button.setAttribute('aria-expanded', 'true');  // Set aria-expanded to true
+            }
+    
+            // Close all other FAQs and reset their icons
+            document.querySelectorAll('.border div:not(.hidden)').forEach(el => {
+                if (el !== answer) {
+                    el.classList.add('hidden');  // Hide the answer
+                    const otherIcon = el.previousElementSibling.querySelector('.icon');
+                    if (otherIcon) {
+                        otherIcon.textContent = '+';  // Reset the icon to "+"
+                        el.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        }
+    </script>
+    
+        
  
     {{-- REVIEW --}}
-    <section class=" backdrop-blur-lg bg-blue-200 bg-opacity-30 px-4 py-12 md:py-24">
+    <section class=" px-4 py-12 md:py-24">
         <div class="max-w-4xl mx-auto">
             <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
                 What Listeners Are Saying
@@ -1013,43 +1048,36 @@
         </div>
     </section>
 
-    {{-- faqs --}}
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold text-center mb-12 text-[#1f1f1f]">Do not leave with doubt</h1>
-
+    
         <!-- Navigation Tabs -->
         <div class="flex justify-center gap-6 sm:gap-8 mb-12 border-b">
-            <button class="text-blue-500 border-b-2 border-blue-500 pb-4 px-6 text-sm sm:text-base" data-tab="tab4">Basic
-                information</button>
-            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base" data-tab="tab5">Design & creation</button>
-            <button class="text-gray-500 pb-4 px-6 text-sm sm:text-base" data-tab="tab6">Scan & print</button>
+            <button class="tab-button text-blue-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab4" aria-selected="true">Basic information</button>
+            <button class="tab-button text-gray-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab5" aria-selected="false">Design & creation</button>
+            <button class="tab-button text-gray-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab6" aria-selected="false">Scan & print</button>
         </div>
-
+    
         <!-- FAQ Items -->
-        <div class="space-y-4" id="tab4">
+        <div class="space-y-4 hidden" id="tab4">
             <!-- FAQ Item 1 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4"
-                    onclick="toggleAccordion(1)">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="1">
                     <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">What is a QR code generator?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-1" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or
-                        other information for scanning by devices like smartphones.</p>
+                    <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or other information for scanning by devices like smartphones.</p>
                 </div>
             </div>
-
+    
             <!-- FAQ Item 2 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4"
-                    onclick="toggleAccordion(2)">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="2">
                     <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Are QR codes free?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
@@ -1057,58 +1085,85 @@
                     <p>Yes, QR codes are free to generate. Many online tools offer free QR code creation services.</p>
                 </div>
             </div>
-
+    
             <!-- FAQ Item 3 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4"
-                    onclick="toggleAccordion(3)">
-                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free
-                        QR codes?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="3">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free QR codes?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-3" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free
-                        services without requiring an account.</p>
+                    <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free services without requiring an account.</p>
                 </div>
             </div>
-
+    
             <!-- FAQ Item 4 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="w-full text-left flex justify-between items-center py-3 sm:py-4"
-                    onclick="toggleAccordion(4)">
-                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Why on other web pages making QR codes is
-                        free?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-4"
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="4">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Why on other web pages making QR codes is free?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-4" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>Other websites may offer free QR code generation as a marketing tool to attract users, or they may
-                        have limitations in their free plans.</p>
+                    <p>Other websites may offer free QR code generation as a marketing tool to attract users, or they may have limitations in their free plans.</p>
                 </div>
             </div>
         </div>
-
+    
         <script>
-            function toggleAccordion(faqId) {
-                const content = document.getElementById(`faq-${faqId}`);
-                const icon = document.getElementById(`icon-${faqId}`);
-
-                // Toggle visibility of the FAQ answer
-                content.classList.toggle('hidden');
-
-                // Rotate the icon to indicate open/close state
-                icon.classList.toggle('rotate-180');
-            }
+            // FAQ Accordion functionality
+            document.addEventListener('click', function(event) {
+                const faqButton = event.target.closest('.faq-button');
+                if (faqButton) {
+                    const faqId = faqButton.getAttribute('data-faq');
+                    const content = document.getElementById(`faq-${faqId}`);
+                    const icon = document.getElementById(`icon-${faqId}`);
+                    const isExpanded = faqButton.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle visibility of the FAQ answer
+                    content.classList.toggle('hidden', isExpanded);
+                    
+                    // Rotate the icon
+                    icon.classList.toggle('rotate-180', !isExpanded);
+                    
+                    // Update aria-expanded state
+                    faqButton.setAttribute('aria-expanded', !isExpanded);
+                }
+            });
+    
+            // Tab switching functionality
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const tabId = button.getAttribute('data-tab');
+    
+                    // Switch the active tab
+                    document.querySelectorAll('.tab-button').forEach(b => {
+                        b.classList.remove('border-b-2', 'border-blue-500', 'text-blue-500');
+                        b.classList.add('text-gray-500');
+                        b.setAttribute('aria-selected', 'false');
+                    });
+                    button.classList.add('border-b-2', 'border-blue-500', 'text-blue-500');
+                    button.setAttribute('aria-selected', 'true');
+    
+                    // Hide all tabs and show the selected one
+                    document.querySelectorAll('[id^="tab"]').forEach(tab => {
+                        tab.classList.add('hidden');
+                    });
+                    document.getElementById(tabId).classList.remove('hidden');
+                });
+            });
+    
+            // Initialize with the first tab visible
+            document.querySelector('[data-tab="tab4"]').click();
         </script>
     </div>
+    
 
     {{-- Design & creation --}}
-    <div class="w-full max-w-md mx-auto  backdrop-blur-lg bg-blue-200 bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
+    <div class="w-full max-w-md mx-auto  backdrop-blur-lg  bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
         <!-- Accordion Item 1 -->
         <div class="border-b">
             <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">

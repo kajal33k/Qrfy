@@ -19,7 +19,8 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
+<body class="bg-[url('https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-10381.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
+
     @include('Components.header')
 
     @yield('comtent')

@@ -1,4 +1,4 @@
-<nav class=" backdrop-blur-lg bg-blue-200 bg-opacity-30 border-b border-gray-200">
+<nav class=" backdrop-blur-lg  bg-opacity-30 border-b border-gray-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
       <!-- Left Section -->
@@ -8,7 +8,7 @@
           <img src="{{asset('asset/img/logo.png')}}" alt="Logo" class="h-8 w-8">
           <span class="ml-2 text-xl font-bold text-gray-800">QRFY</span>
         </a>
-
+    
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8 ml-10">
           <!-- Products Dropdown -->
@@ -21,7 +21,7 @@
               <a href="{{route('frontend.staticqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
               <a href="{{route('frontend.staticqr')}}" @click="open = false" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Event Tracking</a>
             </div> --}}
-            <div x-show="open" x-transition class="absolute hidden group-hover:block bg-white shadow-lg mt-2 py-2 rounded-md w-[800px] z-30">
+            <div x-show="open" x-transition class="absolute hidden group-hover:block bg-white shadow-lg mt-2 py-2 rounded-md w-[800px] z-50">
               <div class="grid grid-cols-1 md:grid-cols-4 gap-2 p-2 w-[800px]">
                 <div class="flex items-start p-0 border border-gray-200 rounded-lg shadow-md">
                   <svg class="w-6 h-6 text-blue-500 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -155,7 +155,7 @@
 
       <!-- Right Section -->
       <div class="flex items-center space-x-4">
-        <a href="{{route('frontend.login')}}" class="text-gray-600 hover:text-gray-900 font-medium border border-blue-600 text-xs md:text-lg md:px-3 md:py-1 p-4 rounded-full">
+        <a href="{{route('frontend.login')}}" class="text-gray-600 hover:text-gray-900 font-medium border border-blue-600 text-xs md:text-lg md:px-3 md:py-1 p-1 rounded-full">
           Log In
         </a>
         <a href="{{route('frontend.login')}}" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium">
