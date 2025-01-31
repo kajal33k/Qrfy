@@ -21,11 +21,11 @@
 </head>
 <body class="bg-[url('https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-10381.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
 
-    @include('Components.header')
+    @include('components.header')
 
     @yield('comtent')
 
-    @include('Components.footer')
+    @include('components.footer')
 
   
 </body>

@@ -275,35 +275,44 @@
         </button>
     </div>
 
-    {{-- STEPS --}}
-   <div class="max-w-4xl md:px-44">
-    <h1 class="text-4xl text-center font-bold px-2 py-8">Create QR Code in 3 Steps</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-2 pb-4">
-        <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
-            <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 1" class="w-full h-40 object-cover rounded-lg">
-            <button class="mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
-                Step 1
-            </button>
-            <p class="text-gray-600 text-lg mt-2">Choose the type</p>
-        </section>
+    <div class="max-w-5xl mx-auto px-4 md:px-8 lg:px-16">
+        <h1 class="text-3xl md:text-4xl text-center font-bold px-2 py-6 md:py-8">
+            Create QR Code in 3 Steps
+        </h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Step 1 -->
+            <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
+                <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 1" 
+                     class="w-full max-w-xs h-40 object-cover rounded-lg">
+                <button class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                    Step 1
+                </button>
+                <p class="text-gray-600 text-lg mt-2 text-center">Choose the type</p>
+            </section>
     
-        <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
-            <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 2" class="w-full h-40 object-cover rounded-lg">
-            <button class="mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
-                Step 2
-            </button>
-            <p class="text-gray-600 text-lg mt-2">Choose the type</p>
-        </section>
+            <!-- Step 2 -->
+            <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
+                <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 2" 
+                     class="w-full max-w-xs h-40 object-cover rounded-lg">
+                <button class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                    Step 2
+                </button>
+                <p class="text-gray-600 text-lg mt-2 text-center">Customize your QR Code</p>
+            </section>
     
-        <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
-            <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 3" class="w-full h-40 object-cover rounded-lg">
-            <button class="mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
-                Step 3
-            </button>
-            <p class="text-gray-600 text-lg mt-2">Choose the type</p>
-        </section>
+            <!-- Step 3 -->
+            <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
+                <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 3" 
+                     class="w-full max-w-xs h-40 object-cover rounded-lg">
+                <button class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                    Step 3
+                </button>
+                <p class="text-gray-600 text-lg mt-2 text-center">Download & Share</p>
+            </section>
+        </div>
     </div>
-   </div>
+    
     
     
     {{-- content --}}
@@ -1174,8 +1183,7 @@
                 </svg>
             </button>
             <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or
-                    any other elements.</div>
+                <div class="p-4 text-gray-600">A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or other information for scanning by devices like smartphones. </div>
             </div>
         </div>
 
