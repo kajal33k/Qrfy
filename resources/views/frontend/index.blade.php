@@ -22,76 +22,73 @@
                 <!-- Left Section -->
                 <div>
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
-        
+                    <textarea
+                        class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none"
+                        placeholder="Enter some text..."></textarea>
+
                     <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
                         <div class="flex flex-wrap gap-4 mb-4">
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-        
+
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">No Frame</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">Envelope</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">Paper</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">Coffee</span>
                             </div>
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Right Section -->
                 <div class="p-6 bg-white rounded-lg shadow-md">
                     <h2 class="text-xl font-semibold text-gray-800 mb-6">Download QR</h2>
                     <div class="flex flex-col items-center gap-6">
                         <!-- QR Code Preview -->
-                        <div class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
-                            <img 
-                                src="{{ asset('asset/img/qr.jpg') }}" 
-                                alt="QR Code" 
-                                class="w-24 h-24 object-contain"
-                            />
+                        <div
+                            class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                            <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-24 h-24 object-contain" />
                             <!-- Placeholder Text (if needed) -->
                             <!-- <span class="text-sm text-gray-500">QR Preview</span> -->
                         </div>
-                
+
                         <!-- Download Button -->
-                        <button 
-                            class="flex items-center gap-2 px-5 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
-                        >
-                            <svg 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                fill="none" 
-                                viewBox="0 0 24 24" 
-                                stroke="currentColor" 
-                                class="w-5 h-5"
-                            >
-                                <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    stroke-width="2" 
-                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" 
-                                />
+                        <button
+                            class="flex items-center gap-2 px-5 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         {{-- text --}}
@@ -100,38 +97,48 @@
                 <!-- Left Section -->
                 <div>
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Complete the Text</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
-        
+                    <textarea
+                        class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none resize-none"
+                        placeholder="Enter some text..."></textarea>
+
                     <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
                         <div class="flex flex-wrap gap-4 mb-4">
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-        
+
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">--
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">No Frame</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📧
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">Envelope</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">📄
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">Paper</span>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕</div>
+                                <div class="w-16 h-16 border rounded-lg flex items-center justify-center bg-gray-100">☕
+                                </div>
                                 <span class="mt-2 text-sm text-gray-600">Coffee</span>
                             </div>
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Right Section -->
                 <div>
                     <h2 class="text-xl font-semibold text-gray-800 mb-4">Download QR</h2>
@@ -139,9 +146,12 @@
                         <div class="h-24 w-24 bg-gray-200 border rounded-md flex items-center justify-center">
                             <span class="text-gray-500">QR Preview</span>
                         </div>
-                        <button class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2 transition">
-                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        <button
+                            class="px-6 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 focus:outline-none flex items-center gap-2 transition">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
@@ -149,7 +159,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <!-- PDF Content -->
         <section id="tab-pdf" class="tab-content hidden">
@@ -157,25 +167,32 @@
                 <!-- Left Content -->
                 <div class="flex-1 space-y-6">
                     <h1 class="text-4xl font-extrabold text-gray-900">QR PDF</h1>
-                    <p class="text-xl text-gray-600 max-w-lg text-wrap">From menus to user guides to creative portfolios, give your clients access to PDF documents quickly and efficiently.</p>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">Register Now</button>
+                    <p class="text-xl text-gray-600 max-w-lg text-wrap">From menus to user guides to creative portfolios,
+                        give your clients access to PDF documents quickly and efficiently.</p>
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500">Register
+                        Now</button>
                 </div>
 
                 <!-- Right Content -->
                 <div class="bg-white p-8 space-y-6">
                     <div class="flex items-center gap-2 text-gray-700">
-                        <span class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
+                        <span
+                            class="bg-gray-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-semibold">3</span>
                         <span class="font-medium">Download Your QR</span>
                     </div>
 
                     <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
-                        <img src="{{asset('asset/img/abtqr.jpg')}}" alt="QR Code" class="w-48 h-48" />
+                        <img src="{{ asset('asset/img/abtqr.jpg') }}" alt="QR Code" class="w-48 h-48" />
                     </div>
 
-                    <button class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                    <button
+                        class="w-full flex items-center justify-center gap-2 text-gray-600 border border-gray-300 rounded-lg px-4 py-3 hover:bg-gray-50 transition duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500">
                         <span>Download QR</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
                         </svg>
                     </button>
                 </div>
@@ -208,7 +225,7 @@
                     </div>
 
                     <div class="bg-gray-100 p-8 rounded-lg flex justify-center items-center">
-                        <img src="{{asset('asset/img/qr.jpg')}}" alt="QR Code" class="w-48 h-48" />
+                        <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-48 h-48" />
                     </div>
 
                     <button
@@ -225,52 +242,56 @@
         </div>
     </div>
     {{--  create account --}}
-    <div class="relative mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-lg border border-white/20">
+    <div
+        class="relative mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-lg border border-white/20">
         <!-- Logo Section -->
         <div class="flex-shrink-0 text-center lg:text-left">
-          <span class="text-2xl font-extrabold text-gray-800 tracking-wide">
-            <span class="text-blue-600">G</span>oogle
-          </span>
+            <span class="text-2xl font-extrabold text-gray-800 tracking-wide">
+                <span class="text-blue-600">G</span>oogle
+            </span>
         </div>
-      
+
         <!-- Trusted Text -->
         <div class="flex-1 text-lg lg:text-xl text-gray-700 font-medium text-center lg:text-left">
-          <span class="font-semibold text-gray-800">Trusted by </span>
-          <span class="text-blue-600 font-bold">12,607+ users</span> globally
+            <span class="font-semibold text-gray-800">Trusted by </span>
+            <span class="text-blue-600 font-bold">12,607+ users</span> globally
         </div>
-      
+
         <!-- Button Section -->
         <div class="text-center lg:text-left">
-          <button class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 hover:shadow-lg transform transition-transform duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            Create your free account
-          </button>
+            <button
+                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 hover:shadow-lg transform transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Create your free account
+            </button>
         </div>
-      
+
         <!-- No Credit Card Text -->
         <div class="text-sm text-gray-500 text-center lg:text-left">
-          <span>No credit card required for signup</span>
+            <span>No credit card required for signup</span>
         </div>
-      </div>
-      
+    </div>
+
     {{-- tittle --}}
-    <div class="bg-white mt-8 p-10 rounded-3xl  max-w-4xl mx-auto flex flex-col items-center gap-6">
+    <div class="bg-white mt-8 p-10 rounded-3xl max-w-4xl mx-auto flex flex-col items-center gap-6">
         <!-- Title -->
         <h1 class="text-4xl font-extrabold text-gray-900 text-center leading-snug">
             Generate Your Custom <span class="text-blue-600">QR Code</span>
         </h1>
-    
+
         <!-- Subtitle -->
         <p class="text-lg text-gray-600 text-center max-w-lg">
-            Personalize with <span class="text-blue-500 font-semibold">colors</span>, 
-            <span class="text-blue-500 font-semibold">shapes</span>, and 
+            Personalize with <span class="text-blue-500 font-semibold">colors</span>,
+            <span class="text-blue-500 font-semibold">shapes</span>, and
             <span class="text-blue-500 font-semibold">logos</span>. Complete your design in just 3 simple steps!
         </p>
-    
+
         <!-- Call to Action -->
-        <button class="mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold rounded-full shadow-lg hover:scale-105 transform transition-transform duration-300">
+        <button
+            class="mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold rounded-full shadow-lg hover:scale-105 transform transition-transform duration-300">
             Get Started Now
         </button>
     </div>
@@ -279,42 +300,43 @@
         <h1 class="text-3xl md:text-4xl text-center font-bold px-2 py-6 md:py-8">
             Create QR Code in 3 Steps
         </h1>
-        
+
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Step 1 -->
             <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
-                <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 1" 
-                     class="w-full max-w-xs h-40 object-cover rounded-lg">
-                <button class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                <img src="{{ asset('asset/img/abtqr.jpg') }}" alt="Step 1"
+                    class="w-full max-w-xs h-40 object-cover rounded-lg">
+                <button
+                    class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
                     Step 1
                 </button>
                 <p class="text-gray-600 text-lg mt-2 text-center">Choose the type</p>
             </section>
-    
+
             <!-- Step 2 -->
             <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
-                <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 2" 
-                     class="w-full max-w-xs h-40 object-cover rounded-lg">
-                <button class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                <img src="{{ asset('asset/img/abtqr.jpg') }}" alt="Step 2"
+                    class="w-full max-w-xs h-40 object-cover rounded-lg">
+                <button
+                    class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
                     Step 2
                 </button>
                 <p class="text-gray-600 text-lg mt-2 text-center">Customize your QR Code</p>
             </section>
-    
+
             <!-- Step 3 -->
             <section class="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
-                <img src="{{asset('asset/img/abtqr.jpg')}}" alt="Step 3" 
-                     class="w-full max-w-xs h-40 object-cover rounded-lg">
-                <button class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
+                <img src="{{ asset('asset/img/abtqr.jpg') }}" alt="Step 3"
+                    class="w-full max-w-xs h-40 object-cover rounded-lg">
+                <button
+                    class="mt-3 px-5 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
                     Step 3
                 </button>
                 <p class="text-gray-600 text-lg mt-2 text-center">Download & Share</p>
             </section>
         </div>
     </div>
-    
-    
-    
+
     {{-- content --}}
     <div class="min-h-screen  py-16 px-6">
         <div class="max-w-4xl mx-auto">
@@ -322,13 +344,14 @@
             <h1 class="text-4xl font-bold text-center text-gray-900 mb-12">
                 How to create a QR code?
             </h1>
-    
+
             <!-- Steps Section -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Step 1 -->
                 <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
                             1
                         </div>
                     </div>
@@ -339,11 +362,12 @@
                         Select from a variety of options: PDF, menu, video, business cards, websites, apps, and more.
                     </p>
                 </div>
-    
+
                 <!-- Step 2 -->
                 <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
                             2
                         </div>
                     </div>
@@ -354,11 +378,12 @@
                         Fill in all the information and use our design tool to make your QR code unique and attractive.
                     </p>
                 </div>
-    
+
                 <!-- Step 3 -->
                 <div class="p-6 bg-white rounded-lg shadow-md border border-gray-200">
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
+                        <div
+                            class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-bold">
                             3
                         </div>
                     </div>
@@ -370,23 +395,24 @@
                     </p>
                 </div>
             </div>
-    
+
             <!-- Create QR Button -->
             <div class="mt-12 flex justify-center">
-                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-transform transform hover:scale-105">
+                <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-transform transform hover:scale-105">
                     Create QR Code
                 </button>
             </div>
         </div>
     </div>
-    
+
     {{-- slider --}}
     <div class="max-w-3xl mx-auto px-4 py-6">
         <!-- Tabs -->
         <div class="grid grid-cols-3 md:flex md:justify-center gap-4 mb-6 flex-wrap" role="tablist">
             <button id="prevBtn" class="text-white md:py-2 md:px-4 rounded-full transition duration-300"
                 aria-label="Previous slide">◀</button>
-    
+
             <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-active text-white"
                 data-index="0" role="tab" aria-selected="true">
                 <div class="w-14 h-14 flex flex-grow items-center justify-center bg-gray-100 rounded-full">
@@ -394,95 +420,116 @@
                 </div>
                 <span class="text-sm font-medium">Landing page</span>
             </button>
-    
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
+
+            <button
+                class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
                 data-index="1" role="tab" aria-selected="false">
                 <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                     <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
                 </div>
                 <span class="text-sm font-medium">Landing page</span>
             </button>
-    
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
+
+            <button
+                class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
                 data-index="2" role="tab" aria-selected="false">
                 <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                     <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
                 </div>
                 <span class="text-sm font-medium">Landing page</span>
             </button>
-    
-            <button class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
+
+            <button
+                class="tab-btn py-2 px-4 rounded-md flex flex-col items-center gap-1 tab-inactive bg-gray-200 text-gray-700"
                 data-index="3" role="tab" aria-selected="false">
                 <div class="w-14 h-14 flex items-center justify-center bg-gray-100 rounded-full">
                     <img src="{{ asset('asset/img/logo.png') }}" alt="Landing page icon" class="rounded-full" />
                 </div>
                 <span class="text-sm font-medium">Landing page</span>
             </button>
-    
+
             <button id="nextBtn" class="text-white py-2 px-4 rounded-full transition duration-300"
                 aria-label="Next slide">▶</button>
         </div>
-    
+
         <!-- Slider -->
         <div class="relative overflow-hidden">
             <div id="slider" class="flex transition-transform duration-500 ease-in-out">
                 <!-- Slide 1 -->
-                <div class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
+                <div
+                    class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
                     <!-- Left Section -->
                     <div class="space-y-4 text-center md:text-left w-full md:w-1/2">
                         <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Event</h1>
                         <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR
+                            Code</button>
                     </div>
-    
+
                     <!-- Right Section -->
-                    <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                        <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                    <div
+                        class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                        <img src="https://via.placeholder.com/240x160" alt="Event Image"
+                            class="w-full h-48 object-cover mb-4 rounded-lg" />
                         <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
                         <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                        <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
+                        <button
+                            class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm
+                            Assistance</button>
                     </div>
                 </div>
-    
+
                 <!-- Slide 2 -->
-                <div class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
+                <div
+                    class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
                     <!-- Left Section -->
                     <div class="space-y-4 text-center md:text-left w-full md:w-1/2">
                         <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Event</h1>
                         <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR
+                            Code</button>
                     </div>
-    
+
                     <!-- Right Section -->
-                    <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                        <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                    <div
+                        class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                        <img src="https://via.placeholder.com/240x160" alt="Event Image"
+                            class="w-full h-48 object-cover mb-4 rounded-lg" />
                         <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
                         <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                        <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
+                        <button
+                            class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm
+                            Assistance</button>
                     </div>
                 </div>
-    
+
                 <!-- Slide 3 -->
-                <div class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
+                <div
+                    class="min-w-full flex flex-col md:flex-row justify-center items-center bg-gray-100 p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8">
                     <!-- Left Section -->
                     <div class="space-y-4 text-center md:text-left w-full md:w-1/2">
                         <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Mail</h1>
                         <p class="text-gray-600">Invite your guests dynamically, with images, date, time, and location.</p>
-                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR Code</button>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Generate QR
+                            Code</button>
                     </div>
-    
+
                     <!-- Right Section -->
-                    <div class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
-                        <img src="https://via.placeholder.com/240x160" alt="Event Image" class="w-full h-48 object-cover mb-4 rounded-lg" />
+                    <div
+                        class="relative w-full sm:w-[280px] md:w-[320px] h-[500px] mx-auto border-8 border-black rounded-[3rem] overflow-hidden bg-white shadow-lg">
+                        <img src="https://via.placeholder.com/240x160" alt="Event Image"
+                            class="w-full h-48 object-cover mb-4 rounded-lg" />
                         <h2 class="text-lg font-semibold text-center">Andy & Carol</h2>
                         <p class="text-sm text-gray-600 text-center mb-6">Join us for our wedding celebration.</p>
-                        <button class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm Assistance</button>
+                        <button
+                            class="bg-yellow-500 text-black px-6 py-2 rounded-lg font-semibold mb-6 hover:bg-yellow-600">Confirm
+                            Assistance</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-   
+
     <!-- grid Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
@@ -656,7 +703,7 @@
             </div>
         </div>
     </main>
-  {{-- slider --}}
+    {{-- slider --}}
     <div>
         <div class=" p-4 md:p-8 flex items-center md:space-x-6 mx-4 md:mx-32">
 
@@ -784,94 +831,107 @@
 
 
     </div>
-    
-   {{--  Take your QR Codes--}}
-  
-        <div class="min-h-screen bg-gray-50">
-            <!-- Main Content -->
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Take your QR Codes to the next level</h1>
-                    <p class="text-xl text-gray-600 mb-16">Explore more ways to upgrade your QR Codes with The QR Code Generator:</p>
+
+    {{--  Take your QR Codes --}}
+
+    <div class="min-h-screen bg-gray-50">
+        <!-- Main Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Take your QR Codes to the next level</h1>
+                <p class="text-xl text-gray-600 mb-16">Explore more ways to upgrade your QR Codes with The QR Code
+                    Generator:</p>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mb-6">
+                        <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">In-depth scan data</h3>
+                    <p class="text-gray-600">Gain deeper insights into your QR Code performance. Visualize usage by device
+                        type, scans by country, and scans by city to refine your QR Code marketing strategy effectively.</p>
                 </div>
-    
-                <!-- Feature Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Feature 1 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm">
-                        <div class="w-16 h-16 mb-6">
-                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
-                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                </svg>
-                            </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mb-6">
+                        <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">In-depth scan data</h3>
-                        <p class="text-gray-600">Gain deeper insights into your QR Code performance. Visualize usage by device type, scans by country, and scans by city to refine your QR Code marketing strategy effectively.</p>
                     </div>
-    
-                    <!-- Feature 2 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm">
-                        <div class="w-16 h-16 mb-6">
-                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
-                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Ad-free scanning</h3>
-                        <p class="text-gray-600">Provide a seamless user experience without distracting ads, ensuring users have a better experience in each scan.</p>
-                    </div>
-    
-                    <!-- Feature 3 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm">
-                        <div class="w-16 h-16 mb-6">
-                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
-                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Multi-user collaboration</h3>
-                        <p class="text-gray-600">Collaborate with up to five team members on the same dashboard. Create, manage, and share QR Code access uninterruptedly across your team and organization.</p>
-                    </div>
-    
-                    <!-- Feature 4 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm">
-                        <div class="w-16 h-16 mb-6">
-                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
-                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Priority customer support</h3>
-                        <p class="text-gray-600">Receive dedicated customer support for quick resolutions to issues or queries with your QR Codes and the platform. Keep your QR Code campaigns running smoothly and efficiently.</p>
-                    </div>
-    
-                    <!-- Feature 5 -->
-                    <div class="bg-white p-8 rounded-xl shadow-sm">
-                        <div class="w-16 h-16 mb-6">
-                            <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
-                                <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4">Flexible user and QR Code limits</h3>
-                        <p class="text-gray-600">As your requirements grow, you can add users and QR Codes to your quota in our professional plan. Continue your operations without limitations.</p>
-                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Ad-free scanning</h3>
+                    <p class="text-gray-600">Provide a seamless user experience without distracting ads, ensuring users
+                        have a better experience in each scan.</p>
                 </div>
-    
-                <!-- CTA Button -->
-                <div class="text-center mt-16">
-                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                        Explore plans
-                    </button>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mb-6">
+                        <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Multi-user collaboration</h3>
+                    <p class="text-gray-600">Collaborate with up to five team members on the same dashboard. Create,
+                        manage, and share QR Code access uninterruptedly across your team and organization.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mb-6">
+                        <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Priority customer support</h3>
+                    <p class="text-gray-600">Receive dedicated customer support for quick resolutions to issues or queries
+                        with your QR Codes and the platform. Keep your QR Code campaigns running smoothly and efficiently.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="w-16 h-16 mb-6">
+                        <div class="bg-gradient-to-br from-blue-200 to-blue-300 p-4 rounded-lg inline-block">
+                            <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Flexible user and QR Code limits</h3>
+                    <p class="text-gray-600">As your requirements grow, you can add users and QR Codes to your quota in our
+                        professional plan. Continue your operations without limitations.</p>
                 </div>
             </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-16">
+                <button
+                    class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                    Explore plans
+                </button>
+            </div>
         </div>
-   
+    </div>
+
     {{-- img-FAQ --}}
     <div class="max-w-7xl mx-auto px-4 py-8 lg:px-36">
         <h2 class="text-3xl font-semibold text-center mb-4">
@@ -881,37 +941,41 @@
             In this section, you will find the basic concepts and the necessary steps to start enjoying the benefits of
             using QR.
         </p>
-    
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div class="flex justify-center lg:justify-start">
                 <img src="{{ asset('asset/img/imagfold') }}" alt="QR Image"
                     class="w-full max-w-lg h-auto object-cover rounded-lg ">
             </div>
-    
+
             <div class="w-full max-w-2xl p-6 bg-white rounded-2xl ">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
                 <div class="space-y-4">
                     <!-- FAQ Item 1 -->
                     <div class="border rounded-lg">
-                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)" aria-expanded="false">
+                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none"
+                            onclick="toggleFAQ(this)" aria-expanded="false">
                             <span class="text-lg font-medium">What is your return policy?</span>
                             <span class="icon">+</span>
                         </button>
-                        <div class="hidden px-4 pb-3 text-gray-600">You can return any item within 30 days of purchase.</div>
+                        <div class="hidden px-4 pb-3 text-gray-600">You can return any item within 30 days of purchase.
+                        </div>
                     </div>
-    
+
                     <!-- FAQ Item 2 -->
                     <div class="border rounded-lg">
-                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)" aria-expanded="false">
+                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none"
+                            onclick="toggleFAQ(this)" aria-expanded="false">
                             <span class="text-lg font-medium">How long does shipping take?</span>
                             <span class="icon">+</span>
                         </button>
                         <div class="hidden px-4 pb-3 text-gray-600">Shipping usually takes 5-7 business days.</div>
                     </div>
-    
+
                     <!-- FAQ Item 3 -->
                     <div class="border rounded-lg">
-                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)" aria-expanded="false">
+                        <button class="w-full text-left px-4 py-3 flex justify-between items-center focus:outline-none"
+                            onclick="toggleFAQ(this)" aria-expanded="false">
                             <span class="text-lg font-medium">Do you offer international shipping?</span>
                             <span class="icon">+</span>
                         </button>
@@ -921,40 +985,40 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         function toggleFAQ(button) {
-            const answer = button.nextElementSibling;  // The div containing the answer
-            const icon = button.querySelector('.icon');  // The icon (either "+" or "-")
-            const isOpen = !answer.classList.contains('hidden');  // Determine if the answer is open
-    
+            const answer = button.nextElementSibling; // The div containing the answer
+            const icon = button.querySelector('.icon'); // The icon (either "+" or "-")
+            const isOpen = !answer.classList.contains('hidden'); // Determine if the answer is open
+
             // Toggle the current answer and icon
             if (isOpen) {
-                answer.classList.add('hidden');  // Hide the answer
-                icon.textContent = '+';  // Reset the icon to "+"
-                button.setAttribute('aria-expanded', 'false');  // Set aria-expanded to false
+                answer.classList.add('hidden'); // Hide the answer
+                icon.textContent = '+'; // Reset the icon to "+"
+                button.setAttribute('aria-expanded', 'false'); // Set aria-expanded to false
             } else {
-                answer.classList.remove('hidden');  // Show the answer
-                icon.textContent = '-';  // Change the icon to "-"
-                button.setAttribute('aria-expanded', 'true');  // Set aria-expanded to true
+                answer.classList.remove('hidden'); // Show the answer
+                icon.textContent = '-'; // Change the icon to "-"
+                button.setAttribute('aria-expanded', 'true'); // Set aria-expanded to true
             }
-    
+
             // Close all other FAQs and reset their icons
             document.querySelectorAll('.border div:not(.hidden)').forEach(el => {
                 if (el !== answer) {
-                    el.classList.add('hidden');  // Hide the answer
+                    el.classList.add('hidden'); // Hide the answer
                     const otherIcon = el.previousElementSibling.querySelector('.icon');
                     if (otherIcon) {
-                        otherIcon.textContent = '+';  // Reset the icon to "+"
+                        otherIcon.textContent = '+'; // Reset the icon to "+"
                         el.previousElementSibling.setAttribute('aria-expanded', 'false');
                     }
                 }
             });
         }
     </script>
-    
-        
- 
+
+
+
     {{-- REVIEW --}}
     <section class=" px-4 py-12 md:py-24">
         <div class="max-w-4xl mx-auto">
@@ -1059,34 +1123,42 @@
 
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-bold text-center mb-12 text-[#1f1f1f]">Do not leave with doubt</h1>
-    
+
         <!-- Navigation Tabs -->
         <div class="flex justify-center gap-6 sm:gap-8 mb-12 border-b">
-            <button class="tab-button text-blue-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab4" aria-selected="true">Basic information</button>
-            <button class="tab-button text-gray-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab5" aria-selected="false">Design & creation</button>
-            <button class="tab-button text-gray-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab6" aria-selected="false">Scan & print</button>
+            <button class="tab-button text-blue-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab4"
+                aria-selected="true">Basic information</button>
+            <button class="tab-button text-gray-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab5"
+                aria-selected="false">Design & creation</button>
+            <button class="tab-button text-gray-500 pb-4 md:px-6 px-2 text-xs sm:text-base" data-tab="tab6"
+                aria-selected="false">Scan & print</button>
         </div>
-    
+
         <!-- FAQ Items -->
         <div class="space-y-4 hidden" id="tab4">
             <!-- FAQ Item 1 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="1">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                    aria-expanded="false" data-faq="1">
                     <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">What is a QR code generator?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-1" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or other information for scanning by devices like smartphones.</p>
+                    <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or
+                        other information for scanning by devices like smartphones.</p>
                 </div>
             </div>
-    
+
             <!-- FAQ Item 2 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="2">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                    aria-expanded="false" data-faq="2">
                     <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Are QR codes free?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
@@ -1094,34 +1166,42 @@
                     <p>Yes, QR codes are free to generate. Many online tools offer free QR code creation services.</p>
                 </div>
             </div>
-    
+
             <!-- FAQ Item 3 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="3">
-                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free QR codes?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                    aria-expanded="false" data-faq="3">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free
+                        QR codes?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-3" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free services without requiring an account.</p>
+                    <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free
+                        services without requiring an account.</p>
                 </div>
             </div>
-    
+
             <!-- FAQ Item 4 -->
             <div class="border-b border-gray-200 pb-4">
-                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4" aria-expanded="false" data-faq="4">
-                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Why on other web pages making QR codes is free?</span>
-                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                    aria-expanded="false" data-faq="4">
+                    <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Why on other web pages making QR codes is
+                        free?</span>
+                    <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-4"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </button>
                 <div id="faq-4" class="hidden pl-8 pt-2 text-gray-700">
-                    <p>Other websites may offer free QR code generation as a marketing tool to attract users, or they may have limitations in their free plans.</p>
+                    <p>Other websites may offer free QR code generation as a marketing tool to attract users, or they may
+                        have limitations in their free plans.</p>
                 </div>
             </div>
         </div>
-    
+
         <script>
             // FAQ Accordion functionality
             document.addEventListener('click', function(event) {
@@ -1131,23 +1211,23 @@
                     const content = document.getElementById(`faq-${faqId}`);
                     const icon = document.getElementById(`icon-${faqId}`);
                     const isExpanded = faqButton.getAttribute('aria-expanded') === 'true';
-                    
+
                     // Toggle visibility of the FAQ answer
                     content.classList.toggle('hidden', isExpanded);
-                    
+
                     // Rotate the icon
                     icon.classList.toggle('rotate-180', !isExpanded);
-                    
+
                     // Update aria-expanded state
                     faqButton.setAttribute('aria-expanded', !isExpanded);
                 }
             });
-    
+
             // Tab switching functionality
             document.querySelectorAll('.tab-button').forEach(button => {
                 button.addEventListener('click', function() {
                     const tabId = button.getAttribute('data-tab');
-    
+
                     // Switch the active tab
                     document.querySelectorAll('.tab-button').forEach(b => {
                         b.classList.remove('border-b-2', 'border-blue-500', 'text-blue-500');
@@ -1156,7 +1236,7 @@
                     });
                     button.classList.add('border-b-2', 'border-blue-500', 'text-blue-500');
                     button.setAttribute('aria-selected', 'true');
-    
+
                     // Hide all tabs and show the selected one
                     document.querySelectorAll('[id^="tab"]').forEach(tab => {
                         tab.classList.add('hidden');
@@ -1164,12 +1244,12 @@
                     document.getElementById(tabId).classList.remove('hidden');
                 });
             });
-    
+
             // Initialize with the first tab visible
             document.querySelector('[data-tab="tab4"]').click();
         </script>
     </div>
-    
+
 
     {{-- Design & creation --}}
     <div class="w-full max-w-md mx-auto  backdrop-blur-lg  bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
@@ -1183,7 +1263,8 @@
                 </svg>
             </button>
             <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or other information for scanning by devices like smartphones. </div>
+                <div class="p-4 text-gray-600">A QR code generator is a tool that creates a QR code that can store data
+                    like a URL, contact info, or other information for scanning by devices like smartphones. </div>
             </div>
         </div>
 
@@ -1216,9 +1297,10 @@
             </div>
         </div>
     </div>
-   
+
     {{-- Scan & print --}}
-    <div class="w-full max-w-md mx-auto  backdrop-blur-lg bg-blue-200 bg-opacity-30 shadow-lg rounded-lg hidden " id="tab6">
+    <div class="w-full max-w-md mx-auto  backdrop-blur-lg bg-blue-200 bg-opacity-30 shadow-lg rounded-lg hidden "
+        id="tab6">
         <!-- Accordion Item 1 -->
         <div class="border-b">
             <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
@@ -1807,23 +1889,22 @@
         });
     </script>
 
-<script>
-    // Tab switching logic
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+    <script>
+        // Tab switching logic
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabPanes = document.querySelectorAll('.tab-pane');
 
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Deactivate all buttons and hide all panes
-            tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
-            tabPanes.forEach(pane => pane.classList.add('hidden'));
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Deactivate all buttons and hide all panes
+                tabButtons.forEach(btn => btn.classList.remove('text-blue-600', 'border-blue-600'));
+                tabPanes.forEach(pane => pane.classList.add('hidden'));
 
-            // Activate clicked button and show corresponding pane
-            button.classList.add('text-blue-600', 'border-blue-600');
-            const targetPane = document.querySelector(`#${button.dataset.tab}`);
-            targetPane.classList.remove('hidden');
+                // Activate clicked button and show corresponding pane
+                button.classList.add('text-blue-600', 'border-blue-600');
+                const targetPane = document.querySelector(`#${button.dataset.tab}`);
+                targetPane.classList.remove('hidden');
+            });
         });
-    });
-</script>
-
+    </script>
 @endsection
