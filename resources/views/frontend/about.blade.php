@@ -1,5 +1,5 @@
 @extends('components.main')
-@section('comtent')
+@section('content')
 <div class="bg-gray-50 py-12 px-6 sm:px-12 lg:px-32">
     <div class="max-w-7xl mx-auto text-center">
         <h2 class="text-3xl font-semibold text-gray-900">About Us</h2>

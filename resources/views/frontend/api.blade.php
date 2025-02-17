@@ -1,5 +1,5 @@
 @extends('components.main')
-@section('comtent')
+@section('content')
 
 {{-- Hero Section --}}
 <div class="bg-[#220E27] text-white py-16 px-6 sm:px-12 lg:px-32 flex flex-col items-center text-center">

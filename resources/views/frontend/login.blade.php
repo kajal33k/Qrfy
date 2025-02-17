@@ -1,5 +1,5 @@
 @extends('components.main')
-@section('comtent')
+@section('content')
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">  
         <!-- Form Section -->
         <div class="min-h-screen flex flex-col justify-center bg-gray-100 py-12 sm:px-6 lg:px-8">

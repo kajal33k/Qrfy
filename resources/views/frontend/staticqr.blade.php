@@ -1,5 +1,5 @@
 @extends('components.main')
-@section('comtent')
+@section('content')
 <div class="max-w-4xl mx-auto bg-white p-6  mt-10">
     <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">Static QR</h1>
     

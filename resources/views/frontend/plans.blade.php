@@ -1,5 +1,5 @@
 @extends('components.main')
-@section('comtent')
+@section('content')
 
 <!-- Pricing Section -->
 <section class="max-w-6xl mx-auto mt-20 p-6 text-center">
