@@ -3,8 +3,8 @@
 
 <!-- Pricing Section -->
 <section class="max-w-6xl mx-auto mt-20 p-6 text-center">
-    <h1 class="text-2xl text-black  font-bold mb-2">Pricing & Plans</h1>
-    <h2 class="text-xl text-gray-600 font-medium mb-2">You have free unlimited updates and premium support on each package.</h2>
+    <h1 class="text-2xl text-white  font-bold mb-2">Pricing & Plans</h1>
+    <h2 class="text-xl text-gray-100 font-medium mb-2">You have free unlimited updates and premium support on each package.</h2>
 
     <!-- Plan Toggle -->
     <div class="flex justify-center mb-6">
@@ -101,7 +101,7 @@
 </section>
  <!-- Features Section -->
  <section class="max-w-6xl mx-auto  p-6">
-    <h1 class="text-4xl text-center font-bold">Features</h1>
+    <h1 class="text-4xl text-center font-bold text-white">Features</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
         <!-- Feature Items -->
         <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow hover:shadow-lg transition">

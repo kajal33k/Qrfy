@@ -23,7 +23,7 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="relative bg-cover bg-center bg-fixed" style="background-image: url('{{ asset('asset/img/QR-bg_cleanup.jpg') }}');">
+<body class="relative bg-cover bg-center bg-fixed " style="background-image: url('{{ asset('asset/img/bg.jpg!w700wp') }}');">
 
     @include('components.header')
 

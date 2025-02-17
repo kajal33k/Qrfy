@@ -279,14 +279,14 @@
         class="relative mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-lg border border-white/20">
         <!-- Logo Section -->
         <div class="flex-shrink-0 text-center lg:text-left">
-            <span class="text-2xl font-extrabold text-gray-800 tracking-wide">
+            <span class="text-2xl font-extrabold text-gray-300 tracking-wide">
                 <span class="text-blue-600">G</span>oogle
             </span>
         </div>
 
         <!-- Trusted Text -->
-        <div class="flex-1 text-lg lg:text-xl text-gray-700 font-medium text-center lg:text-left">
-            <span class="font-semibold text-gray-800">Trusted by </span>
+        <div class="flex-1 text-lg lg:text-xl text-gray-300 font-medium text-center lg:text-left">
+            <span class="font-semibold text-gray-100">Trusted by </span>
             <span class="text-blue-600 font-bold">12,607+ users</span> globally
         </div>
 
@@ -303,7 +303,7 @@
         </div>
 
         <!-- No Credit Card Text -->
-        <div class="text-sm text-gray-500 text-center lg:text-left">
+        <div class="text-sm text-gray-200 text-center lg:text-left">
             <span>No credit card required for signup</span>
         </div>
     </div>
@@ -330,7 +330,7 @@
     </div>
 
     <div class="max-w-5xl mx-auto px-4 md:px-8 lg:px-16">
-        <h1 class="text-3xl md:text-4xl text-center font-bold px-2 py-6 md:py-8">
+        <h1 class="text-3xl md:text-4xl text-center font-bold px-2 py-6 md:py-8 text-white">
             Create QR Code in 3 Steps
         </h1>
 
@@ -374,7 +374,7 @@
     <div class="min-h-screen  py-16 px-6">
         <div class="max-w-4xl mx-auto">
             <!-- Header -->
-            <h1 class="text-4xl font-bold text-center text-gray-900 mb-12">
+            <h1 class="text-4xl font-bold text-center text-gray-50 mb-12">
                 How to create a QR code?
             </h1>
 
@@ -565,7 +565,7 @@
 
     <!-- grid Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-50 mb-16">
             Your all-in-one marketing platform
         </h1>
         <div class="max-w-7xl mx-auto p-6">
@@ -742,7 +742,7 @@
 
             <div class="bg-white/40 backdrop-blur-lg p-12">
                 <h2 class="text-sm font-semibold text-blue-700">QR Codes on</h2>
-                <p class="text-lg text-gray-700 mt-2 font-medium">
+                <p class="text-lg text-gray-50 mt-2 font-medium">
                     Discover how to use QR codes to boost your marketing strategy. They are a great tool for engaging
                     customers, sharing promotions, and enhancing user experience with easy-to-scan links and content.
                 </p>
@@ -871,8 +871,8 @@
         <!-- Main Content -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">Take your QR Codes to the next level</h1>
-                <p class="text-xl text-gray-600 mb-16">Explore more ways to upgrade your QR Codes with The QR Code
+                <h1 class="text-4xl font-bold text-gray-50 mb-4">Take your QR Codes to the next level</h1>
+                <p class="text-xl text-gray-100 mb-16">Explore more ways to upgrade your QR Codes with The QR Code
                     Generator:</p>
             </div>
 
@@ -967,10 +967,10 @@
 
     {{-- img-FAQ --}}
     <div class="max-w-7xl mx-auto px-4 py-8 lg:px-36">
-        <h2 class="text-3xl font-semibold text-center mb-4">
+        <h2 class="text-3xl font-semibold text-center mb-4 text-white">
             Everything you need to know to get started
         </h2>
-        <p class="text-center text-gray-600 mb-8">
+        <p class="text-center text-gray-50 mb-8">
             In this section, you will find the basic concepts and the necessary steps to start enjoying the benefits of
             using QR.
         </p>
@@ -1154,7 +1154,7 @@
         </div>
     </section>
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-4">
         <h1 class="text-4xl font-bold text-center mb-12 text-[#1f1f1f]">Do not leave with doubt</h1>
 
         <!-- Navigation Tabs -->
@@ -1285,7 +1285,7 @@
 
 
     {{-- Design & creation --}}
-    <div class="w-full max-w-md mx-auto  backdrop-blur-lg  bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
+    <div class="w-full bg-white max-w-md mx-auto  backdrop-blur-lg  bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
         <!-- Accordion Item 1 -->
         <div class="border-b">
             <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
@@ -1397,7 +1397,7 @@
         });
     </script>
     {{-- section with image --}}
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:px-32 px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:px-32 px-4 mt-8">
         <div class="flex justify-center">
             <svg width="242" height="234" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="207" height="209" rx="10" fill="#fff" />
@@ -1532,9 +1532,9 @@
             </svg>
         </div>
         <div>
-            <div class="text-center mb-8">
-                <h2 class="text-2xl font-semibold text-[#1f1f1f] mb-4">Want to know more?</h2>
-                <p class="text-lg text-gray-600">Check our FAQs to find an answer to any questions you may have about our
+            <div class="text-center mb-8 mt-8">
+                <h2 class="text-2xl font-semibold text-white mb-4">Want to know more?</h2>
+                <p class="text-lg text-gray-100">Check our FAQs to find an answer to any questions you may have about our
                     QR codes.</p>
             </div>
         </div>

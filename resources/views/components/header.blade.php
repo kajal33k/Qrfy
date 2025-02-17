@@ -211,7 +211,7 @@
                 <ul
                   class='absolute top-5 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-white max-h-0 overflow-hidden min-w-[230px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-[400ms]'>
                   <li class='border-b py-3'>
-                    <a href='javascript:void(0)'
+                    <a href="{{route('frontend.typesofqr')}}"
                       class='hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                         viewBox="0 0 64 64">
@@ -223,7 +223,7 @@
                     </a>
                   </li>
                   <li class='border-b py-3'>
-                    <a href='javascript:void(0)'
+                    <a href="{{route('frontend.typesofqr')}}"
                       class='hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                         viewBox="0 0 1700 1700">
@@ -247,7 +247,7 @@
                     </a>
                   </li>
                   <li class='border-b py-3'>
-                    <a href='javascript:void(0)'
+                    <a href="{{route('frontend.typesofqr')}}"
                       class='hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                         viewBox="0 0 407.7 407.7">
@@ -259,7 +259,7 @@
                     </a>
                   </li>
                   <li class='border-b py-3'>
-                    <a href='javascript:void(0)'
+                    <a href="{{route('frontend.typesofqr')}}"
                       class='hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="mr-4 inline-block"
                         viewBox="0 0 512 512">
