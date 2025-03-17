@@ -5,38 +5,48 @@
         <!-- Tabs Container -->
         <div class="border-b border-gray-200 mb-6">
             <div class="flex space-x-4 overflow-x-auto">
-                <button id="url" data-tab="tab-url" class="tab-btn active px-4 py-2 text-lg font-medium rounded-md bg-gray-200 text-gray-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
+                <button id="url" data-tab="tab-url"
+                    class="tab-btn active px-4 py-2 text-lg font-medium rounded-md bg-gray-200 text-gray-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
                     URL
                 </button>
-                <button id="text" data-tab="tab-text" class="tab-btn px-4 py-2 text-lg font-medium rounded-md text-gray-700 hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
+                <button id="text" data-tab="tab-text"
+                    class="tab-btn px-4 py-2 text-lg font-medium rounded-md text-gray-700 hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
                     Text
                 </button>
-                <button id="pdf" data-tab="tab-pdf" class="tab-btn px-4 py-2 text-lg font-medium rounded-md text-gray-700 hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
+                <button id="pdf" data-tab="tab-pdf"
+                    class="tab-btn px-4 py-2 text-lg font-medium rounded-md text-gray-700 hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
                     PDF
                 </button>
-                <button id="img" data-tab="tab-img" class="tab-btn px-4 py-2 text-lg font-medium rounded-md text-gray-700 hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
+                <button id="img" data-tab="tab-img"
+                    class="tab-btn px-4 py-2 text-lg font-medium rounded-md text-gray-700 hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none">
                     IMAGE
                 </button>
             </div>
         </div>
-    
+
         <!-- URL Content -->
         <section id="tab-url" class="tab-content mt-6">
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Left Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
-    
+                    <textarea
+                        class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
+                        placeholder="Enter some text..."></textarea>
+
                     <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
                         <div class="flex flex-wrap gap-4 mb-4">
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-    
+
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
                                 <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
@@ -57,17 +67,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Right Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-6">Download QR</h2>
                     <div class="flex flex-col items-center gap-6">
-                        <div class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                        <div
+                            class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
                             <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-24 h-24 object-contain" />
                         </div>
-                        <button class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        <button
+                            class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
@@ -75,24 +89,30 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- Text Content -->
         <section id="tab-text" class="tab-content hidden mt-6">
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Left Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-4">Complete the Text</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
-    
+                    <textarea
+                        class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
+                        placeholder="Enter some text..."></textarea>
+
                     <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
                         <div class="flex flex-wrap gap-4 mb-4">
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-    
+
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
                                 <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
@@ -113,17 +133,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Right Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-6">Download QR</h2>
                     <div class="flex flex-col items-center gap-6">
-                        <div class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                        <div
+                            class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
                             <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-24 h-24 object-contain" />
                         </div>
-                        <button class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        <button
+                            class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
@@ -131,7 +155,7 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- PDF Content -->
         <section id="tab-pdf" class="tab-content hidden mt-6">
             <!-- Same content structure as URL and Text sections -->
@@ -139,17 +163,23 @@
                 <!-- Left Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-4">Complete the Pdf</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
-    
+                    <textarea
+                        class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
+                        placeholder="Enter some text..."></textarea>
+
                     <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
                         <div class="flex flex-wrap gap-4 mb-4">
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-    
+
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
                                 <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
@@ -170,17 +200,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Right Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-6">Download QR</h2>
                     <div class="flex flex-col items-center gap-6">
-                        <div class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                        <div
+                            class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
                             <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-24 h-24 object-contain" />
                         </div>
-                        <button class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        <button
+                            class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
@@ -188,7 +222,7 @@
                 </div>
             </div>
         </section>
-    
+
         <!-- Image Content -->
         <section id="tab-img" class="tab-content hidden mt-6">
             <!-- Same content structure as URL and Text sections -->
@@ -196,17 +230,23 @@
                 <!-- Left Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-4">Complete the Image</h2>
-                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none" placeholder="Enter some text..."></textarea>
-    
+                    <textarea
+                        class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
+                        placeholder="Enter some text..."></textarea>
+
                     <div class="mt-6">
                         <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
                         <div class="flex flex-wrap gap-4 mb-4">
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
-                            <button class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Frame</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Shape</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Logo</button>
+                            <button
+                                class="px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition">Level</button>
                         </div>
-    
+
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center">
                                 <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
@@ -227,17 +267,21 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Right Section -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-gray-800 mb-6">Download QR</h2>
                     <div class="flex flex-col items-center gap-6">
-                        <div class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                        <div
+                            class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
                             <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-24 h-24 object-contain" />
                         </div>
-                        <button class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        <button
+                            class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>
                             Download QR
                         </button>
@@ -246,37 +290,37 @@
             </div>
         </section>
     </div>
-    
+
     <!-- Add the following JavaScript to handle tab switching -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const tabButtons = document.querySelectorAll('.tab-btn');
             const tabContents = document.querySelectorAll('.tab-content');
-            
+
             tabButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     // Remove active class from all buttons and hide all content
                     tabButtons.forEach(btn => btn.classList.remove('active'));
                     tabContents.forEach(content => content.classList.add('hidden'));
-    
+
                     // Add active class to the clicked button and show corresponding content
                     button.classList.add('active');
                     const tabId = button.getAttribute('data-tab');
                     document.getElementById(tabId).classList.remove('hidden');
                 });
             });
-    
+
             // Set the first tab (URL) as active by default
             document.getElementById('url').classList.add('active');
             document.getElementById('tab-url').classList.remove('hidden');
         });
     </script>
-    
-    
-    
+
+
+
     {{--  create account --}}
     <div
-        class="relative mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-lg border border-white/20">
+        class="relative mt-8 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 bg-white/40 backdrop-blur-lg border border-white/20">
         <!-- Logo Section -->
         <div class="flex-shrink-0 text-center lg:text-left">
             <span class="text-2xl font-extrabold text-gray-300 tracking-wide">
@@ -440,7 +484,7 @@
     </div>
 
     {{-- slider --}}
-    <div class="max-w-3xl mx-auto px-4 py-6">
+    <div class="max-w-4xl mx-auto px-4 py-6 rounded-lg bg-white/40 backdrop-blur-lg">
         <!-- Tabs -->
         <div class="grid grid-cols-3 md:flex md:justify-center gap-4 mb-6 flex-wrap" role="tablist">
             <button id="prevBtn" class="text-white md:py-2 md:px-4 rounded-full transition duration-300"
@@ -1055,7 +1099,7 @@
     {{-- REVIEW --}}
     <section class=" px-4 py-12 md:py-24">
         <div class="max-w-4xl mx-auto">
-            <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
+            <h2 class="font-black text-white text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">
                 What Listeners Are Saying
             </h2>
 
@@ -1285,96 +1329,103 @@
 
 
     {{-- Design & creation --}}
-    <div class="w-full bg-white max-w-md mx-auto  backdrop-blur-lg  bg-opacity-30 shadow-lg rounded-lg hidden " id="tab5">
-        <!-- Accordion Item 1 -->
-        <div class="border-b">
-            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
-                <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
-                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    <div class="w-full bg-white max-w-3xl mx-auto hidden " id="tab5">
+        <!-- FAQ Item 1 -->
+        <div class="border-b border-gray-200 pb-4">
+            <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                aria-expanded="false" data-faq="1">
+                <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">What is a QR code generator?</span>
+                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">A QR code generator is a tool that creates a QR code that can store data
-                    like a URL, contact info, or other information for scanning by devices like smartphones. </div>
+            <div id="faq-1" class="hidden pl-8 pt-2 text-gray-700">
+                <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or
+                    other information for scanning by devices like smartphones.</p>
             </div>
         </div>
 
-        <!-- Accordion Item 2 -->
-        <div class="border-b">
-            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
-                <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
-                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <!-- FAQ Item 2 -->
+        <div class="border-b border-gray-200 pb-4">
+            <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                aria-expanded="false" data-faq="2">
+                <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Are QR codes free?</span>
+                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
+            <div id="faq-2" class="hidden pl-8 pt-2 text-gray-700">
+                <p>Yes, QR codes are free to generate. Many online tools offer free QR code creation services.</p>
             </div>
         </div>
 
-        <!-- Accordion Item 3 -->
-        <div>
-            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
-                <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
-                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <!-- FAQ Item 3 -->
+        <div class="border-b border-gray-200 pb-4">
+            <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                aria-expanded="false" data-faq="3">
+                <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free
+                    QR codes?</span>
+                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.
-                </div>
+            <div id="faq-3" class="hidden pl-8 pt-2 text-gray-700">
+                <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free
+                    services without requiring an account.</p>
             </div>
         </div>
     </div>
 
     {{-- Scan & print --}}
-    <div class="w-full max-w-md mx-auto  backdrop-blur-lg bg-blue-200 bg-opacity-30 shadow-lg rounded-lg hidden "
-        id="tab6">
-        <!-- Accordion Item 1 -->
-        <div class="border-b">
-            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content1">
-                <span class="text-lg font-medium text-gray-700">Accordion Title 1</span>
-                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    <div class="w-full max-w-3xl mx-auto bg-white hidden " id="tab6">
+        <!-- FAQ Item 1 -->
+        <div class="border-b border-gray-200 pb-4">
+            <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                aria-expanded="false" data-faq="1">
+                <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">What is a QR code generator?</span>
+                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-1"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div id="content1" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">This is the content of the first accordion. It can contain text, links, or
-                    any other elements.</div>
+            <div id="faq-1" class="hidden pl-8 pt-2 text-gray-700">
+                <p>A QR code generator is a tool that creates a QR code that can store data like a URL, contact info, or
+                    other information for scanning by devices like smartphones.</p>
             </div>
         </div>
 
-        <!-- Accordion Item 2 -->
-        <div class="border-b">
-            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content2">
-                <span class="text-lg font-medium text-gray-700">Accordion Title 2</span>
-                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <!-- FAQ Item 2 -->
+        <div class="border-b border-gray-200 pb-4">
+            <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                aria-expanded="false" data-faq="2">
+                <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">Are QR codes free?</span>
+                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-2"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div id="content2" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">This is the content of the second accordion. Customize it as needed.</div>
+            <div id="faq-2" class="hidden pl-8 pt-2 text-gray-700">
+                <p>Yes, QR codes are free to generate. Many online tools offer free QR code creation services.</p>
             </div>
         </div>
 
-        <!-- Accordion Item 3 -->
-        <div>
-            <button class="w-full flex justify-between items-center p-4 focus:outline-none group" data-target="#content3">
-                <span class="text-lg font-medium text-gray-700">Accordion Title 3</span>
-                <svg class="h-5 w-5 text-gray-500 group-hover:text-gray-700 transition-transform transform group-[aria-expanded=true]:rotate-180"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <!-- FAQ Item 3 -->
+        <div class="border-b border-gray-200 pb-4">
+            <button class="faq-button w-full text-left flex justify-between items-center py-3 sm:py-4"
+                aria-expanded="false" data-faq="3">
+                <span class="text-lg sm:text-xl font-medium text-[#1f1f1f]">So can I create an account to generate free
+                    QR codes?</span>
+                <svg class="w-6 h-6 text-gray-500 transform transition-transform duration-300" id="icon-3"
+                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
-            <div id="content3" class="max-h-0 overflow-hidden transition-all duration-300">
-                <div class="p-4 text-gray-600">This is the content of the third accordion. Feel free to style it further.
-                </div>
+            <div id="faq-3" class="hidden pl-8 pt-2 text-gray-700">
+                <p>You may or may not need an account depending on the tool you use. Many QR code generators offer free
+                    services without requiring an account.</p>
             </div>
         </div>
     </div>
@@ -1897,7 +1948,7 @@
         prevBtn.addEventListener("click", handlePrevClick);
         nextBtn.addEventListener("click", handleNextClick);
     </script>
-    <script>
+     <script>
         // JavaScript for Tab Functionality
         document.addEventListener('DOMContentLoaded', () => {
             const tabButtons = document.querySelectorAll('.tab-btn');
@@ -1920,7 +1971,7 @@
                 });
             });
         });
-    </script>
+     </script>
 
     <script>
         // Tab switching logic

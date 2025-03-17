@@ -297,3 +297,16 @@
       </div>
   </div>
 </header>
+
+
+<script>
+    document.getElementById('toggleMenu').addEventListener('click', function() {
+    const menu = document.getElementById('collapseMenu');
+    menu.classList.toggle('-translate-x-full');
+});
+
+document.getElementById('toggleClose').addEventListener('click', function() {
+    const menu = document.getElementById('collapseMenu');
+    menu.classList.add('-translate-x-full');
+});
+</script>
