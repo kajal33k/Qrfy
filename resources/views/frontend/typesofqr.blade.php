@@ -1,60 +1,60 @@
 @extends('components.main')
 @section('content')
-<div class="max-w-4xl mx-auto bg-white p-6 mt-10">
-    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">Choose the Type of QR Code You Need to Improve Your Business</h1>
+<div class="max-w-full px-24 mx-auto bg-white p-6 ">
+    <h1 class="text-2xl md:text-5xl font-bold text-gray-800 text-center mb-6">Choose the Type of <span class="text-blue-500">QR Code</span> You<br> Need to Improve Your Business</h1>
     
     <div class="space-y-6">
-        <p class="text-gray-600 text-lg leading-relaxed">
+        <p class="text-gray-600 text-lg leading-relaxed px-32">
             The variety of types of customizable QR codes will allow you to renew your print and digital media, improve the customer experience, and integrate links to any type of content. Whether you want to direct customers to a website, share contact information, or provide access to promotions, there’s a QR code type tailored to your needs.
         </p>
     </div>
 
     
-{{-- icons --}}F575A
-<div class="flex flex-row overflow-x-auto gap-4 mt-4">
+{{-- icons --}}
+<div class="flex flex-row overflow-x-auto gap-4 mt-4 ">
+    <div class="flex flex-col  items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t1.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">website</p>
+    </div>
     <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <img src="{{asset('asset/img/t2.jpeg')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">pdf</p>
+    </div>
+    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t3.jpeg')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Vcard plus</p>
+    </div>
+    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t4.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Image</p>
+    </div>
+    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t5.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Video</p>
+    </div>
+    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t6.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Link</p>
+    </div>
+    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t7.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Video</p>
+    </div>
+    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
+        <img src="{{asset('asset/img/t8.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
         <p class="text-xl font-semibold text-gray-800">Coupon</p>
     </div>
     <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
+        <img src="{{asset('asset/img/t9.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Url</p>
     </div>
     <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
+        <img src="{{asset('asset/img/t10.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">Event</p>
     </div>
     <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/coupon.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Coupon</p>
+        <img src="{{asset('asset/img/t12.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+        <p class="text-xl font-semibold text-gray-800">App</p>
     </div>
 </div>
 </div>
