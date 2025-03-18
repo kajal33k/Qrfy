@@ -1,7 +1,7 @@
 @extends('components.main')
 @section('content')
     {{-- hero section --}}
-    <div class="max-w-4xl mx-auto p-6 md:mt-20 rounded-lg shadow-lg bg-white/40 backdrop-blur-lg">
+    {{-- <div class="max-w-4xl mx-auto p-6 md:mt-20 rounded-lg shadow-lg bg-white/40 backdrop-blur-lg">
         <!-- Tabs Container -->
         <div class="border-b border-gray-200 mb-6">
             <div class="flex space-x-4 overflow-x-auto">
@@ -314,8 +314,8 @@
             document.getElementById('url').classList.add('active');
             document.getElementById('tab-url').classList.remove('hidden');
         });
-    </script>
-
+    </script> --}}
+ @include('frontend.tab')
 
 
     {{--  create account --}}
@@ -483,7 +483,7 @@
         </div>
     </div>
 
-    {{-- slider --}}
+    {{-- slider
     <div class="max-w-4xl mx-auto px-4 py-6 rounded-lg bg-white/40 backdrop-blur-lg">
         <!-- Tabs -->
         <div class="grid grid-cols-3 md:flex md:justify-center gap-4 mb-6 flex-wrap" role="tablist">
@@ -605,8 +605,8 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </div> --}}
+@include('frontend.slider')
     <!-- grid Section -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-50 mb-16">
