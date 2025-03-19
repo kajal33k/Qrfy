@@ -334,18 +334,93 @@
             <span class="text-blue-600 font-bold">12,607+ users</span> globally
         </div>
 
-        <!-- Button Section -->
-        <div class="text-center lg:text-left">
-            <button
-                class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 hover:shadow-lg transform transition-transform duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                Create your free account
+     <!-- Button Section -->
+     <div class="relative text-center lg:text-left">
+        <button 
+            id="dropdownButton"
+            type="button"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold text-sm rounded-full shadow-md hover:scale-105 hover:shadow-lg transform transition-transform duration-300"
+            aria-haspopup="true"
+            aria-expanded="false"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Create your free account
+        </button>
+        
+        <div 
+            id="dropdownMenu"
+            class="hidden hover:block absolute left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 mt-2 w-48 bg-white rounded-lg shadow-lg p-2 space-y-2 z-50"
+            role="menu"
+            aria-labelledby="dropdownButton"
+        >
+            <button 
+                class="flex items-center w-full px-4 py-2 text-gray-800 hover:bg-blue-50 rounded-md transition-colors duration-200"
+                role="menuitem"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="w-5 h-5 mr-3">
+                <span class="text-sm">Continue with Google</span>
+            </button>
+        
+            <button 
+                class="flex items-center w-full px-4 py-2 text-gray-800 hover:bg-blue-50 rounded-md transition-colors duration-200"
+                role="menuitem"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="w-5 h-5 mr-3">
+                <span class="text-sm">Continue with LinkedIn</span>
+            </button>
+        
+            <button 
+                class="flex items-center w-full px-4 py-2 text-gray-800 hover:bg-blue-50 rounded-md transition-colors duration-200"
+                role="menuitem"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="w-5 h-5 mr-3">
+                <span class="text-sm">Continue with Facebook</span>
+            </button>
+        
+            <button 
+                class="flex items-center w-full px-4 py-2 text-gray-800 hover:bg-blue-50 rounded-md transition-colors duration-200"
+                role="menuitem"
+            >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Mail_%28iOS%29.svg" alt="Email" class="w-5 h-5 mr-3">
+                <span class="text-sm">Continue with Email</span>
             </button>
         </div>
-
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownButton = document.getElementById("dropdownButton");
+            const dropdownMenu = document.getElementById("dropdownMenu");
+    
+            function toggleMenu(show = true) {
+                dropdownMenu.classList.toggle("hidden", !show);
+                dropdownButton.setAttribute("aria-expanded", show.toString());
+            }
+    
+            dropdownButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                const isExpanded = dropdownButton.getAttribute("aria-expanded") === "true";
+                toggleMenu(!isExpanded);
+            });
+    
+            document.addEventListener("click", function (event) {
+                if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
+                    toggleMenu(false);
+                }
+            });
+    
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    toggleMenu(false);
+                }
+            });
+    
+            // Close menu on resize to handle responsive positioning
+            window.addEventListener("resize", () => toggleMenu(false));
+        });
+    </script>
         <!-- No Credit Card Text -->
         <div class="text-sm text-gray-200 text-center lg:text-left">
             <span>No credit card required for signup</span>
@@ -475,9 +550,9 @@
 
             <!-- Create QR Button -->
             <div class="mt-12 flex justify-center">
-                <button
+                <button 
                     class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full text-lg shadow-md transition-transform transform hover:scale-105">
-                    Create QR Code
+                    <a href="#">Create QR Code</a>
                 </button>
             </div>
         </div>

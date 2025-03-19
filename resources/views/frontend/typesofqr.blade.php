@@ -1,89 +1,92 @@
 @extends('components.main')
 @section('content')
-<div class="max-w-full px-24 mx-auto bg-white p-6 ">
+<div class="bg-white">
+<div class="max-w-5xl px-4 mx-auto bg-white p-6 ">
     <h1 class="text-2xl md:text-5xl font-bold text-gray-800 text-center mb-6">Choose the Type of <span class="text-blue-500">QR Code</span> You<br> Need to Improve Your Business</h1>
     
     <div class="space-y-6">
-        <p class="text-gray-600 text-lg leading-relaxed px-32">
+        <p class="text-gray-600 text-lg leading-relaxed ">
             The variety of types of customizable QR codes will allow you to renew your print and digital media, improve the customer experience, and integrate links to any type of content. Whether you want to direct customers to a website, share contact information, or provide access to promotions, there’s a QR code type tailored to your needs.
         </p>
     </div>
 
     
 {{-- icons --}}
-<div class="flex flex-row overflow-x-auto gap-4 mt-4 ">
-    <div class="flex flex-col  items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t1.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">website</p>
+<div class="flex flex-row overflow-x-auto gap-4 snap-x snap-mandatory mt-6 mb-6">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t1.png')}}" alt="Website" class="w-32 h-32 object-contain">
+        <p class="text-xl font-semibold text-gray-800">Website</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t2.jpeg')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">pdf</p>
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t2.jpeg')}}" alt="PDF" class="w-32 h-32 object-contain">
+        <p class="text-xl font-semibold text-gray-800">PDF</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t3.jpeg')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Vcard plus</p>
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t3.jpeg')}}" alt="Vcard Plus" class="w-32 h-32 object-contain">
+        <p class="text-xl font-semibold text-gray-800">Vcard Plus</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t4.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t4.png')}}" alt="Image" class="w-32 h-32 object-contain">
         <p class="text-xl font-semibold text-gray-800">Image</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t5.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t5.png')}}" alt="Video" class="w-32 h-32 object-contain">
         <p class="text-xl font-semibold text-gray-800">Video</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t6.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t6.png')}}" alt="Link" class="w-32 h-32 object-contain">
         <p class="text-xl font-semibold text-gray-800">Link</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t7.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Video</p>
-    </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t8.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t7.png')}}" alt="Coupon" class="w-32 h-32 object-contain">
         <p class="text-xl font-semibold text-gray-800">Coupon</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t9.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
-        <p class="text-xl font-semibold text-gray-800">Url</p>
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t9.png')}}" alt="URL" class="w-32 h-32 object-contain">
+        <p class="text-xl font-semibold text-gray-800">URL</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t10.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t10.png')}}" alt="Event" class="w-32 h-32 object-contain">
         <p class="text-xl font-semibold text-gray-800">Event</p>
     </div>
-    <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg shadow-md">
-        <img src="{{asset('asset/img/t12.png')}}" alt="Coupon" class="w-32 h-32 object-contain mb-4">
+    <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md min-w-[140px] snap-center w-[calc(100%/3)]">
+        <img src="{{asset('asset/img/t12.png')}}" alt="App" class="w-32 h-32 object-contain">
         <p class="text-xl font-semibold text-gray-800">App</p>
     </div>
 </div>
 </div>
 
+</div>
+
 {{-- section1 --}}
-<section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#EF575A] via-[#FEEBEB] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
-    <!-- Left Image Section -->
-    <div class="flex justify-center">
-        <img src="{{asset('asset/img/types.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
-    </div>
-    <!-- Right Text Section -->
-    <div class="max-w-lg mx-auto text-center lg:text-left">
-        <header class="mb-6">
-            <h1 class="text-4xl font-bold text-gray-800">Website</h1>
-        </header>
-        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-            With just one click, send directly to the address you choose on your page or application, 
-            to facilitate access and improve the experience of new users or clients.
-        </p>
-        <div class="flex justify-center lg:justify-start gap-6">
-            <button class="px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700">
-                Create QR Code
-            </button>
-            <button class="px-6 py-3 bg-gray-300 text-gray-700 text-lg font-semibold rounded-lg hover:bg-gray-400">
-                More Info
-            </button>
+
+
+    <div class="bg-gradient-to-l from-[#f4f5f5] to-[#ea0707] w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-12">
+        <!-- Left Image Section -->
+        <div class="flex justify-center">
+            <!-- Mobile Preview -->
+            <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+                <!-- Notch -->
+                <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+                <!-- Screen -->
+                <img src="{{asset('asset/img/section11')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+            </div>
+        </div>
+        
+        <!-- Right Content Section -->
+        <div class="text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Website</h2>
+            <p class="text-gray-600 mt-4 text-lg">With just one click, send directly to the address you choose on your page or application, to facilitate access and improve the experience of new users or clients.</p>
+            
+            <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">Create QR code</a>
+                <a href="#" class="text-blue-600 font-medium hover:underline">More Info</a>
+            </div>
         </div>
     </div>
-</section>
+
+
+
 
 {{-- section2 --}}
 <section class="p-6 max-w-full mx-auto bg-gradient-to-l from-[#68D8E9] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
@@ -106,8 +109,18 @@
         </div>
     </div>
        <!-- Left Image Section -->
-       <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <div class="flex flex-col md:flex-row items-center gap-2">
+      
+
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section2.jpg')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
 </section>
 
@@ -115,7 +128,13 @@
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#D155D1] via-[#FEEBEB] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
     <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">
@@ -157,8 +176,18 @@
         </div>
     </div>
        <!-- Left Image Section -->
-       <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+       <div class="flex flex-col md:flex-row items-center gap-2">
+      
+
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section4')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
 </section>
 
@@ -166,7 +195,13 @@
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#255FF9] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
     <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section5')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">
@@ -208,8 +243,16 @@
         </div>
     </div>
        <!-- Left Image Section -->
-       <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+    <div class="flex flex-col md:flex-row items-center gap-2">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section6')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
 </section>
 
@@ -217,7 +260,13 @@
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#ACACAC] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
     <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section8')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">
@@ -259,8 +308,16 @@
         </div>
     </div>
        <!-- Left Image Section -->
-       <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+       <div class="flex flex-col md:flex-row items-center gap-2">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section10')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
 </section>
 
@@ -268,7 +325,13 @@
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#EE854E] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
     <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section9.webp')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">
@@ -310,8 +373,16 @@
         </div>
     </div>
        <!-- Left Image Section -->
-       <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+       <div class="flex flex-col md:flex-row items-center gap-2">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section11')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
 </section>
 
@@ -320,7 +391,13 @@
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#AD6D38] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
     <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section12')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">
@@ -362,8 +439,16 @@
         </div>
     </div>
        <!-- Left Image Section -->
-       <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+       <div class="flex flex-col md:flex-row items-center gap-2">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section14')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
 </section>
 
@@ -373,7 +458,13 @@
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#53E3C7] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
     <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section15')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">
@@ -416,15 +507,29 @@
     </div>
        <!-- Left Image Section -->
        <div class="flex justify-center">
-        <img src="{{asset('asset/img/section2.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-auto shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+            <!-- Screen -->
+            <img src="{{asset('asset/img/section16')}}" alt="QR Code Preview" class="w-full h-full object-cover">
+        </div>
     </div>
 </section>
 
 {{-- section 15--}}
 <section class="p-6 max-w-full mx-auto bg-gradient-to-r from-[#902D3D] to-white shadow-lg rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-16">
     <!-- Left Image Section -->
-    <div class="flex justify-center">
-        <img src="{{asset('asset/img/section3.jpg')}}" alt="QR Code Poster and Mobile Preview" class="h-80 w-auto object-contain">
+    <div class="flex flex-col md:flex-row items-center gap-2">
+        <!-- Mobile Preview -->
+        <div class="relative bg-black rounded-[2rem] w-56 h-100 shadow-xl border-4 border-gray-800 flex flex-col items-center overflow-hidden">
+            <!-- Notch -->
+            <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
+             <!-- Screen -->
+            <img src="{{asset('asset/img/section3.jpg')}}" alt="" class="h-auto w-auto">
+          
+           
+        </div>
     </div>
     <!-- Right Text Section -->
     <div class="max-w-lg mx-auto text-center lg:text-left">

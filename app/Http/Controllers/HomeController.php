@@ -22,6 +22,10 @@ class HomeController extends Controller
        return view('frontend.login');
    }
 
+   public function register(){
+      return view('frontend.register');
+   }
+
    public function plans()
    {
       return view('frontend.plans');
