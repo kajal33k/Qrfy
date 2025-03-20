@@ -77,7 +77,7 @@
     </div>
 
     <!-- website Content -->
-    <section id="tab-website" class="tab-content mt-6">
+    {{-- <section id="tab-website" class="tab-content mt-6">
         <div class="grid md:grid-cols-2 gap-8">
             <!-- Left Section -->
             <div class="bg-white p-6 rounded-lg shadow-md">
@@ -288,220 +288,219 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+<!-- Include qr-code-styling library -->
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling/lib/qr-code-styling.js"></script>
 
-    <!-- URL Content -->
-    <section id="tab-url" class="tab-content mt-6">
-        <div class="grid md:grid-cols-2 gap-8">
-            <!-- Left Section -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Complete the Content</h2>
-                <textarea
-                    class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
-                    placeholder="Enter some text..."></textarea>
-
-                    <div class="mt-6">
-                        <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
-    
-                        <!-- Tab Buttons -->
-                        <div class="flex flex-wrap gap-4 mb-4" role="tablist">
-                            <button id="frame-tab"
-                                class="tab-button px-4 py-2 rounded-lg shadow-md transition bg-blue-500 text-white"
-                                role="tab" aria-controls="frame-content" aria-selected="true"
-                                data-target="frame-content">
-                                Frame
-                            </button>
-                            <button id="shape-tab"
-                                class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
-                                role="tab" aria-controls="shape-content" aria-selected="false"
-                                data-target="shape-content">
-                                Shape
-                            </button>
-                            <button id="logo-tab"
-                                class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
-                                role="tab" aria-controls="logo-content" aria-selected="false"
-                                data-target="logo-content">
-                                Logo
-                            </button>
-                            <button id="level-tab"
-                                class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
-                                role="tab" aria-controls="level-content" aria-selected="false"
-                                data-target="level-content">
-                                Level
-                            </button>
-                        </div>
-    
-                        <!-- Tab Contents -->
-                        <div class="tab-contents">
-                            <!-- Frame Content -->
-                            <div id="frame-content" role="tabpanel" aria-labelledby="frame-tab" class="tab-pane active">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
-                                        <span class="mt-2 text-sm text-gray-600">No Frame</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">📧</div>
-                                        <span class="mt-2 text-sm text-gray-600">Envelope</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">📄</div>
-                                        <span class="mt-2 text-sm text-gray-600">Paper</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">☕</div>
-                                        <span class="mt-2 text-sm text-gray-600">Coffee</span>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <!-- Shape Content -->
-                            <div id="shape-content" role="tabpanel" aria-labelledby="shape-tab" class="tab-pane hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">◻️</div>
-                                        <span class="mt-2 text-sm text-gray-600">Square</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-full bg-gray-100">🔘</div>
-                                        <span class="mt-2 text-sm text-gray-600">Circle</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100 transform rotate-45">♦️</div>
-                                        <span class="mt-2 text-sm text-gray-600">Diamond</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">⭐</div>
-                                        <span class="mt-2 text-sm text-gray-600">Star</span>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <!-- Logo Content -->
-                            <div id="logo-content" role="tabpanel" aria-labelledby="logo-tab" class="tab-pane hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            <span class="text-2xl">🏢</span>
-                                        </div>
-                                        <span class="mt-2 text-sm text-gray-600">Company</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            <span class="text-2xl">🖼️</span>
-                                        </div>
-                                        <span class="mt-2 text-sm text-gray-600">Custom</span>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <!-- Level Content -->
-                            <div id="level-content" role="tabpanel" aria-labelledby="level-tab" class="tab-pane hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            L</div>
-                                        <span class="mt-2 text-sm text-gray-600">Low</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            M</div>
-                                        <span class="mt-2 text-sm text-gray-600">Medium</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            Q</div>
-                                        <span class="mt-2 text-sm text-gray-600">Quartile</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            H</div>
-                                        <span class="mt-2 text-sm text-gray-600">High</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const tabButtons = document.querySelectorAll('.tab-button');
-                            const tabPanes = document.querySelectorAll('.tab-pane');
-                    
-                            function activateTab(target) {
-                                // Ensure the parent section stays visible
-                                document.getElementById('tab-website').classList.remove('hidden');
-                    
-                                // Remove active state from all buttons
-                                tabButtons.forEach(btn => {
-                                    btn.classList.remove('bg-blue-500', 'text-white');
-                                    btn.classList.add('bg-gray-200', 'hover:bg-gray-300');
-                                    btn.setAttribute('aria-selected', 'false');
-                                });
-                    
-                                // Hide all tab contents first
-                                tabPanes.forEach(pane => {
-                                    pane.classList.add('hidden');
-                                });
-                    
-                                // Activate the selected button
-                                const activeButton = document.querySelector(`[data-target="${target}"]`);
-                                if (activeButton) {
-                                    activeButton.classList.remove('bg-gray-200', 'hover:bg-gray-300');
-                                    activeButton.classList.add('bg-blue-500', 'text-white');
-                                    activeButton.setAttribute('aria-selected', 'true');
-                                }
-                    
-                                // Show the targeted tab content
-                                const activeTab = document.getElementById(target);
-                                if (activeTab) {
-                                    activeTab.classList.remove('hidden');
-                                }
-                            }
-                    
-                            // Default active tab on load
-                            activateTab('frame-content');
-                    
-                            // Add click event to all tab buttons
-                            tabButtons.forEach(button => {
-                                button.addEventListener('click', function(e) {
-                                    e.preventDefault();
-                                    const target = this.dataset.target;
-                                    activateTab(target);
-                                });
-                            });
-                        });
-                    </script>
-                    
+<section id="tab-website" class="tab-content mt-6 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Left Section -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Generate QR Code</h2>
+            <input type="text" id="qr-text" placeholder="Enter text or URL..." 
+                class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none mb-4">
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <select id="qr-frame" class="p-2 border rounded-lg w-full">
+                    <option value="none">No Frame</option>
+                    <option value="square">Square Frame</option>
+                    <option value="circle">Circle Frame</option>
+                    <option value="rounded">Rounded Frame</option>
+                </select>
+                <select id="qr-shape" class="p-2 border rounded-lg w-full">
+                    <option value="square">Square</option>
+                    <option value="dots">Dots</option>
+                    <option value="rounded">Rounded</option>
+                    <option value="extra-rounded">Extra Rounded</option>
+                </select>
             </div>
 
-            <!-- Right Section -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Download QR</h2>
-                <div class="flex flex-col items-center gap-6">
-                    <div
-                        class="w-32 h-32 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
-                        <img src="{{ asset('asset/img/qr.jpg') }}" alt="QR Code" class="w-24 h-24 object-contain" />
-                    </div>
-                    <button
-                        class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                        Download QR
-                    </button>
+            <select id="qr-level" class="w-full p-2 border rounded-lg mb-4">
+                <option value="L">Low</option>
+                <option value="M" selected>Medium</option>
+                <option value="Q">Quartile</option>
+                <option value="H">High</option>
+            </select>
+
+            <button id="qr-generate" 
+                class="w-full px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition">
+                Generate QR Code
+            </button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">QR Code Preview & Download</h2>
+            <div class="flex flex-col items-center gap-6">
+                <div id="qr-container" class="w-40 h-40 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center">
+                    <!-- QR Code Preview Here -->
                 </div>
+                <button id="qr-download" 
+                    class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download QR
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const qrContainer = document.getElementById("qr-container");
+        const qrDownloadBtn = document.getElementById("qr-download");
+        const qrTextInput = document.getElementById("qr-text");
+        const qrGenerateBtn = document.getElementById("qr-generate");
+        const qrFrameSelect = document.getElementById("qr-frame");
+        const qrShapeSelect = document.getElementById("qr-shape");
+        const qrLevelSelect = document.getElementById("qr-level");
+
+        let qrCode = new QRCodeStyling({
+            width: 160,
+            height: 160,
+            type: "svg",
+            data: "", 
+            dotsOptions: {
+                color: "#000",
+                type: "square"
+            },
+            backgroundOptions: {
+                color: "#fff"
+            },
+            qrOptions: {
+                errorCorrectionLevel: "M"
+            }
+        });
+
+        qrCode.append(qrContainer);
+
+        function generateQRCode() {
+            const text = qrTextInput.value || "https://example.com";
+            const level = qrLevelSelect.value;
+            const shape = qrShapeSelect.value;
+            const frame = qrFrameSelect.value;
+
+            qrCode.update({
+                data: text,
+                qrOptions: { errorCorrectionLevel: level },
+                dotsOptions: { type: shape },
+                backgroundOptions: { color: "#fff" },
+                imageOptions: { crossOrigin: "anonymous", margin: frame !== "none" ? 10 : 0 }
+            });
+        }
+
+        qrGenerateBtn.addEventListener("click", generateQRCode);
+
+        qrDownloadBtn.addEventListener("click", function () {
+            qrCode.download({ name: "qr-code", extension: "png" });
+        });
+    });
+</script>
+
+    <!-- URL Content -->
+ 
+ <!-- Include QRCodeStyling Library -->
+<script src="https://cdn.jsdelivr.net/npm/qr-code-styling/lib/qr-code-styling.umd.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const qrContainer = document.getElementById("qr-container");
+        const qrText = document.getElementById("qr-text");
+        const qrShape = document.getElementById("qr-shape");
+        const qrLevel = document.getElementById("qr-level");
+        const qrGenerate = document.getElementById("qr-generate");
+        const qrDownload = document.getElementById("qr-download");
+
+        // Ensure the QR Code Styling instance is correctly initialized
+        let qrCode = new QRCodeStyling({
+            width: 200,
+            height: 200,
+            type: "svg",
+            data: "https://example.com", // Default data
+            dotsOptions: {
+                type: "square",
+                color: "#000",
+            },
+            backgroundOptions: {
+                color: "#fff",
+            },
+            qrOptions: {
+                errorCorrectionLevel: "M",
+            }
+        });
+
+        qrGenerate.addEventListener("click", () => {
+            const text = qrText.value.trim();
+            if (!text) {
+                alert("Please enter text or a URL");
+                return;
+            }
+
+            qrCode.update({
+                data: text,
+                dotsOptions: {
+                    type: qrShape.value,
+                },
+                qrOptions: {
+                    errorCorrectionLevel: qrLevel.value,
+                },
+            });
+
+            // Clear and append new QR code
+            qrContainer.innerHTML = "";
+            qrCode.append(qrContainer);
+        });
+
+        qrDownload.addEventListener("click", () => {
+            qrCode.download({ name: "qr-code", extension: "png" });
+        });
+    });
+</script>
+
+        <section id="tab-url" class="tab-content mt-6 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Generate QR Code</h2>
+                    <input type="text" id="qr-text" placeholder="Enter text or URL..." class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none mb-4">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <select id="qr-frame" class="p-2 border rounded-lg w-full">
+                            <option value="none">No Frame</option>
+                            <option value="square">Square Frame</option>
+                            <option value="circle">Circle Frame</option>
+                            <option value="rounded">Rounded Frame</option>
+                        </select>
+                        <select id="qr-shape" class="p-2 border rounded-lg w-full">
+                            <option value="square">Square</option>
+                            <option value="dots">Dots</option>
+                            <option value="rounded">Rounded</option>
+                            <option value="extra-rounded">Extra Rounded</option>
+                        </select>
+                    </div>
+                    <select id="qr-level" class="w-full p-2 border rounded-lg mb-4">
+                        <option value="L">Low</option>
+                        <option value="M" selected>Medium</option>
+                        <option value="Q">Quartile</option>
+                        <option value="H">High</option>
+                    </select>
+                    <button id="qr-generate" class="w-full px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition">Generate QR Code</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6">QR Code Preview & Download</h2>
+                    <div class="flex flex-col items-center gap-6">
+                        <div id="qr-container" class="w-40 h-40 bg-gray-100 border border-gray-300 rounded-md flex items-center justify-center"></div>
+                        <button id="qr-download" class="flex items-center gap-2 px-6 py-2 text-sm font-medium text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            Download QR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
 
     <!-- Text Content -->
     <section id="tab-text" class="tab-content hidden mt-6">
@@ -513,185 +512,185 @@
                     class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"
                     placeholder="Enter some text..."></textarea>
 
-                    <div class="mt-6">
-                        <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
-    
-                        <!-- Tab Buttons -->
-                        <div class="flex flex-wrap gap-4 mb-4" role="tablist">
-                            <button id="frame-tab"
-                                class="tab-button px-4 py-2 rounded-lg shadow-md transition bg-blue-500 text-white"
-                                role="tab" aria-controls="frame-content" aria-selected="true"
-                                data-target="frame-content">
-                                Frame
-                            </button>
-                            <button id="shape-tab"
-                                class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
-                                role="tab" aria-controls="shape-content" aria-selected="false"
-                                data-target="shape-content">
-                                Shape
-                            </button>
-                            <button id="logo-tab"
-                                class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
-                                role="tab" aria-controls="logo-content" aria-selected="false"
-                                data-target="logo-content">
-                                Logo
-                            </button>
-                            <button id="level-tab"
-                                class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
-                                role="tab" aria-controls="level-content" aria-selected="false"
-                                data-target="level-content">
-                                Level
-                            </button>
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold text-gray-700">2. Design Your QR</h2>
+
+                    <!-- Tab Buttons -->
+                    <div class="flex flex-wrap gap-4 mb-4" role="tablist">
+                        <button id="frame-tab"
+                            class="tab-button px-4 py-2 rounded-lg shadow-md transition bg-blue-500 text-white"
+                            role="tab" aria-controls="frame-content" aria-selected="true"
+                            data-target="frame-content">
+                            Frame
+                        </button>
+                        <button id="shape-tab"
+                            class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
+                            role="tab" aria-controls="shape-content" aria-selected="false"
+                            data-target="shape-content">
+                            Shape
+                        </button>
+                        <button id="logo-tab"
+                            class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
+                            role="tab" aria-controls="logo-content" aria-selected="false"
+                            data-target="logo-content">
+                            Logo
+                        </button>
+                        <button id="level-tab"
+                            class="tab-button px-4 py-2 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"
+                            role="tab" aria-controls="level-content" aria-selected="false"
+                            data-target="level-content">
+                            Level
+                        </button>
+                    </div>
+
+                    <!-- Tab Contents -->
+                    <div class="tab-contents">
+                        <!-- Frame Content -->
+                        <div id="frame-content" role="tabpanel" aria-labelledby="frame-tab" class="tab-pane active">
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
+                                    <span class="mt-2 text-sm text-gray-600">No Frame</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100">📧</div>
+                                    <span class="mt-2 text-sm text-gray-600">Envelope</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100">📄</div>
+                                    <span class="mt-2 text-sm text-gray-600">Paper</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100">☕</div>
+                                    <span class="mt-2 text-sm text-gray-600">Coffee</span>
+                                </div>
+                            </div>
                         </div>
-    
-                        <!-- Tab Contents -->
-                        <div class="tab-contents">
-                            <!-- Frame Content -->
-                            <div id="frame-content" role="tabpanel" aria-labelledby="frame-tab" class="tab-pane active">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">--</div>
-                                        <span class="mt-2 text-sm text-gray-600">No Frame</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">📧</div>
-                                        <span class="mt-2 text-sm text-gray-600">Envelope</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">📄</div>
-                                        <span class="mt-2 text-sm text-gray-600">Paper</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">☕</div>
-                                        <span class="mt-2 text-sm text-gray-600">Coffee</span>
-                                    </div>
+
+                        <!-- Shape Content -->
+                        <div id="shape-content" role="tabpanel" aria-labelledby="shape-tab" class="tab-pane hidden">
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100">◻️</div>
+                                    <span class="mt-2 text-sm text-gray-600">Square</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-full bg-gray-100">🔘</div>
+                                    <span class="mt-2 text-sm text-gray-600">Circle</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100 transform rotate-45">♦️</div>
+                                    <span class="mt-2 text-sm text-gray-600">Diamond</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-16 h-16 border rounded-lg bg-gray-100">⭐</div>
+                                    <span class="mt-2 text-sm text-gray-600">Star</span>
                                 </div>
                             </div>
-    
-                            <!-- Shape Content -->
-                            <div id="shape-content" role="tabpanel" aria-labelledby="shape-tab" class="tab-pane hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">◻️</div>
-                                        <span class="mt-2 text-sm text-gray-600">Square</span>
+                        </div>
+
+                        <!-- Logo Content -->
+                        <div id="logo-content" role="tabpanel" aria-labelledby="logo-tab" class="tab-pane hidden">
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
+                                        <span class="text-2xl">🏢</span>
                                     </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-full bg-gray-100">🔘</div>
-                                        <span class="mt-2 text-sm text-gray-600">Circle</span>
+                                    <span class="mt-2 text-sm text-gray-600">Company</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
+                                        <span class="text-2xl">🖼️</span>
                                     </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100 transform rotate-45">♦️</div>
-                                        <span class="mt-2 text-sm text-gray-600">Diamond</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div class="w-16 h-16 border rounded-lg bg-gray-100">⭐</div>
-                                        <span class="mt-2 text-sm text-gray-600">Star</span>
-                                    </div>
+                                    <span class="mt-2 text-sm text-gray-600">Custom</span>
                                 </div>
                             </div>
-    
-                            <!-- Logo Content -->
-                            <div id="logo-content" role="tabpanel" aria-labelledby="logo-tab" class="tab-pane hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            <span class="text-2xl">🏢</span>
-                                        </div>
-                                        <span class="mt-2 text-sm text-gray-600">Company</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            <span class="text-2xl">🖼️</span>
-                                        </div>
-                                        <span class="mt-2 text-sm text-gray-600">Custom</span>
-                                    </div>
+                        </div>
+
+                        <!-- Level Content -->
+                        <div id="level-content" role="tabpanel" aria-labelledby="level-tab" class="tab-pane hidden">
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
+                                        L</div>
+                                    <span class="mt-2 text-sm text-gray-600">Low</span>
                                 </div>
-                            </div>
-    
-                            <!-- Level Content -->
-                            <div id="level-content" role="tabpanel" aria-labelledby="level-tab" class="tab-pane hidden">
-                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            L</div>
-                                        <span class="mt-2 text-sm text-gray-600">Low</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            M</div>
-                                        <span class="mt-2 text-sm text-gray-600">Medium</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            Q</div>
-                                        <span class="mt-2 text-sm text-gray-600">Quartile</span>
-                                    </div>
-                                    <div class="flex flex-col items-center">
-                                        <div
-                                            class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
-                                            H</div>
-                                        <span class="mt-2 text-sm text-gray-600">High</span>
-                                    </div>
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
+                                        M</div>
+                                    <span class="mt-2 text-sm text-gray-600">Medium</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
+                                        Q</div>
+                                    <span class="mt-2 text-sm text-gray-600">Quartile</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="w-16 h-16 border rounded-lg bg-gray-100 flex items-center justify-center">
+                                        H</div>
+                                    <span class="mt-2 text-sm text-gray-600">High</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
-                    <script>
-                        document.addEventListener('DOMContentLoaded', function() {
-                            const tabButtons = document.querySelectorAll('.tab-button');
-                            const tabPanes = document.querySelectorAll('.tab-pane');
-                    
-                            function activateTab(target) {
-                                // Ensure the parent section stays visible
-                                document.getElementById('tab-website').classList.remove('hidden');
-                    
-                                // Remove active state from all buttons
-                                tabButtons.forEach(btn => {
-                                    btn.classList.remove('bg-blue-500', 'text-white');
-                                    btn.classList.add('bg-gray-200', 'hover:bg-gray-300');
-                                    btn.setAttribute('aria-selected', 'false');
-                                });
-                    
-                                // Hide all tab contents first
-                                tabPanes.forEach(pane => {
-                                    pane.classList.add('hidden');
-                                });
-                    
-                                // Activate the selected button
-                                const activeButton = document.querySelector(`[data-target="${target}"]`);
-                                if (activeButton) {
-                                    activeButton.classList.remove('bg-gray-200', 'hover:bg-gray-300');
-                                    activeButton.classList.add('bg-blue-500', 'text-white');
-                                    activeButton.setAttribute('aria-selected', 'true');
-                                }
-                    
-                                // Show the targeted tab content
-                                const activeTab = document.getElementById(target);
-                                if (activeTab) {
-                                    activeTab.classList.remove('hidden');
-                                }
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const tabButtons = document.querySelectorAll('.tab-button');
+                        const tabPanes = document.querySelectorAll('.tab-pane');
+                
+                        function activateTab(target) {
+                            // Ensure the parent section stays visible
+                            document.getElementById('tab-website').classList.remove('hidden');
+                
+                            // Remove active state from all buttons
+                            tabButtons.forEach(btn => {
+                                btn.classList.remove('bg-blue-500', 'text-white');
+                                btn.classList.add('bg-gray-200', 'hover:bg-gray-300');
+                                btn.setAttribute('aria-selected', 'false');
+                            });
+                
+                            // Hide all tab contents first
+                            tabPanes.forEach(pane => {
+                                pane.classList.add('hidden');
+                            });
+                
+                            // Activate the selected button
+                            const activeButton = document.querySelector(`[data-target="${target}"]`);
+                            if (activeButton) {
+                                activeButton.classList.remove('bg-gray-200', 'hover:bg-gray-300');
+                                activeButton.classList.add('bg-blue-500', 'text-white');
+                                activeButton.setAttribute('aria-selected', 'true');
                             }
-                    
-                            // Default active tab on load
-                            activateTab('frame-content');
-                    
-                            // Add click event to all tab buttons
-                            tabButtons.forEach(button => {
-                                button.addEventListener('click', function(e) {
-                                    e.preventDefault();
-                                    const target = this.dataset.target;
-                                    activateTab(target);
-                                });
+                
+                            // Show the targeted tab content
+                            const activeTab = document.getElementById(target);
+                            if (activeTab) {
+                                activeTab.classList.remove('hidden');
+                            }
+                        }
+                
+                        // Default active tab on load
+                        activateTab('frame-content');
+                
+                        // Add click event to all tab buttons
+                        tabButtons.forEach(button => {
+                            button.addEventListener('click', function(e) {
+                                e.preventDefault();
+                                const target = this.dataset.target;
+                                activateTab(target);
                             });
                         });
-                    </script>
-                    
+                    });
+                </script>
+                
             </div>
 
             <!-- Right Section -->
@@ -731,7 +730,7 @@
                     </p>
                     <button
                         class="mt-4 px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition">
-                        Register now
+                     <a href="{{route('frontend.register')}}">   Register now</a>
                     </button>
                 </div>
 
@@ -764,7 +763,7 @@
                 </p>
                 <button
                     class="mt-4 px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition">
-                    Register now
+                    <a href="{{route('frontend.register')}}">   Register now</a>
                 </button>
             </div>
 
@@ -796,7 +795,7 @@
                 </p>
                 <button
                     class="mt-4 px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition">
-                    Register now
+                    <a href="{{route('frontend.register')}}">   Register now</a>
                 </button>
             </div>
 
@@ -894,7 +893,7 @@
                 </p>
                 <button
                     class="mt-4 px-6 py-2 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition">
-                    Register now
+                    <a href="{{route('frontend.register')}}">   Register now</a>
                 </button>
             </div>
 

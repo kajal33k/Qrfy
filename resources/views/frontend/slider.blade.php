@@ -78,8 +78,8 @@
                         <p class="text-gray-600 mt-4 font-light">Connect your URL to a QR code so everyone can access your website
                             quickly and easily. Turn every visit into an opportunity for growth!</p>
                         <button
-                            class="mt-6 font-light bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700">Generate
-                            QR Code for Website</button>
+                            class="mt-6 font-light bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700"><a href="{{route('qrtype')}}">Generate
+                                QR Code for Website</a></button>
                     </div>
 
                     <!-- Mobile Mockup -->

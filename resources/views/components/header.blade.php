@@ -1,10 +1,10 @@
 <header class="flex shadow-md py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50">
   <div class="flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto">
       <!-- Logo -->
-      <a href="javascript:void(0)" class="hidden sm:block">
+      <a href="{{route('frontend.index')}}" class="hidden sm:block">
           <img src="{{asset('asset/img/logo.png')}}" alt="logo" class="w-12" />
       </a>
-      <a href="javascript:void(0)" class="sm:hidden">
+      <a href="{{route('frontend.index')}}" class="sm:hidden">
           <img src="{{asset('asset/img/logo.png')}}" alt="logo" class="w-9" />
       </a>
 

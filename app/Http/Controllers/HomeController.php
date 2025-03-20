@@ -46,9 +46,15 @@ class HomeController extends Controller
       return view('frontend.staticqr');
    }
 
+   public function feedback(){
+      return view('frontend.feedback');
+   }
    
    public function typesofqr()
    {
       return view('frontend.typesofqr');
+   }
+   public function qrtype(){
+      return view('frontend.qrtype');
    }
 }

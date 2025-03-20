@@ -2,8 +2,8 @@
 @section('content')
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">  
         <!-- Form Section -->
-        <div class="min-h-screen flex flex-col justify-center bg-gray-100 py-12 sm:px-6 lg:px-8">
-            <div class="sm:w-full sm:max-w-md mx-auto">
+        <div class="min-h-screen flex flex-col justify-center bg-gray-100 py-12 sm:px-6 lg:px-8 ">
+            <div class="sm:w-full sm:max-w-md mx-auto shadow-lg rounded-lg p-4">
                 <!-- Title Section -->
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-900">Free QR Code Generator</h2>
@@ -37,7 +37,7 @@
                     <!-- Registration Link -->
                     <div class="text-center">
                         <p class="text-sm text-gray-600">
-                            Don't have an account? <a href="#" class="font-medium text-blue-600 hover:text-blue-700">Create an account</a>
+                            Don't have an account? <a href="{{route('frontend.register')}}" class="font-medium text-blue-600 hover:text-blue-700">Create an account</a>
                         </p>
                     </div>
                 </div>

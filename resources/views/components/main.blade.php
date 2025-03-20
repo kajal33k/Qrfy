@@ -25,6 +25,7 @@
 {{-- icon --}}
   <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
 </head>
 <body class="relative bg-cover bg-center bg-fixed " style="background-image: url('{{ asset('asset/img/bg.jpg!w700wp') }}');">
 
