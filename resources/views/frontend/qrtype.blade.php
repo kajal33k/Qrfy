@@ -1,15 +1,39 @@
 @extends('components.main')
 @section('content')
+{{-- slider css --}}
+<style>
+    .slider-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+</style>
+
     <!-- Hero Section -->
-    <div class="bg-gradient-to-t to-red-400 from-gray-200 px-4 lg:px-20 py-12 flex flex-col-reverse lg:flex-row items-center gap-8">
+    <div
+        class="bg-gradient-to-t to-red-400 from-gray-200 px-4 lg:px-20 py-12 flex flex-col-reverse lg:flex-row items-center gap-8">
         <!-- Text Section -->
         <div class="text-center lg:text-left lg:max-w-lg">
             <p class="text-gray-600 font-medium text-sm lg:text-base">Generate a Website QR Code</p>
             <h1 class="text-3xl lg:text-5xl font-bold mt-2 text-gray-900 leading-tight">
                 Share a <span class="text-blue-600">Website</span> with your customers with a simple scan
             </h1>
-            <p class="text-gray-600 mt-4 text-sm lg:text-base">And allow them to easily access the landing page of your choice. You can edit your URL as many times as you need, even after printing your QR code.</p>
-            <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium shadow-md hover:bg-blue-700 transition-all">
+            <p class="text-gray-600 mt-4 text-sm lg:text-base">And allow them to easily access the landing page of your
+                choice. You can edit your URL as many times as you need, even after printing your QR code.</p>
+            <button
+                class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium shadow-md hover:bg-blue-700 transition-all">
                 Create QR code →
             </button>
         </div>
@@ -17,7 +41,8 @@
         <!-- Image Section -->
         <div class="relative w-full max-w-xs lg:max-w-md">
             <div class="flex justify-center">
-                <div class="relative bg-black rounded-[2rem] w-48 lg:w-56 h-auto shadow-xl border-4 border-gray-800 overflow-hidden">
+                <div
+                    class="relative bg-black rounded-[2rem] w-48 lg:w-56 h-auto shadow-xl border-4 border-gray-800 overflow-hidden">
                     <div class="absolute top-0 w-24 h-2 bg-gray-800 rounded-b-lg"></div>
                     <img src="{{ asset('asset/img/section11') }}" alt="QR Code Preview" class="w-full h-full object-cover">
                 </div>
@@ -28,31 +53,40 @@
     <!-- Categories Section -->
     <div class="py-12 bg-white">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-2xl lg:text-3xl font-bold text-gray-900">Learn about some of the multiple uses of the Website QR</h1>
-            <p class="text-gray-600 mt-2 text-sm lg:text-base px-4">It doesn't matter what your industry is: expand the reach of your business by improving your customers' experience through direct and quick access to your URLs of interest.</p>
+            <h1 class="text-2xl lg:text-3xl font-bold text-gray-900">Learn about some of the multiple uses of the Website QR
+            </h1>
+            <p class="text-gray-600 mt-2 text-sm lg:text-base px-4">It doesn't matter what your industry is: expand the
+                reach of your business by improving your customers' experience through direct and quick access to your URLs
+                of interest.</p>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-4 mt-6 px-4">
-                <button class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
+                <button
+                    class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
                     <span class="text-2xl lg:text-3xl">📦</span>
                     <span class="mt-1 lg:mt-2">Products</span>
                 </button>
-                <button class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
+                <button
+                    class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
                     <span class="text-2xl lg:text-3xl">🏪</span>
                     <span class="mt-1 lg:mt-2">Shops</span>
                 </button>
-                <button class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
+                <button
+                    class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
                     <span class="text-2xl lg:text-3xl">💻</span>
                     <span class="mt-1 lg:mt-2">Software</span>
                 </button>
-                <button class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
+                <button
+                    class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
                     <span class="text-2xl lg:text-3xl">🍽️</span>
                     <span class="mt-1 lg:mt-2">Restaurants</span>
                 </button>
-                <button class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
+                <button
+                    class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
                     <span class="text-2xl lg:text-3xl">❤️</span>
                     <span class="mt-1 lg:mt-2">NGOs</span>
                 </button>
-                <button class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
+                <button
+                    class="category-btn border-2 border-gray-300 rounded-lg p-2 lg:p-4 flex flex-col items-center text-gray-700 hover:border-blue-500 text-sm">
                     <span class="text-2xl lg:text-3xl">💰</span>
                     <span class="mt-1 lg:mt-2">Finance & Insurance</span>
                 </button>
@@ -60,18 +94,104 @@
         </div>
     </div>
 
+    {{-- slider --}}
+
+  <div class="bg-white max-w-full">
+    <div class="slider-container ">
+        <div class="slider">
+            <div class="slide bg-orange-100 p-10 py-12 flex flex-col md:flex-row items-center justify-center gap-6">
+                <div class="w-full md:w-1/3">
+                    <img src="{{asset('asset/img/s1.jpg')}}" alt="Restaurant Image" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-gray-800">Restaurants</h1>
+                    <p class="text-gray-600 mt-2">
+                        Share the entire menu in PDF with your customers in a single scan. An economical, hygienic, and ecological way to share the list of dishes and prices, which your client can always have available.
+                    </p>
+                    <div class="mt-4 flex gap-4 justify-center md:justify-start">
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">Get Started</button>
+                        <button class="bg-gray-300 text-gray-800 px-5 py-2 rounded-lg shadow-md hover:bg-gray-400 transition">More Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide bg-blue-100 p-10 py-12 flex flex-col md:flex-row items-center justify-center gap-6">
+                <div class="w-full md:w-1/3">
+                    <img src="{{asset('asset/img/s1.jpg')}}" alt="Restaurant Image" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-gray-800">Restaurants</h1>
+                    <p class="text-gray-600 mt-2">
+                        Share the entire menu in PDF with your customers in a single scan. An economical, hygienic, and ecological way to share the list of dishes and prices, which your client can always have available.
+                    </p>
+                    <div class="mt-4 flex gap-4 justify-center md:justify-start">
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">Get Started</button>
+                        <button class="bg-gray-300 text-gray-800 px-5 py-2 rounded-lg shadow-md hover:bg-gray-400 transition">More Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide bg-green-100 p-10 py-12 flex flex-col md:flex-row items-center justify-center gap-6">
+                <div class="w-full md:w-1/3">
+                    <img src="{{asset('asset/img/s1.jpg')}}" alt="Restaurant Image" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-gray-800">Restaurants</h1>
+                    <p class="text-gray-600 mt-2">
+                        Share the entire menu in PDF with your customers in a single scan. An economical, hygienic, and ecological way to share the list of dishes and prices, which your client can always have available.
+                    </p>
+                    <div class="mt-4 flex gap-4 justify-center md:justify-start">
+                        <button class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">Get Started</button>
+                        <button class="bg-gray-300 text-gray-800 px-5 py-2 rounded-lg shadow-md hover:bg-gray-400 transition">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="prev"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white px-4 py-2 rounded-full">&#10094;</button>
+        <button id="next"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white px-4 py-2 rounded-full">&#10095;</button>
+    </div>
+  </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
+    
+        function moveNext() {
+            index++;
+            slider.style.transition = 'transform 0.5s ease-in-out';
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            if (index >= slides.length) {
+                setTimeout(() => {
+                    slider.style.transition = 'none';
+                    slider.style.transform = 'translateX(0)';
+                    index = 0;
+                }, 500);
+            }
+        }
+    
+        document.getElementById('next').addEventListener('click', moveNext);
+        setInterval(moveNext, 3000); // Auto move every 3 seconds
+    </script>
+
+    
     <!-- Banner Sections -->
     <div class="bg-white">
         <!-- Banner 1 -->
         <div class="flex flex-col lg:flex-row items-center max-w-6xl mx-auto px-4 py-8 lg:py-12">
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                <img src="{{ asset('asset/img/banner-01-Ds5GKfUs.webp') }}" alt="QR Code Creation" class="w-full h-auto object-cover">
+                <img src="{{ asset('asset/img/banner-01-Ds5GKfUs.webp') }}" alt="QR Code Creation"
+                    class="w-full h-auto object-cover">
             </div>
             <div class="w-full lg:w-1/2 px-4 lg:px-8">
                 <span class="text-blue-500 font-semibold text-lg">CREATE</span>
-                <h1 class="text-2xl lg:text-3xl font-bold mt-2 mb-4">A fast and effective way to share any link instantly</h1>
-                <p class="text-gray-600 text-base lg:text-lg mb-6">Websites, forms, download links, online files, social networks... any URL can be converted into a QR code.</p>
-                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
+                <h1 class="text-2xl lg:text-3xl font-bold mt-2 mb-4">A fast and effective way to share any link instantly
+                </h1>
+                <p class="text-gray-600 text-base lg:text-lg mb-6">Websites, forms, download links, online files, social
+                    networks... any URL can be converted into a QR code.</p>
+                <button
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
                     Generate QR Code
                 </button>
             </div>
@@ -80,13 +200,17 @@
         <!-- Banner 2 -->
         <div class="flex flex-col lg:flex-row items-center max-w-6xl mx-auto px-4 py-8 lg:py-12">
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:order-last">
-                <img src="{{ asset('asset/img/banner-02-BFtDQRYn.webp') }}" alt="QR Customization" class="w-full h-auto object-cover">
+                <img src="{{ asset('asset/img/banner-02-BFtDQRYn.webp') }}" alt="QR Customization"
+                    class="w-full h-auto object-cover">
             </div>
             <div class="w-full lg:w-1/2 px-4 lg:px-8">
                 <span class="text-blue-500 font-semibold text-lg">PERSONALIZE</span>
-                <h1 class="text-2xl lg:text-3xl font-bold mt-2 mb-4">Customize your Website QR to make it easier to share</h1>
-                <p class="text-gray-600 text-base lg:text-lg mb-6">You can shorten it and modify the text, so that it has your brand in the link, so that your customers know who it belongs to before accessing it.</p>
-                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
+                <h1 class="text-2xl lg:text-3xl font-bold mt-2 mb-4">Customize your Website QR to make it easier to share
+                </h1>
+                <p class="text-gray-600 text-base lg:text-lg mb-6">You can shorten it and modify the text, so that it has
+                    your brand in the link, so that your customers know who it belongs to before accessing it.</p>
+                <button
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
                     Generate QR Code
                 </button>
             </div>
@@ -95,13 +219,16 @@
         <!-- Banner 3 -->
         <div class="flex flex-col lg:flex-row items-center max-w-6xl mx-auto px-4 py-8 lg:py-12">
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                <img src="{{ asset('asset/img/banner-03-6zN3E2y2.webp') }}" alt="QR Flexibility" class="w-full h-auto object-cover">
+                <img src="{{ asset('asset/img/banner-03-6zN3E2y2.webp') }}" alt="QR Flexibility"
+                    class="w-full h-auto object-cover">
             </div>
             <div class="w-full lg:w-1/2 px-4 lg:px-8">
                 <span class="text-blue-500 font-semibold text-lg">FLEXIBILITY</span>
                 <h1 class="text-2xl lg:text-3xl font-bold mt-2 mb-4">Customize your QR code to be more attractive</h1>
-                <p class="text-gray-600 text-base lg:text-lg mb-6">Attract scans by customizing your QR with your own colors and logo. You can also choose the presentation and framework to improve the user experience.</p>
-                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
+                <p class="text-gray-600 text-base lg:text-lg mb-6">Attract scans by customizing your QR with your own colors
+                    and logo. You can also choose the presentation and framework to improve the user experience.</p>
+                <button
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
                     Generate QR Code
                 </button>
             </div>
@@ -110,13 +237,16 @@
         <!-- Banner 4 -->
         <div class="flex flex-col lg:flex-row items-center max-w-6xl mx-auto px-4 py-8 lg:py-12">
             <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:order-last">
-                <img src="{{ asset('asset/img/banner-04-CvCFp6q2.webp') }}" alt="QR Analytics" class="w-full h-auto object-cover">
+                <img src="{{ asset('asset/img/banner-04-CvCFp6q2.webp') }}" alt="QR Analytics"
+                    class="w-full h-auto object-cover">
             </div>
             <div class="w-full lg:w-1/2 px-4 lg:px-8">
                 <span class="text-blue-500 font-semibold text-lg">TRACKING</span>
                 <h1 class="text-2xl lg:text-3xl font-bold mt-2 mb-4">Monitor your QR code performance in real time</h1>
-                <p class="text-gray-600 text-base lg:text-lg mb-6">Get detailed analytics on scans, locations, and devices used to access your QR codes.</p>
-                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
+                <p class="text-gray-600 text-base lg:text-lg mb-6">Get detailed analytics on scans, locations, and devices
+                    used to access your QR codes.</p>
+                <button
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg text-sm lg:text-base font-medium hover:bg-blue-600">
                     Generate QR Code
                 </button>
             </div>
@@ -131,14 +261,16 @@
                 <img src="{{ asset('asset/img/icon1.jpg') }}" alt="Dynamic QR" class="w-6 h-6 lg:w-8 lg:h-8 mt-1">
                 <div>
                     <h3 class="text-base lg:text-lg font-semibold text-gray-900">Unlimited dynamic QR</h3>
-                    <p class="text-gray-600 text-sm lg:text-base">Create unlimited QRs and update them whenever you want in real time.</p>
+                    <p class="text-gray-600 text-sm lg:text-base">Create unlimited QRs and update them whenever you want in
+                        real time.</p>
                 </div>
             </div>
             <div class="flex items-start space-x-4">
                 <img src="{{ asset('asset/img/icon1.jpg') }}" alt="QR Types" class="w-6 h-6 lg:w-8 lg:h-8 mt-1">
                 <div>
                     <h3 class="text-base lg:text-lg font-semibold text-gray-900">Variety of QR types</h3>
-                    <p class="text-gray-600 text-sm lg:text-base">Choose from multiple QR types, such as URL, PDF, Menu, and more.</p>
+                    <p class="text-gray-600 text-sm lg:text-base">Choose from multiple QR types, such as URL, PDF, Menu,
+                        and more.</p>
                 </div>
             </div>
             <div class="flex items-start space-x-4">
@@ -149,10 +281,12 @@
                 </div>
             </div>
             <div class="flex items-start space-x-4">
-                <img src="{{ asset('asset/img/icon1.jpg') }}" alt="Team Collaboration" class="w-6 h-6 lg:w-8 lg:h-8 mt-1">
+                <img src="{{ asset('asset/img/icon1.jpg') }}" alt="Team Collaboration"
+                    class="w-6 h-6 lg:w-8 lg:h-8 mt-1">
                 <div>
                     <h3 class="text-base lg:text-lg font-semibold text-gray-900">Unlimited Members</h3>
-                    <p class="text-gray-600 text-sm lg:text-base">Invite users to collaborate in creation and management.</p>
+                    <p class="text-gray-600 text-sm lg:text-base">Invite users to collaborate in creation and management.
+                    </p>
                 </div>
             </div>
             <div class="flex items-start space-x-4">
@@ -184,7 +318,8 @@
                 </div>
             </div>
             <div class="flex items-start space-x-4">
-                <img src="{{ asset('asset/img/icon1.jpg') }}" alt="Pixel Integration" class="w-6 h-6 lg:w-8 lg:h-8 mt-1">
+                <img src="{{ asset('asset/img/icon1.jpg') }}" alt="Pixel Integration"
+                    class="w-6 h-6 lg:w-8 lg:h-8 mt-1">
                 <div>
                     <h3 class="text-base lg:text-lg font-semibold text-gray-900">Pixel Integration</h3>
                     <p class="text-gray-600 text-sm lg:text-base">Integrate Google and Facebook Pixel tracking.</p>
@@ -233,14 +368,3 @@
         });
     </script>
 @endsection
-
-{{-- @push('styles')
-<style>
-    @media (max-width: 640px) {
-        .category-btn {
-            min-height: 100px;
-            padding: 1rem;
-        }
-    }
-</style>
-@endpush --}}

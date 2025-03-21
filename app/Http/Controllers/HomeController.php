@@ -57,4 +57,7 @@ class HomeController extends Controller
    public function qrtype(){
       return view('frontend.qrtype');
    }
+   public function qrcard(){
+      return view('frontend.qrcard');
+   }
 }

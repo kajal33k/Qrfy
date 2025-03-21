@@ -12,11 +12,11 @@
         }
     </style>
 </head>
-<div class="px-12 flex flex-col items-center justify-center min-h-screen">
+<div class="md:px-12 flex flex-col items-center justify-center min-h-screen">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md p-4 rounded-lg w-3/4">
-        <ul class="flex justify-between space-x-2 bg-white/40 backdrop-blur-lg">
+    <nav class="bg-white shadow-md p-2 rounded-lg md:w-3/4 w-full px-4">
+        <ul class="flex justify-between space-x-2 bg-white/40 backdrop-blur-lg overflow-x-auto">
             <li><button class="nav-btn px-4 py-2 bg-gray-500 text-white rounded-lg" onclick="goToSlide(0)"><span
                         class="text-3xl">🌐</span>
                     <span class="text-sm">Website</span>
@@ -68,7 +68,7 @@
 
     <!-- Slider Container -->
     {{-- slide1 --}}
-    <div class="overflow-hidden w-3/4 mt-4 bg-white rounded-lg shadow-lg">
+    <div class="overflow-hidden md:w-3/4 w-full mt-4 bg-white rounded-lg shadow-lg">
         <div id="slider" class="flex w-full">
             <div class="slide w-full flex-shrink-0  h-auto flex items-center justify-center text-white text-2xl">
                 <div class="max-w-6xl mx-auto py-6 px-6 flex flex-col md:flex-row items-center justify-between">

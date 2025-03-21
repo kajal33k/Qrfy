@@ -16,4 +16,5 @@ Route::prefix('/')->group(function () {
     Route::get('/staticqr', [HomeController::class, 'staticQr'])->name('frontend.staticqr');
     Route::get('/qrtype', [HomeController::class, 'qrtype'])->name('qrtype');
     Route::get('/typesofqr', [HomeController::class, 'typesOfQr'])->name('frontend.typesofqr');
+    Route::get('/qrcard', [HomeController::class, 'qrcard'])->name('qrcard');
 });
